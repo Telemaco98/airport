@@ -1,0 +1,122 @@
+﻿THEORY BalanceX IS
+  Airport,30,0,0,30,0,0,0;
+  Initialisation,4,0,0,4,0,0,0;
+  WellDefinedness_Precondition_change_status,2,0,0,2,0,0,0;
+  WellDefinedness_Precondition_depart,2,0,0,2,0,0,0;
+  WellDefinedness_Precondition_land,4,0,0,4,0,0,0;
+  WellDefinedness_Precondition_took_off,2,0,0,2,0,0,0;
+  WellDefinedness_can_landing,2,0,0,2,0,0,0;
+  WellDefinedness_where_is_parked,1,0,0,1,0,0,0;
+  WellDefinedness_which_status,2,0,0,2,0,0,0;
+  change_status,1,0,0,1,0,0,0;
+  depart,3,0,0,3,0,0,0;
+  land,3,0,0,3,0,0,0;
+  park,3,0,0,3,0,0,0;
+  took_off,1,0,0,1,0,0,0
+END
+&
+THEORY ProofState IS
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0)
+END
+&
+THEORY MethodList IS
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr
+END
+&
+THEORY PassList IS
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?
+END
+&
+THEORY ManForms 
+END
+&
+THEORY Version IS
+  PRVersion("svn")(CLT == "svn")
+END

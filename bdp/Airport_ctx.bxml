@@ -1,0 +1,183 @@
+<Machine name='Airport_ctx' type='abstraction'>
+<Sets>
+<Attr>
+<Pos l='8' c='1' s='4'/>
+</Attr>
+<Set>
+<Id value='AIRPLANE' typref='1569085991'>
+<Attr>
+<Pos l='9' c='5' s='8'/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id value='TRACK' typref='2594961926'>
+<Attr>
+<Pos l='9' c='15' s='5'/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id value='GATE' typref='1113318944'>
+<Attr>
+<Pos l='9' c='22' s='4'/>
+</Attr>
+</Id>
+</Set>
+<Set>
+<Id value='STATUS' typref='515940807'>
+<Attr>
+<Pos l='11' c='5' s='6'/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value='boarding' typref='2246778642'>
+<Attr>
+<Pos l='11' c='15' s='8'/>
+</Attr>
+</Id>
+<Id value='flight_closed' typref='2246778642'>
+<Attr>
+<Pos l='11' c='25' s='13'/>
+</Attr>
+</Id>
+<Id value='taking_off' typref='2246778642'>
+<Attr>
+<Pos l='11' c='40' s='10'/>
+</Attr>
+</Id>
+<Id value='disembarking' typref='2246778642'>
+<Attr>
+<Pos l='11' c='52' s='12'/>
+</Attr>
+</Id>
+<Id value='confirmed' typref='2246778642'>
+<Attr>
+<Pos l='11' c='66' s='9'/>
+</Attr>
+</Id>
+<Id value='out' typref='2246778642'>
+<Attr>
+<Pos l='11' c='77' s='3'/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+<Set>
+<Id value='OCCUPATION' typref='1900168096'>
+<Attr>
+<Pos l='12' c='5' s='10'/>
+</Attr>
+</Id>
+<Enumerated_Values>
+<Id value='occupied' typref='2702565625'>
+<Attr>
+<Pos l='12' c='19' s='8'/>
+</Attr>
+</Id>
+<Id value='unoccupied' typref='2702565625'>
+<Attr>
+<Pos l='12' c='29' s='10'/>
+</Attr>
+</Id>
+</Enumerated_Values>
+</Set>
+</Sets>
+<Concrete_Constants>
+<Attr>
+<Pos l='15' c='1' s='18'/>
+</Attr>
+<Id value='sz_gates' typref='2701647786'>
+<Attr>
+<Pos l='16' c='5' s='8'/>
+</Attr>
+</Id>
+<Id value='sz_tracks' typref='2701647786'>
+<Attr>
+<Pos l='16' c='15' s='9'/>
+</Attr>
+</Id>
+</Concrete_Constants>
+<Properties>
+<Attr>
+<Pos l='18' c='1' s='10'/>
+</Attr>
+<Nary_Pred op='&amp;'>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='19' c='14' s='1'/>
+</Attr>
+<Id value='sz_gates' typref='2701647786'>
+<Attr>
+<Pos l='19' c='5' s='8'/>
+</Attr>
+</Id>
+<Id value='NAT1' typref='3603043417'>
+<Attr>
+<Pos l='19' c='16' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='20' c='15' s='1'/>
+</Attr>
+<Id value='sz_tracks' typref='2701647786'>
+<Attr>
+<Pos l='20' c='5' s='9'/>
+</Attr>
+</Id>
+<Id value='NAT1' typref='3603043417'>
+<Attr>
+<Pos l='20' c='17' s='4'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
+</Properties>
+<Initialisation>
+<Skip/>
+</Initialisation>
+<TypeInfos>
+<Type id='1569085991'>
+<Unary_Exp op='POW'>
+<Id value='AIRPLANE'/>
+</Unary_Exp>
+</Type>
+<Type id='2594961926'>
+<Unary_Exp op='POW'>
+<Id value='TRACK'/>
+</Unary_Exp>
+</Type>
+<Type id='1113318944'>
+<Unary_Exp op='POW'>
+<Id value='GATE'/>
+</Unary_Exp>
+</Type>
+<Type id='515940807'>
+<Unary_Exp op='POW'>
+<Id value='STATUS'/>
+</Unary_Exp>
+</Type>
+<Type id='2246778642'>
+<Id value='STATUS'/>
+</Type>
+<Type id='1900168096'>
+<Unary_Exp op='POW'>
+<Id value='OCCUPATION'/>
+</Unary_Exp>
+</Type>
+<Type id='2702565625'>
+<Id value='OCCUPATION'/>
+</Type>
+<Type id='2701647786'>
+<Id value='INTEGER'/>
+</Type>
+<Type id='3603043417'>
+<Unary_Exp op='POW'>
+<Id value='INTEGER'/>
+</Unary_Exp>
+</Type>
+</TypeInfos>
+
+</Machine>

@@ -1,0 +1,58 @@
+/* Airport_i
+ * Author: ohara
+ * Creation date: 04/11/2019
+ */
+
+IMPLEMENTATION Airport_i
+REFINES Airport
+
+IMPORTS
+    Gate
+    
+//CONCRETE_VARIABLES
+
+
+INITIALISATION
+//    land (aa, tt) =
+//        BEGIN
+//        END;
+//            
+//    park (aa, gg) =
+//        BEGIN
+//        END;
+//
+//    depart (aa, tt) =
+//        BEGIN
+//        END;
+//        
+//    took_off (aa) = 
+//        BEGIN
+//        END;
+//
+//    change_status (aa, ss) =
+//        BEGIN
+//        END;
+//        
+//            
+//    /**
+//     * Ask if can land on a track
+//     */
+//    rr <-- can_landing (tt) =
+//        BEGIN
+//        END;
+//        
+//    /**
+//     * What's the status of the airplane
+//     */
+//    rr <-- which_status (aa) =
+//        BEGIN
+//        END;
+//      
+//    /**
+//     * The place that the plane is parked
+//     */  
+//    gg <-- where_is_parked (aa) =
+//        BEGIN
+//        END
+//
+END

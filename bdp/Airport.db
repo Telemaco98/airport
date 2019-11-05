@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<db_xml>
+    <atelierb version="3_7_ubuntu-cvs" />
+    <project decomp_dir="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\expand_src" old_decomp_dir="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\src">
+        <!-- Definition directory list -->
+        <!-- Component file list -->
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Airplane" suffix="mch" user="ohara">
+            <component name="Airplane" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Airport" suffix="mch" user="ohara">
+            <component name="Airport" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Airport_ctx" suffix="mch" user="ohara">
+            <component name="Airport_ctx" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Airport_ctx_i" suffix="imp" user="ohara">
+            <component name="Airport_ctx_i" type="implementation" />
+        </component_file>
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Airport_i" suffix="imp" user="ohara">
+            <component name="Airport_i" type="implementation" />
+        </component_file>
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Gate" suffix="mch" user="ohara">
+            <component name="Gate" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Track" suffix="mch" user="ohara">
+            <component name="Track" type="specification" />
+        </component_file>
+    </project>
+</db_xml>

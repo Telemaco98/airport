@@ -1,0 +1,97 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(12) & _f(32) & WellDefinedness_where_is_parked.1,(_f(46) => _f(57));
+_f(1) & _f(2) & _f(12) & _f(31) & WellDefinedness_which_status.2,(_f(46) => _f(50));
+_f(1) & _f(2) & _f(12) & _f(31) & WellDefinedness_which_status.1,(_f(46) => _f(49));
+_f(1) & _f(2) & _f(12) & _f(28) & WellDefinedness_can_landing.2,(_f(46) => _f(48));
+_f(1) & _f(2) & _f(12) & _f(28) & WellDefinedness_can_landing.1,(_f(46) => _f(47));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_change_status.2,(_f(55) & _f(56) & _f(46) => _f(50));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_change_status.1,(_f(55) & _f(56) & _f(46) => _f(49));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_took_off.2,(_f(31) & _f(43) & _f(46) => _f(50));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_took_off.1,(_f(31) & _f(43) & _f(46) => _f(49));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_depart.2,(_f(55) & _f(46) => _f(50));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_depart.1,(_f(55) & _f(46) => _f(49));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_land.4,(_f(31) & _f(28) & _f(45) & _f(44) & _f(43) & _f(29) & _f(46) => _f(50));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_land.3,(_f(31) & _f(28) & _f(45) & _f(44) & _f(43) & _f(29) & _f(46) => _f(49));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_land.2,(_f(31) & _f(28) & _f(45) & _f(44) & _f(43) & _f(46) => _f(48));
+_f(1) & _f(2) & _f(12) & WellDefinedness_Precondition_land.1,(_f(31) & _f(28) & _f(45) & _f(44) & _f(43) & _f(46) => _f(47));
+_f(1) & _f(2) & _f(12) & _f(26) & change_status.1,(_f(3) & _f(8) => _f(27));
+_f(1) & _f(2) & _f(12) & _f(24) & took_off.1,(_f(3) & _f(8) => _f(25));
+_f(1) & _f(2) & _f(12) & _f(21) & depart.3,(_f(3) & _f(8) => _f(23));
+_f(1) & _f(2) & _f(12) & _f(21) & depart.2,(_f(3) & _f(6) => _f(14));
+_f(1) & _f(2) & _f(12) & _f(21) & depart.1,(_f(3) & _f(4) => _f(22));
+_f(1) & _f(2) & _f(12) & _f(17) & park.3,(_f(3) & _f(8) => _f(20));
+_f(1) & _f(2) & _f(12) & _f(17) & park.2,(_f(3) & _f(6) => _f(19));
+_f(1) & _f(2) & _f(12) & _f(17) & park.1,(_f(3) & _f(4) => _f(18));
+_f(1) & _f(2) & _f(12) & _f(13) & land.3,(_f(3) & _f(10) => _f(16));
+_f(1) & _f(2) & _f(12) & _f(13) & land.2,(_f(3) & _f(8) => _f(15));
+_f(1) & _f(2) & _f(12) & _f(13) & land.1,(_f(3) & _f(6) => _f(14));
+_f(1) & _f(2) & Initialisation.4,(_f(3) & _f(10) => _f(11));
+_f(1) & _f(2) & Initialisation.3,(_f(3) & _f(8) => _f(9));
+_f(1) & _f(2) & Initialisation.2,(_f(3) & _f(6) => _f(7));
+_f(1) & _f(2) & Initialisation.1,(_f(3) & _f(4) => _f(5))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & TRACK: FIN(INTEGER) & not(TRACK = {}) & GATE: FIN(INTEGER) & not(GATE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & ((sz_tracks) : ((NAT-{0})));
+"Invariant is preserved";
+"Check invariant ((landed) : (((AIRPLANE) >+> (GATE))))";
+(({}) : (((AIRPLANE) >+> (GATE))));
+"Check invariant ((landing) : (((AIRPLANE) >+> (TRACK))))";
+(({}) : (((AIRPLANE) >+> (TRACK))));
+"Check invariant ((status_a) : (((AIRPLANE) --> (STATUS))))";
+(((AIRPLANE * ({(6|->STATUS)}))) : (((AIRPLANE) --> (((1..6)*{STATUS})))));
+"Check invariant ((status_t) : (((TRACK) --> (OCCUPATION))))";
+(((TRACK * ({(2|->OCCUPATION)}))) : (((TRACK) --> (((1..2)*{OCCUPATION})))));
+landed : AIRPLANE +-> GATE & landed~ : GATE +-> AIRPLANE & ((landed) : (((AIRPLANE) >+> (GATE)))) & landing : AIRPLANE +-> TRACK & landing~ : TRACK +-> AIRPLANE & ((landing) : (((AIRPLANE) >+> (TRACK)))) & status_a : AIRPLANE +-> ((1..6)*{STATUS}) & dom(status_a) = AIRPLANE & ((status_a) : (((AIRPLANE) --> (((1..6)*{STATUS}))))) & status_t : TRACK +-> ((1..2)*{OCCUPATION}) & dom(status_t) = TRACK & ((status_t) : (((TRACK) --> (((1..2)*{OCCUPATION})))));
+((aa) : (AIRPLANE)) & ((tt) : (TRACK)) & not(aa : dom(landing)) & not(tt : ran(landing)) & not(aa : dom(landed)) & (((status_t )(tt)) = ((2|->OCCUPATION))) & (((status_a )(aa)) = ((6|->STATUS)));
+((((landing) \/ (({((aa) |-> (tt))})))) : (((AIRPLANE) >+> (TRACK))));
+((((status_a) <+ (({((aa) |-> ((5|->STATUS)))})))) : (((AIRPLANE) --> (((1..6)*{STATUS})))));
+((((status_t) <+ (({((tt) |-> ((1|->OCCUPATION)))})))) : (((TRACK) --> (((1..2)*{OCCUPATION})))));
+((aa) : (AIRPLANE)) & ((aa) : (dom(landing))) & ((gg) : (GATE)) & not(gg : ran(landed)) & not(aa : dom(landed));
+((((landed) \/ (({((aa) |-> (gg))})))) : (((AIRPLANE) >+> (GATE))));
+((((({aa})) <<| (landing))) : (((AIRPLANE) >+> (TRACK))));
+((((status_a) <+ (({((aa) |-> ((4|->STATUS)))})))) : (((AIRPLANE) --> (((1..6)*{STATUS})))));
+((aa) : (dom(landed))) & (((status_a )(aa)) = ((2|->STATUS))) & ((tt) : (TRACK)) & not(tt : ran(landing)) & not(aa : dom(landing));
+((((({aa})) <<| (landed))) : (((AIRPLANE) >+> (GATE))));
+((((status_a) <+ (({((aa) |-> ((3|->STATUS)))})))) : (((AIRPLANE) --> (((1..6)*{STATUS})))));
+((aa) : (AIRPLANE)) & not(aa : dom(landed)) & (((status_a )(aa)) = ((3|->STATUS)));
+((((status_a) <+ (({((aa) |-> ((6|->STATUS)))})))) : (((AIRPLANE) --> (((1..6)*{STATUS})))));
+((aa) : (dom(landed))) & ((ss) : (((1..6)*{STATUS}))) & not(ss = (status_a )(aa));
+((((status_a) <+ (({((aa) |-> (ss))})))) : (((AIRPLANE) --> (((1..6)*{STATUS})))));
+((tt) : (TRACK));
+(((status_t )(tt)) = ((2|->OCCUPATION)));
+not((((status_t )(tt)) = ((2|->OCCUPATION))));
+((aa) : (AIRPLANE));
+((aa) : (AIRPLANE)) & ((aa) : (dom(landed)));
+btrue;
+status_a : AIRPLANE +-> ((1..6)*{STATUS});
+dom(status_a) = AIRPLANE;
+((status_a) : (((AIRPLANE) --> (((1..6)*{STATUS})))));
+landing : AIRPLANE +-> TRACK;
+landing~ : TRACK +-> AIRPLANE;
+((landing) : (((AIRPLANE) >+> (TRACK))));
+landed : AIRPLANE +-> GATE;
+landed~ : GATE +-> AIRPLANE;
+((landed) : (((AIRPLANE) >+> (GATE))));
+not(aa : dom(landed));
+not(tt : ran(landing));
+not(aa : dom(landing));
+"Well definedness";
+((tt) : (dom(status_t)));
+((status_t) : (((dom(status_t)) +-> (ran(status_t)))));
+((aa) : (dom(status_a)));
+((status_a) : (((dom(status_a)) +-> (ran(status_a)))));
+not(gg : ran(landed));
+((gg) : (GATE));
+((aa) : (dom(landing)));
+(((status_a )(aa)) = ((2|->STATUS)));
+((aa) : (dom(landed)));
+((ss) : (((1..6)*{STATUS})));
+((landed) : (((dom(landed)) +-> (ran(landed)))))
+END
+&
+THEORY EnumerateX IS
+OCCUPATION == {occupied,unoccupied};
+STATUS == {boarding,flight_closed,taking_off,disembarking,confirmed,out}
+END
