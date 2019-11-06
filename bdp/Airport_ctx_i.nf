@@ -134,7 +134,7 @@ THEORY ListHiddenConstantsX IS
 END
 &
 THEORY ListPropertiesX IS
-  Abstract_List_Properties(Implementation(Airport_ctx_i))==(sz_gates: NAT1 & sz_tracks: NAT1 & sz_airplanes: NAT1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
+  Abstract_List_Properties(Implementation(Airport_ctx_i))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
   Context_List_Properties(Implementation(Airport_ctx_i))==(btrue);
   Inherited_List_Properties(Implementation(Airport_ctx_i))==(btrue);
   List_Properties(Implementation(Airport_ctx_i))==(btrue)

@@ -21,7 +21,7 @@ END
 &
 THEORY Formulas IS
 ((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
-AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & ((sz_tracks) : ((NAT-{0}))) & ((sz_airplanes) : ((NAT-{0}))) & ((gate) = (((0) .. (sz_gates)))) & ((track) = (((0) .. (sz_tracks)))) & ((plane_dummy) : (AIRPLANE));
+AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & (1 +1 <= sz_gates) & ((sz_tracks) : ((NAT-{0}))) & (1 +1 <= sz_tracks) & ((sz_airplanes) : ((NAT-{0}))) & (1 +1 <= sz_airplanes) & ((gate) = (((0) .. (sz_gates)))) & ((track) = (((0) .. (sz_tracks)))) & ((plane_dummy) : (AIRPLANE));
 "Invariant is preserved";
 "Check invariant ((pointer) : (((0) .. (sz_airplanes))))";
 ((0) : (((0) .. (sz_airplanes))));

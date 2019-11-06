@@ -1,12 +1,12 @@
 ﻿THEORY BalanceX IS
   Gate_i,14,0,0,13,1,0,0;
   Initialisation,1,0,0,0,1,0,0;
-  WellDefinedness_belongs_to,2,0,0,2,0,0,0;
-  WellDefinedness_is_occupied,2,0,0,2,0,0,0;
-  belongs_to,2,0,0,2,0,0,0;
-  is_occupied,3,0,0,3,0,0,0;
-  occupy,2,0,0,2,0,0,0;
-  vacate,2,0,0,2,0,0,0
+  WellDefinedness_gate_belongs_to,2,0,0,2,0,0,0;
+  WellDefinedness_is_gate_occupied,2,0,0,2,0,0,0;
+  gate_belongs_to,2,0,0,2,0,0,0;
+  is_gate_occupied,3,0,0,3,0,0,0;
+  occupy_gate,2,0,0,2,0,0,0;
+  vacate_gate,2,0,0,2,0,0,0
 END
 &
 THEORY ProofState IS

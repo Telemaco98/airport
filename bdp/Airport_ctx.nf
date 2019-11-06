@@ -142,7 +142,7 @@ THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(Airport_ctx))==(btrue);
   Context_List_Properties(Machine(Airport_ctx))==(btrue);
   Inherited_List_Properties(Machine(Airport_ctx))==(btrue);
-  List_Properties(Machine(Airport_ctx))==(sz_gates: NAT1 & sz_tracks: NAT1 & sz_airplanes: NAT1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}))
+  List_Properties(Machine(Airport_ctx))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}))
 END
 &
 THEORY ListSeenInfoX END

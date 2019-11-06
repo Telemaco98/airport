@@ -5,7 +5,7 @@
   WellDefinedness_Precondition_occupy_gate,2,0,0,2,0,0,0;
   WellDefinedness_Precondition_vacate_gate,2,0,0,2,0,0,0;
   WellDefinedness_gate_belongs_to,2,0,0,2,0,0,0;
-  WellDefinedness_is_occupied_gate,2,0,0,2,0,0,0;
+  WellDefinedness_is_gate_occupied,2,0,0,2,0,0,0;
   occupy_gate,1,0,0,1,0,0,0;
   vacate_gate,1,0,0,1,0,0,0
 END

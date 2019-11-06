@@ -1,11 +1,9 @@
 ﻿THEORY BalanceX IS
-  Airport_ctx_i,7,0,0,7,0,0,0;
-  ValuesLemmas,7,0,0,7,0,0,0
+  Airport_ctx_i,5,0,0,5,0,0,0;
+  ValuesLemmas,5,0,0,5,0,0,0
 END
 &
 THEORY ProofState IS
-  Proved(0);
-  Proved(0);
   Proved(0);
   Proved(0);
   Proved(0);
@@ -18,14 +16,10 @@ THEORY MethodList IS
   pr;
   pr;
   pr;
-  pr;
-  pr;
   pr
 END
 &
 THEORY PassList IS
-  Force(0),?;
-  Force(0),?;
   Force(0),?;
   Force(0),?;
   Force(0),?;

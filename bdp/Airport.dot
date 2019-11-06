@@ -7,6 +7,9 @@ Track_i [ label=" Track\nTrack_i " shape= box ]
 
 "Airplane_i" -> "Airport_ctx_i" [style= dotted ]
 "Airport_i" -> "Airport_ctx_i" [style= dotted ]
+"Airport_i" -> "Airplane_i" []
+"Airport_i" -> "Track_i" []
+"Airport_i" -> "Gate_i" []
 "Gate_i" -> "Airport_ctx_i" [style= dotted ]
 "Track_i" -> "Airport_ctx_i" [style= dotted ]
 }

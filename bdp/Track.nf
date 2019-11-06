@@ -170,7 +170,7 @@ END
 &
 THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(Track))==(btrue);
-  Context_List_Properties(Machine(Track))==(sz_gates: NAT1 & sz_tracks: NAT1 & sz_airplanes: NAT1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
+  Context_List_Properties(Machine(Track))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
   Inherited_List_Properties(Machine(Track))==(btrue);
   List_Properties(Machine(Track))==(btrue)
 END

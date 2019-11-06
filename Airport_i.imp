@@ -6,20 +6,120 @@
 IMPLEMENTATION Airport_i
 REFINES Airport
 
+IMPORTS
+    Airplane, Track, Gate
+
 SEES 
     Airport_ctx
 
+CONCRETE_VARIABLES
+    landing_i, 
+    parking_i,
+    status_airplane_i
 
-VARIABLES
-    landing, parking, 
-    status_airplane
+INVARIANT
+    landing_i : track --> AIRPLANE 
+    & dom(landing_i) = ran(landing)
+    & landing_i~ = landing
+    
+    & parking_i : gate --> AIRPLANE 
+    & dom(parking_i) = ran(parking)
+    & parking_i~ = parking
 
+    & status_airplane_i : AIRPLANE --> STATUS
+    & status_airplane_i = status_airplane
 
 INITIALISATION
-    landing := {} || 
-    parking := {} ||
-    status_airplane := AIRPLANE * {out}
+    landing_i := track * {plane_dummy}; 
+    parking_i := gate * {plane_dummy};
+    status_airplane_i := AIRPLANE * {out}
 
-
-
- END
+OPERATIONS
+    add_airplane (aa) =
+        BEGIN
+            add_plane(aa);
+            status_airplane_i (aa) := flighting
+        END;
+    
+    land (aa, tt) =
+        BEGIN
+            occupy_track(tt, aa);
+            landing_i(tt) := aa;
+            status_airplane_i(aa) := alighting
+        END;
+            
+    park (aa, gg) =
+        BEGIN
+            occupy_gate(gg, aa);
+            vacate_track (landing_i~(aa));
+            landing_i(landing_i~(aa)) := plane_dummy;
+            parking_i(gg) := aa;
+            status_airplane_i(aa) := parked
+        END;
+        
+    board (aa) =
+        BEGIN
+            status_airplane_i(aa) := boarding
+        END;
+        
+    take_track (aa, tt) =
+        BEGIN
+            occupy_track(tt, aa);
+            vacate_gate(parking_i~(aa));
+            status_airplane_i(aa) := departing;
+            parking_i(parking_i~(aa)) := plane_dummy;
+            landing_i(tt) := aa
+        END;
+        
+    depart (aa) = 
+        BEGIN
+            vacate_track(landing_i~(aa));
+            landing_i(landing_i~(aa)) := plane_dummy;
+            status_airplane_i(aa) := flighting
+        END;
+        
+    exclude_airplane(aa) =
+        BEGIN
+            remove(aa);
+            status_airplane_i(aa) := out
+        END;
+    
+    /**
+     * Ask if can land on a track
+     */
+    bb <-- can_landing (tt) =
+       BEGIN            
+            VAR ii, nsz, plane_current IN 
+                ii := 0;
+                nsz := sz_gates;
+                bb := FALSE;
+                plane_current := landing_i(ii);
+                WHILE (ii < sz_gates)
+                DO 
+                   plane_current := landing_i(ii);
+                   IF plane_dummy = plane_current & tt = ii
+                   THEN bb := TRUE
+                   END; 
+                   ii := ii + 1
+                INVARIANT ii : NAT & ii <= nsz
+                VARIANT nsz - ii
+                END
+            END
+        END;
+        
+    /**
+     * What's the airplane status
+     */
+    bb <-- query_status (aa) =
+        BEGIN
+            bb := status_airplane_i(aa)
+        END;
+      
+    /**
+     * The place where the airplane is parked
+     */  
+    gg <-- query_parked (aa) =
+        BEGIN
+            gg := parking_i~(aa)
+        END
+END

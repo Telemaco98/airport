@@ -19,184 +19,229 @@
 </Define>
 <Define name="ctx">
 <Attr>
-<Pos s="4" l="8" c="1"/>
+<Pos s="4" c="1" l="8"/>
 </Attr>
 <Set>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:1:1" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:1:1" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="9" c="5"/>
+<Pos s="8" c="5" l="9"/>
 </Attr>
 </Id>
 </Set>
 <Set>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:1" value="STATUS" typref="515940807">
+<Id typref="515940807" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:1" value="STATUS">
 <Attr>
-<Pos s="6" l="11" c="5"/>
+<Pos s="6" c="5" l="11"/>
 </Attr>
 </Id>
 <Enumerated_Values>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:1" value="out" typref="2246778642">
+<Id typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:1" value="out">
 <Attr>
-<Pos s="3" l="11" c="16"/>
+<Pos s="3" c="16" l="11"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:2" value="flighting" typref="2246778642">
+<Id typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:2" value="flighting">
 <Attr>
-<Pos s="9" l="11" c="21"/>
+<Pos s="9" c="21" l="11"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:3" value="alighting" typref="2246778642">
+<Id typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:3" value="alighting">
 <Attr>
-<Pos s="9" l="11" c="32"/>
+<Pos s="9" c="32" l="11"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:4" value="parked" typref="2246778642">
+<Id typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:4" value="parked">
 <Attr>
-<Pos s="6" l="11" c="43"/>
+<Pos s="6" c="43" l="11"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:5" value="boarding" typref="2246778642">
+<Id typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:5" value="boarding">
 <Attr>
-<Pos s="8" l="11" c="51"/>
+<Pos s="8" c="51" l="11"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:6" value="departing" typref="2246778642">
+<Id typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:6" value="departing">
 <Attr>
-<Pos s="9" l="11" c="61"/>
+<Pos s="9" c="61" l="11"/>
 </Attr>
 </Id>
 </Enumerated_Values>
 </Set>
 <Set>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:1" value="OCCUPATION" typref="1900168096">
+<Id typref="1900168096" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:1" value="OCCUPATION">
 <Attr>
-<Pos s="10" l="12" c="5"/>
+<Pos s="10" c="5" l="12"/>
 </Attr>
 </Id>
 <Enumerated_Values>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:2:1" value="occupied" typref="2702565625">
+<Id typref="2702565625" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:2:1" value="occupied">
 <Attr>
-<Pos s="8" l="12" c="19"/>
+<Pos s="8" c="19" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:2:2" value="unoccupied" typref="2702565625">
+<Id typref="2702565625" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:2:2" value="unoccupied">
 <Attr>
-<Pos s="10" l="12" c="29"/>
+<Pos s="10" c="29" l="12"/>
 </Attr>
 </Id>
 </Enumerated_Values>
 </Set>
 <Attr>
-<Pos s="10" l="21" c="1"/>
+<Pos s="10" c="1" l="21"/>
 </Attr>
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="22" c="16"/>
+<Pos s="1" c="16" l="22"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:1:1" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:1:1" value="sz_gates">
 <Attr>
-<Pos s="8" l="22" c="7"/>
-</Attr>
-</Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:1:2" value="NAT1" typref="3603043417">
-<Attr>
-<Pos s="4" l="22" c="18"/>
+<Pos s="8" c="7" l="22"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=":">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:1:2" value="NAT1">
 <Attr>
-<Pos s="1" l="23" c="17"/>
-</Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:2:1" value="sz_tracks" typref="2701647786">
-<Attr>
-<Pos s="9" l="23" c="7"/>
-</Attr>
-</Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:2:2" value="NAT1" typref="3603043417">
-<Attr>
-<Pos s="4" l="23" c="19"/>
+<Pos s="4" c="18" l="22"/>
 </Attr>
 </Id>
 </Exp_Comparison>
+<Exp_Comparison op="&gt;">
+<Attr>
+<Pos s="1" c="34" l="22"/>
+</Attr>
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:2:1" value="sz_gates">
+<Attr>
+<Pos s="8" c="25" l="22"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:2:2" value="1">
+<Attr>
+<Pos s="1" c="36" l="22"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="24" c="20"/>
+<Pos s="1" c="17" l="23"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:3:1" value="sz_airplanes" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:3:1" value="sz_tracks">
 <Attr>
-<Pos s="12" l="24" c="7"/>
+<Pos s="9" c="7" l="23"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:3:2" value="NAT1" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:3:2" value="NAT1">
 <Attr>
-<Pos s="4" l="24" c="22"/>
+<Pos s="4" c="19" l="23"/>
 </Attr>
 </Id>
+</Exp_Comparison>
+<Exp_Comparison op="&gt;">
+<Attr>
+<Pos s="1" c="36" l="23"/>
+</Attr>
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:4:1" value="sz_tracks">
+<Attr>
+<Pos s="9" c="26" l="23"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:4:2" value="1">
+<Attr>
+<Pos s="1" c="38" l="23"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos s="1" c="20" l="24"/>
+</Attr>
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:5:1" value="sz_airplanes">
+<Attr>
+<Pos s="12" c="7" l="24"/>
+</Attr>
+</Id>
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:5:2" value="NAT1">
+<Attr>
+<Pos s="4" c="22" l="24"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="&gt;">
+<Attr>
+<Pos s="1" c="42" l="24"/>
+</Attr>
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:6:1" value="sz_airplanes">
+<Attr>
+<Pos s="12" c="29" l="24"/>
+</Attr>
+</Id>
+<Integer_Literal typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:6:2" value="1">
+<Attr>
+<Pos s="1" c="44" l="24"/>
+</Attr>
+</Integer_Literal>
 </Exp_Comparison>
 <Exp_Comparison op="=">
 <Attr>
-<Pos s="1" l="26" c="12"/>
+<Pos s="1" c="12" l="26"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:4:1" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:7:1" value="gate">
 <Attr>
-<Pos s="4" l="26" c="7"/>
+<Pos s="4" c="7" l="26"/>
 </Attr>
 </Id>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="26" c="15"/>
+<Pos s="2" c="15" l="26"/>
 </Attr>
-<Integer_Literal tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:4:2:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:7:2:1" value="0">
 <Attr>
-<Pos s="1" l="26" c="14"/>
+<Pos s="1" c="14" l="26"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:4:2:2" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:7:2:2" value="sz_gates">
 <Attr>
-<Pos s="8" l="26" c="17"/>
+<Pos s="8" c="17" l="26"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op="=">
 <Attr>
-<Pos s="1" l="27" c="13"/>
+<Pos s="1" c="13" l="27"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:5:1" value="track" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:8:1" value="track">
 <Attr>
-<Pos s="5" l="27" c="7"/>
+<Pos s="5" c="7" l="27"/>
 </Attr>
 </Id>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="27" c="16"/>
+<Pos s="2" c="16" l="27"/>
 </Attr>
-<Integer_Literal tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:5:2:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:8:2:1" value="0">
 <Attr>
-<Pos s="1" l="27" c="15"/>
+<Pos s="1" c="15" l="27"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:5:2:2" value="sz_tracks" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:8:2:2" value="sz_tracks">
 <Attr>
-<Pos s="9" l="27" c="18"/>
+<Pos s="9" c="18" l="27"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="29" c="19"/>
+<Pos s="1" c="19" l="29"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:6:1" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:9:1" value="plane_dummy">
 <Attr>
-<Pos s="11" l="29" c="7"/>
+<Pos s="11" c="7" l="29"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:6:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:9:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="29" c="21"/>
+<Pos s="8" c="21" l="29"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -207,29 +252,29 @@
 <Define name="aprp"/>
 <Define name="abs">
 <Attr>
-<Pos s="9" l="14" c="1"/>
+<Pos s="9" c="1" l="14"/>
 </Attr>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="15" c="11"/>
+<Pos s="1" c="11" l="15"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:3:1:1" initialTag="gates" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:3:1:1" value="gates" initialTag="gates">
 <Attr>
-<Pos s="5" l="15" c="5"/>
-</Attr>
-</Id>
-<Binary_Exp op="--&gt;" initialTag="((gate) --&gt; (AIRPLANE))" typref="2971351405">
-<Attr>
-<Pos s="3" l="15" c="18"/>
-</Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:3:1:2:1" value="gate" typref="3603043417">
-<Attr>
-<Pos s="4" l="15" c="13"/>
+<Pos s="5" c="5" l="15"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:3:1:2:2" value="AIRPLANE" typref="1569085991">
+<Binary_Exp typref="2971351405" initialTag="((gate) --&gt; (AIRPLANE))" op="--&gt;">
 <Attr>
-<Pos s="8" l="15" c="22"/>
+<Pos s="3" c="18" l="15"/>
+</Attr>
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:3:1:2:1" value="gate">
+<Attr>
+<Pos s="4" c="13" l="15"/>
+</Attr>
+</Id>
+<Id typref="1569085991" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:3:1:2:2" value="AIRPLANE">
+<Attr>
+<Pos s="8" c="22" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -237,56 +282,56 @@
 </Define>
 <Define name="inv">
 <Attr>
-<Pos s="9" l="14" c="1"/>
+<Pos s="9" c="1" l="14"/>
 </Attr>
 <Nary_Pred op="&amp;">
-<Exp_Comparison op=":" initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))">
+<Exp_Comparison initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))" op=":">
 <Attr>
-<Pos s="1" l="15" c="13"/>
+<Pos s="1" c="13" l="15"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Binary_Exp op="--&gt;" typref="2971351405">
+<Binary_Exp typref="2971351405" op="--&gt;">
 <Attr>
-<Pos s="3" l="15" c="27"/>
+<Pos s="3" c="27" l="15"/>
 </Attr>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="15" c="16"/>
+<Pos s="2" c="16" l="15"/>
 </Attr>
-<Integer_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0">
 <Attr>
-<Pos s="1" l="15" c="15"/>
+<Pos s="1" c="15" l="15"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates">
 <Attr>
-<Pos s="8" l="15" c="18"/>
+<Pos s="8" c="18" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="15" c="31"/>
+<Pos s="8" c="31" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
-<Exp_Comparison op="=" initialTag="((gates_i$1) = (gates))">
+<Exp_Comparison initialTag="((gates_i$1) = (gates))" op="=">
 <Attr>
-<Pos s="1" l="16" c="13"/>
+<Pos s="1" c="13" l="16"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates">
 <Attr>
-<Pos s="5" l="16" c="15"/>
+<Pos s="5" c="15" l="16"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -337,43 +382,43 @@
 <Sub_Calculus overflow="true">
 <Nary_Sub op=";">
 <Attr>
-<Pos s="14" l="18" c="1"/>
+<Pos s="14" c="1" l="18"/>
 </Attr>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:5:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:5:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Binary_Exp op="*" typref="1731522284">
+<Binary_Exp typref="1731522284" op="*">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="19" c="18"/>
+<Pos s="2" c="18" l="19"/>
 </Attr>
-<Integer_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:5:1:2:1:1:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:5:1:2:1:1:1" value="0">
 <Attr>
-<Pos s="1" l="19" c="17"/>
+<Pos s="1" c="17" l="19"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:5:1:2:1:1:2" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:5:1:2:1:1:2" value="sz_gates">
 <Attr>
-<Pos s="8" l="19" c="20"/>
+<Pos s="8" c="20" l="19"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Nary_Exp op="{" typref="1569085991">
+<Nary_Exp typref="1569085991" op="{">
 <Attr>
-<Pos s="1" l="19" c="32"/>
+<Pos s="1" c="32" l="19"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:5:1:2:1:2:1" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:5:1:2:1:2:1" value="plane_dummy">
 <Attr>
-<Pos s="11" l="19" c="33"/>
+<Pos s="11" c="33" l="19"/>
 </Attr>
 </Id>
 </Nary_Exp>
@@ -387,33 +432,33 @@
 <Sub_Calculus>
 <Nary_Sub op=";">
 <Attr>
-<Pos s="14" l="17" c="1"/>
+<Pos s="14" c="1" l="17"/>
 </Attr>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:4:1:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:4:1:1:1" value="gates">
 <Attr>
-<Pos s="5" l="18" c="5"/>
+<Pos s="5" c="5" l="18"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Binary_Exp op="*" typref="1731522284">
+<Binary_Exp typref="1731522284" op="*">
 <Attr>
-<Pos s="5" l="18" c="5"/>
+<Pos s="5" c="5" l="18"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:4:1:2:1:1" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:4:1:2:1:1" value="gate">
 <Attr>
-<Pos s="4" l="18" c="14"/>
+<Pos s="4" c="14" l="18"/>
 </Attr>
 </Id>
-<Nary_Exp op="{" typref="1569085991">
+<Nary_Exp typref="1569085991" op="{">
 <Attr>
-<Pos s="1" l="18" c="21"/>
+<Pos s="1" c="21" l="18"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:4:1:2:1:2:1" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:4:1:2:1:2:1" value="plane_dummy">
 <Attr>
-<Pos s="11" l="18" c="22"/>
+<Pos s="11" c="22" l="18"/>
 </Attr>
 </Id>
 </Nary_Exp>
@@ -424,56 +469,56 @@
 <Not>
 <Nary_Pred op="&amp;">
 <Attr>
-<Pos s="9" l="14" c="1"/>
+<Pos s="9" c="1" l="14"/>
 </Attr>
 <Nary_Pred op="&amp;">
-<Exp_Comparison op=":" initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))">
+<Exp_Comparison initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))" op=":">
 <Attr>
-<Pos s="1" l="15" c="13"/>
+<Pos s="1" c="13" l="15"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Binary_Exp op="--&gt;" typref="2971351405">
+<Binary_Exp typref="2971351405" op="--&gt;">
 <Attr>
-<Pos s="3" l="15" c="27"/>
+<Pos s="3" c="27" l="15"/>
 </Attr>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="15" c="16"/>
+<Pos s="2" c="16" l="15"/>
 </Attr>
-<Integer_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0">
 <Attr>
-<Pos s="1" l="15" c="15"/>
+<Pos s="1" c="15" l="15"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates">
 <Attr>
-<Pos s="8" l="15" c="18"/>
+<Pos s="8" c="18" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="15" c="31"/>
+<Pos s="8" c="31" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
-<Exp_Comparison op="=" initialTag="((gates_i$1) = (gates))">
+<Exp_Comparison initialTag="((gates_i$1) = (gates))" op="=">
 <Attr>
-<Pos s="1" l="16" c="13"/>
+<Pos s="1" c="13" l="16"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates">
 <Attr>
-<Pos s="5" l="16" c="15"/>
+<Pos s="5" c="15" l="16"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -507,76 +552,76 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="22" c="16"/>
+<Pos s="1" c="16" l="22"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="22" c="13"/>
+<Pos s="2" c="13" l="22"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="22" c="18"/>
+<Pos s="8" c="18" l="22"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="23" c="18"/>
+<Pos s="1" c="18" l="23"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:1" value="gg">
 <Attr>
-<Pos s="2" l="23" c="15"/>
+<Pos s="2" c="15" l="23"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:2" value="gate">
 <Attr>
-<Pos s="4" l="23" c="20"/>
+<Pos s="4" c="20" l="23"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos s="2" l="24" c="18"/>
+<Pos s="2" c="18" l="24"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:1" value="aa">
 <Attr>
-<Pos s="2" l="24" c="15"/>
+<Pos s="2" c="15" l="24"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="1569085991">
+<Unary_Exp typref="1569085991" op="ran">
 <Attr>
-<Pos s="3" l="24" c="21"/>
+<Pos s="3" c="21" l="24"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:2:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:2:1" value="gates">
 <Attr>
-<Pos s="5" l="24" c="25"/>
+<Pos s="5" c="25" l="24"/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op="=">
 <Attr>
-<Pos s="1" l="25" c="25"/>
+<Pos s="1" c="25" l="25"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="25" c="20"/>
+<Pos s="0" c="20" l="25"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:1" value="gates">
 <Attr>
-<Pos s="5" l="25" c="15"/>
+<Pos s="5" c="15" l="25"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:2" value="gg">
 <Attr>
-<Pos s="2" l="25" c="21"/>
+<Pos s="2" c="21" l="25"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="25" c="27"/>
+<Pos s="11" c="27" l="25"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -619,76 +664,76 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="22" c="16"/>
+<Pos s="1" c="16" l="22"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="22" c="13"/>
+<Pos s="2" c="13" l="22"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="22" c="18"/>
+<Pos s="8" c="18" l="22"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="23" c="18"/>
+<Pos s="1" c="18" l="23"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:1" value="gg">
 <Attr>
-<Pos s="2" l="23" c="15"/>
+<Pos s="2" c="15" l="23"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:2" value="gate">
 <Attr>
-<Pos s="4" l="23" c="20"/>
+<Pos s="4" c="20" l="23"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos s="2" l="24" c="18"/>
+<Pos s="2" c="18" l="24"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:1" value="aa">
 <Attr>
-<Pos s="2" l="24" c="15"/>
+<Pos s="2" c="15" l="24"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="1569085991">
+<Unary_Exp typref="1569085991" op="ran">
 <Attr>
-<Pos s="3" l="24" c="21"/>
+<Pos s="3" c="21" l="24"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:2:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:2:1" value="gates">
 <Attr>
-<Pos s="5" l="24" c="25"/>
+<Pos s="5" c="25" l="24"/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op="=">
 <Attr>
-<Pos s="1" l="25" c="25"/>
+<Pos s="1" c="25" l="25"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="25" c="20"/>
+<Pos s="0" c="20" l="25"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:1" value="gates">
 <Attr>
-<Pos s="5" l="25" c="15"/>
+<Pos s="5" c="15" l="25"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:2" value="gg">
 <Attr>
-<Pos s="2" l="25" c="21"/>
+<Pos s="2" c="21" l="25"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="25" c="27"/>
+<Pos s="11" c="27" l="25"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -698,29 +743,29 @@
 <Nary_Sub op=";">
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:1:2:1:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:1:2:1:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Binary_Exp op="&lt;+">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:1:2:1:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:1:2:1:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 <Nary_Exp op="{">
 <Binary_Exp op="|-&gt;">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:1:2:1:1:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:1:2:1:1:1:2" value="gg">
 <Attr>
-<Pos s="2" l="25" c="22"/>
+<Pos s="2" c="22" l="25"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:1:2:1:2:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:1:2:1:2:1" value="aa">
 <Attr>
-<Pos s="2" l="25" c="29"/>
+<Pos s="2" c="29" l="25"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -735,29 +780,29 @@
 <Sub_Calculus>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:3:1:1:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:3:1:1:1:1" value="gates">
 <Attr>
-<Pos s="5" l="27" c="13"/>
+<Pos s="5" c="13" l="27"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Binary_Exp op="&lt;+">
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:3:1:1:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:3:1:1:1:1" value="gates">
 <Attr>
-<Pos s="5" l="27" c="13"/>
+<Pos s="5" c="13" l="27"/>
 </Attr>
 </Id>
 <Nary_Exp op="{">
 <Binary_Exp op="|-&gt;">
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:3:1:1:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:3:1:1:1:2" value="gg">
 <Attr>
-<Pos s="2" l="27" c="20"/>
+<Pos s="2" c="20" l="27"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:3:1:2:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:3:1:2:1" value="aa">
 <Attr>
-<Pos s="2" l="27" c="27"/>
+<Pos s="2" c="27" l="27"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -768,56 +813,56 @@
 <Not>
 <Nary_Pred op="&amp;">
 <Attr>
-<Pos s="9" l="14" c="1"/>
+<Pos s="9" c="1" l="14"/>
 </Attr>
 <Nary_Pred op="&amp;">
-<Exp_Comparison op=":" initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))">
+<Exp_Comparison initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))" op=":">
 <Attr>
-<Pos s="1" l="15" c="13"/>
+<Pos s="1" c="13" l="15"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Binary_Exp op="--&gt;" typref="2971351405">
+<Binary_Exp typref="2971351405" op="--&gt;">
 <Attr>
-<Pos s="3" l="15" c="27"/>
+<Pos s="3" c="27" l="15"/>
 </Attr>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="15" c="16"/>
+<Pos s="2" c="16" l="15"/>
 </Attr>
-<Integer_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0">
 <Attr>
-<Pos s="1" l="15" c="15"/>
+<Pos s="1" c="15" l="15"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates">
 <Attr>
-<Pos s="8" l="15" c="18"/>
+<Pos s="8" c="18" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="15" c="31"/>
+<Pos s="8" c="31" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
-<Exp_Comparison op="=" initialTag="((gates_i$1) = (gates))">
+<Exp_Comparison initialTag="((gates_i$1) = (gates))" op="=">
 <Attr>
-<Pos s="1" l="16" c="13"/>
+<Pos s="1" c="13" l="16"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates">
 <Attr>
-<Pos s="5" l="16" c="15"/>
+<Pos s="5" c="15" l="16"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -853,41 +898,41 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="31" c="16"/>
+<Pos s="1" c="16" l="31"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:1" value="gg">
 <Attr>
-<Pos s="2" l="31" c="13"/>
+<Pos s="2" c="13" l="31"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:2" value="gate">
 <Attr>
-<Pos s="4" l="31" c="18"/>
+<Pos s="4" c="18" l="31"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/=">
 <Attr>
-<Pos s="2" l="32" c="25"/>
+<Pos s="2" c="25" l="32"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="32" c="20"/>
+<Pos s="0" c="20" l="32"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:1" value="gates">
 <Attr>
-<Pos s="5" l="32" c="15"/>
+<Pos s="5" c="15" l="32"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="32" c="21"/>
+<Pos s="2" c="21" l="32"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="32" c="28"/>
+<Pos s="11" c="28" l="32"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -930,41 +975,41 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="31" c="16"/>
+<Pos s="1" c="16" l="31"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:1" value="gg">
 <Attr>
-<Pos s="2" l="31" c="13"/>
+<Pos s="2" c="13" l="31"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:2" value="gate">
 <Attr>
-<Pos s="4" l="31" c="18"/>
+<Pos s="4" c="18" l="31"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/=">
 <Attr>
-<Pos s="2" l="32" c="25"/>
+<Pos s="2" c="25" l="32"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="32" c="20"/>
+<Pos s="0" c="20" l="32"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:1" value="gates">
 <Attr>
-<Pos s="5" l="32" c="15"/>
+<Pos s="5" c="15" l="32"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="32" c="21"/>
+<Pos s="2" c="21" l="32"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="32" c="28"/>
+<Pos s="11" c="28" l="32"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -974,29 +1019,29 @@
 <Nary_Sub op=";">
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:2:2:1:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:2:2:1:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Binary_Exp op="&lt;+">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:2:2:1:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:2:2:1:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 <Nary_Exp op="{">
 <Binary_Exp op="|-&gt;">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:2:2:1:1:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:2:2:1:1:1:2" value="gg">
 <Attr>
-<Pos s="2" l="31" c="22"/>
+<Pos s="2" c="22" l="31"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:2:2:1:2:1" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:2:2:1:2:1" value="plane_dummy">
 <Attr>
-<Pos s="11" l="31" c="29"/>
+<Pos s="11" c="29" l="31"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1011,29 +1056,29 @@
 <Sub_Calculus>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:3:1:1:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:3:1:1:1:1" value="gates">
 <Attr>
-<Pos s="5" l="33" c="14"/>
+<Pos s="5" c="14" l="33"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Binary_Exp op="&lt;+">
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:3:1:1:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:3:1:1:1:1" value="gates">
 <Attr>
-<Pos s="5" l="33" c="14"/>
+<Pos s="5" c="14" l="33"/>
 </Attr>
 </Id>
 <Nary_Exp op="{">
 <Binary_Exp op="|-&gt;">
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:3:1:1:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:3:1:1:1:2" value="gg">
 <Attr>
-<Pos s="2" l="33" c="20"/>
+<Pos s="2" c="20" l="33"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:3:1:2:1" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:3:1:2:1" value="plane_dummy">
 <Attr>
-<Pos s="11" l="33" c="27"/>
+<Pos s="11" c="27" l="33"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1044,56 +1089,56 @@
 <Not>
 <Nary_Pred op="&amp;">
 <Attr>
-<Pos s="9" l="14" c="1"/>
+<Pos s="9" c="1" l="14"/>
 </Attr>
 <Nary_Pred op="&amp;">
-<Exp_Comparison op=":" initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))">
+<Exp_Comparison initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))" op=":">
 <Attr>
-<Pos s="1" l="15" c="13"/>
+<Pos s="1" c="13" l="15"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Binary_Exp op="--&gt;" typref="2971351405">
+<Binary_Exp typref="2971351405" op="--&gt;">
 <Attr>
-<Pos s="3" l="15" c="27"/>
+<Pos s="3" c="27" l="15"/>
 </Attr>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="15" c="16"/>
+<Pos s="2" c="16" l="15"/>
 </Attr>
-<Integer_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0">
 <Attr>
-<Pos s="1" l="15" c="15"/>
+<Pos s="1" c="15" l="15"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates">
 <Attr>
-<Pos s="8" l="15" c="18"/>
+<Pos s="8" c="18" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="15" c="31"/>
+<Pos s="8" c="31" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
-<Exp_Comparison op="=" initialTag="((gates_i$1) = (gates))">
+<Exp_Comparison initialTag="((gates_i$1) = (gates))" op="=">
 <Attr>
-<Pos s="1" l="16" c="13"/>
+<Pos s="1" c="13" l="16"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates">
 <Attr>
-<Pos s="5" l="16" c="15"/>
+<Pos s="5" c="15" l="16"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1128,28 +1173,28 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="37" c="16"/>
+<Pos s="1" c="16" l="37"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:1" value="gg">
 <Attr>
-<Pos s="2" l="37" c="13"/>
+<Pos s="2" c="13" l="37"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:2" value="gate">
 <Attr>
-<Pos s="4" l="37" c="18"/>
+<Pos s="4" c="18" l="37"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="=">
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:1:1" value="bb" typref="2043437594">
+<Id typref="2043437594" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:1:1" value="bb">
 <Attr>
-<Pos s="2" l="36" c="5"/>
+<Pos s="2" c="5" l="36"/>
 </Attr>
 </Id>
 <Id value="bb" typref="2043437594" suffix="">
 <Attr>
-<Pos s="2" l="36" c="5"/>
+<Pos s="2" c="5" l="36"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1177,14 +1222,14 @@
 <Hypothesis>
 <Nary_Pred op="&amp;">
 <Exp_Comparison op="=">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:1:1" value="bb" suffix="1" typref="2043437594">
+<Id typref="2043437594" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:1:1" value="bb" suffix="1">
 <Attr>
-<Pos s="2" l="35" c="5"/>
+<Pos s="2" c="5" l="35"/>
 </Attr>
 </Id>
 <Id value="bb" typref="2043437594" suffix="">
 <Attr>
-<Pos s="2" l="36" c="5"/>
+<Pos s="2" c="5" l="36"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1203,16 +1248,16 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="37" c="16"/>
+<Pos s="1" c="16" l="37"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:1" value="gg">
 <Attr>
-<Pos s="2" l="37" c="13"/>
+<Pos s="2" c="13" l="37"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:2" value="gate">
 <Attr>
-<Pos s="4" l="37" c="18"/>
+<Pos s="4" c="18" l="37"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1221,9 +1266,9 @@
 <Nary_Sub op=";">
 <ANY_Sub normalized="true">
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="37" c="17"/>
+<Pos s="2" c="17" l="37"/>
 </Attr>
 </Id>
 </Variables>
@@ -1234,25 +1279,25 @@
 <Nary_Sub op=";">
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="37" c="23"/>
+<Pos s="2" c="23" l="37"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="2" l="37" c="23"/>
+<Pos s="2" c="23" l="37"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="37" c="38"/>
+<Pos s="2" c="38" l="37"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1260,21 +1305,21 @@
 </Simple_Assignement_Sub>
 <If_Sub elseif="no">
 <Attr>
-<Pos s="2" l="38" c="17"/>
+<Pos s="2" c="17" l="38"/>
 </Attr>
 <Condition>
 <Exp_Comparison op="=">
 <Attr>
-<Pos s="1" l="38" c="23"/>
+<Pos s="1" c="23" l="38"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="38" c="20"/>
+<Pos s="2" c="20" l="38"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="38" c="25"/>
+<Pos s="11" c="25" l="38"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1282,16 +1327,16 @@
 <Then>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:2:1:1:1," value="bb" suffix="1" typref="2043437594">
+<Id typref="2043437594" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:2:1:1:1," value="bb" suffix="1">
 <Attr>
-<Pos s="2" l="35" c="5"/>
+<Pos s="2" c="5" l="35"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Boolean_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:2:1:2:1" value="FALSE" typref="2043437594">
+<Boolean_Literal typref="2043437594" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:2:1:2:1" value="FALSE">
 <Attr>
-<Pos s="2" l="35" c="5"/>
+<Pos s="2" c="5" l="35"/>
 </Attr>
 </Boolean_Literal>
 </Values>
@@ -1300,16 +1345,16 @@
 <Else>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:3:1:1:1," value="bb" suffix="1" typref="2043437594">
+<Id typref="2043437594" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:3:1:1:1," value="bb" suffix="1">
 <Attr>
-<Pos s="2" l="35" c="5"/>
+<Pos s="2" c="5" l="35"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Boolean_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:3:1:2:1" value="TRUE" typref="2043437594">
+<Boolean_Literal typref="2043437594" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:3:1:2:1" value="TRUE">
 <Attr>
-<Pos s="2" l="35" c="5"/>
+<Pos s="2" c="5" l="35"/>
 </Attr>
 </Boolean_Literal>
 </Values>
@@ -1326,31 +1371,31 @@
 <Sub_Calculus>
 <If_Sub elseif="no">
 <Attr>
-<Pos s="2" l="39" c="13"/>
+<Pos s="2" c="13" l="39"/>
 </Attr>
 <Condition>
 <Exp_Comparison op="=">
 <Attr>
-<Pos s="1" l="39" c="27"/>
+<Pos s="1" c="27" l="39"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="39" c="22"/>
+<Pos s="0" c="22" l="39"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:1:1:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:1:1:1:1" value="gates">
 <Attr>
-<Pos s="5" l="39" c="16"/>
+<Pos s="5" c="16" l="39"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:1:1:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:1:1:1:2" value="gg">
 <Attr>
-<Pos s="2" l="39" c="23"/>
+<Pos s="2" c="23" l="39"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:1:1:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:1:1:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="39" c="29"/>
+<Pos s="11" c="29" l="39"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1358,16 +1403,16 @@
 <Then>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:2:1:1:1" value="bb" typref="2043437594">
+<Id typref="2043437594" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:2:1:1:1" value="bb">
 <Attr>
-<Pos s="2" l="40" c="18"/>
+<Pos s="2" c="18" l="40"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Boolean_Literal tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:2:1:2:1" value="FALSE" typref="2043437594">
+<Boolean_Literal typref="2043437594" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:2:1:2:1" value="FALSE">
 <Attr>
-<Pos s="2" l="40" c="18"/>
+<Pos s="2" c="18" l="40"/>
 </Attr>
 </Boolean_Literal>
 </Values>
@@ -1376,16 +1421,16 @@
 <Else>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:3:1:1:1" value="bb" typref="2043437594">
+<Id typref="2043437594" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:3:1:1:1" value="bb">
 <Attr>
-<Pos s="2" l="41" c="18"/>
+<Pos s="2" c="18" l="41"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Boolean_Literal tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:3:1:2:1" value="TRUE" typref="2043437594">
+<Boolean_Literal typref="2043437594" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:4:1:3:1:2:1" value="TRUE">
 <Attr>
-<Pos s="2" l="41" c="18"/>
+<Pos s="2" c="18" l="41"/>
 </Attr>
 </Boolean_Literal>
 </Values>
@@ -1395,69 +1440,69 @@
 <Not>
 <Nary_Pred op="&amp;">
 <Attr>
-<Pos s="9" l="14" c="1"/>
+<Pos s="9" c="1" l="14"/>
 </Attr>
 <Nary_Pred op="&amp;">
-<Exp_Comparison op=":" initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))">
+<Exp_Comparison initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))" op=":">
 <Attr>
-<Pos s="1" l="15" c="13"/>
+<Pos s="1" c="13" l="15"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Binary_Exp op="--&gt;" typref="2971351405">
+<Binary_Exp typref="2971351405" op="--&gt;">
 <Attr>
-<Pos s="3" l="15" c="27"/>
+<Pos s="3" c="27" l="15"/>
 </Attr>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="15" c="16"/>
+<Pos s="2" c="16" l="15"/>
 </Attr>
-<Integer_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0">
 <Attr>
-<Pos s="1" l="15" c="15"/>
+<Pos s="1" c="15" l="15"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates">
 <Attr>
-<Pos s="8" l="15" c="18"/>
+<Pos s="8" c="18" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="15" c="31"/>
+<Pos s="8" c="31" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
-<Exp_Comparison op="=" initialTag="((gates_i$1) = (gates))">
+<Exp_Comparison initialTag="((gates_i$1) = (gates))" op="=">
 <Attr>
-<Pos s="1" l="16" c="13"/>
+<Pos s="1" c="13" l="16"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates">
 <Attr>
-<Pos s="5" l="16" c="15"/>
+<Pos s="5" c="15" l="16"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 </Nary_Pred>
 <Exp_Comparison op="=">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:1:1" value="bb" suffix="1" typref="2043437594">
+<Id typref="2043437594" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:1:1" value="bb" suffix="1">
 <Attr>
-<Pos s="2" l="35" c="5"/>
+<Pos s="2" c="5" l="35"/>
 </Attr>
 </Id>
 <Id value="bb" typref="2043437594" suffix="">
 <Attr>
-<Pos s="2" l="36" c="5"/>
+<Pos s="2" c="5" l="36"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1492,54 +1537,54 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="46" c="16"/>
+<Pos s="1" c="16" l="46"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:1" value="gg">
 <Attr>
-<Pos s="2" l="46" c="13"/>
+<Pos s="2" c="13" l="46"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:2" value="gate">
 <Attr>
-<Pos s="4" l="46" c="18"/>
+<Pos s="4" c="18" l="46"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/=">
 <Attr>
-<Pos s="2" l="47" c="25"/>
+<Pos s="2" c="25" l="47"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="47" c="20"/>
+<Pos s="0" c="20" l="47"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:1" value="gates">
 <Attr>
-<Pos s="5" l="47" c="15"/>
+<Pos s="5" c="15" l="47"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="47" c="21"/>
+<Pos s="2" c="21" l="47"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="47" c="28"/>
+<Pos s="11" c="28" l="47"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 </Nary_Pred>
 <Exp_Comparison op="=">
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:1:1" value="aa">
 <Attr>
-<Pos s="2" l="45" c="5"/>
+<Pos s="2" c="5" l="45"/>
 </Attr>
 </Id>
 <Id value="aa" typref="1727109426" suffix="">
 <Attr>
-<Pos s="2" l="45" c="5"/>
+<Pos s="2" c="5" l="45"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1567,14 +1612,14 @@
 <Hypothesis>
 <Nary_Pred op="&amp;">
 <Exp_Comparison op="=">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:1:1" value="aa" suffix="1" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:1:1" value="aa" suffix="1">
 <Attr>
-<Pos s="2" l="46" c="5"/>
+<Pos s="2" c="5" l="46"/>
 </Attr>
 </Id>
 <Id value="aa" typref="1727109426" suffix="">
 <Attr>
-<Pos s="2" l="45" c="5"/>
+<Pos s="2" c="5" l="45"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1594,41 +1639,41 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="46" c="16"/>
+<Pos s="1" c="16" l="46"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:1" value="gg">
 <Attr>
-<Pos s="2" l="46" c="13"/>
+<Pos s="2" c="13" l="46"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:2" value="gate">
 <Attr>
-<Pos s="4" l="46" c="18"/>
+<Pos s="4" c="18" l="46"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/=">
 <Attr>
-<Pos s="2" l="47" c="25"/>
+<Pos s="2" c="25" l="47"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="47" c="20"/>
+<Pos s="0" c="20" l="47"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:1" value="gates">
 <Attr>
-<Pos s="5" l="47" c="15"/>
+<Pos s="5" c="15" l="47"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="47" c="21"/>
+<Pos s="2" c="21" l="47"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="47" c="28"/>
+<Pos s="11" c="28" l="47"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1638,25 +1683,25 @@
 <Nary_Sub op=";">
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:1:1," value="aa" suffix="1" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:1:1," value="aa" suffix="1">
 <Attr>
-<Pos s="2" l="46" c="5"/>
+<Pos s="2" c="5" l="46"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="2" l="46" c="5"/>
+<Pos s="2" c="5" l="46"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="47" c="23"/>
+<Pos s="2" c="23" l="47"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1669,25 +1714,25 @@
 <Sub_Calculus>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:4:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:4:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="48" c="14"/>
+<Pos s="2" c="14" l="48"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="2" l="48" c="14"/>
+<Pos s="2" c="14" l="48"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:4:1:2:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:4:1:2:1:1" value="gates">
 <Attr>
-<Pos s="5" l="48" c="20"/>
+<Pos s="5" c="20" l="48"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:4:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:4:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="48" c="26"/>
+<Pos s="2" c="26" l="48"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1696,69 +1741,69 @@
 <Not>
 <Nary_Pred op="&amp;">
 <Attr>
-<Pos s="9" l="14" c="1"/>
+<Pos s="9" c="1" l="14"/>
 </Attr>
 <Nary_Pred op="&amp;">
-<Exp_Comparison op=":" initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))">
+<Exp_Comparison initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))" op=":">
 <Attr>
-<Pos s="1" l="15" c="13"/>
+<Pos s="1" c="13" l="15"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Binary_Exp op="--&gt;" typref="2971351405">
+<Binary_Exp typref="2971351405" op="--&gt;">
 <Attr>
-<Pos s="3" l="15" c="27"/>
+<Pos s="3" c="27" l="15"/>
 </Attr>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="15" c="16"/>
+<Pos s="2" c="16" l="15"/>
 </Attr>
-<Integer_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0">
 <Attr>
-<Pos s="1" l="15" c="15"/>
+<Pos s="1" c="15" l="15"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates">
 <Attr>
-<Pos s="8" l="15" c="18"/>
+<Pos s="8" c="18" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="15" c="31"/>
+<Pos s="8" c="31" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
-<Exp_Comparison op="=" initialTag="((gates_i$1) = (gates))">
+<Exp_Comparison initialTag="((gates_i$1) = (gates))" op="=">
 <Attr>
-<Pos s="1" l="16" c="13"/>
+<Pos s="1" c="13" l="16"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:2:2" value="gates">
 <Attr>
-<Pos s="5" l="16" c="15"/>
+<Pos s="5" c="15" l="16"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 </Nary_Pred>
 <Exp_Comparison op="=">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:1:1" value="aa" suffix="1" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:1:1" value="aa" suffix="1">
 <Attr>
-<Pos s="2" l="46" c="5"/>
+<Pos s="2" c="5" l="46"/>
 </Attr>
 </Id>
 <Id value="aa" typref="1727109426" suffix="">
 <Attr>
-<Pos s="2" l="45" c="5"/>
+<Pos s="2" c="5" l="45"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1813,37 +1858,37 @@
 </Binary_Pred>
 </Binary_Pred>
 <Binary_Pred op="=&gt;">
-<Exp_Comparison op=":" initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))">
+<Exp_Comparison initialTag="((gates_i$1) : (((((0) .. (sz_gates))) --&gt; (AIRPLANE))))" op=":">
 <Attr>
-<Pos s="1" l="15" c="13"/>
+<Pos s="1" c="13" l="15"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Binary_Exp op="--&gt;" typref="2971351405">
+<Binary_Exp typref="2971351405" op="--&gt;">
 <Attr>
-<Pos s="3" l="15" c="27"/>
+<Pos s="3" c="27" l="15"/>
 </Attr>
-<Binary_Exp op=".." typref="3603043417">
+<Binary_Exp typref="3603043417" op="..">
 <Attr>
-<Pos s="2" l="15" c="16"/>
+<Pos s="2" c="16" l="15"/>
 </Attr>
-<Integer_Literal tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0" typref="2701647786">
+<Integer_Literal typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:1" value="0">
 <Attr>
-<Pos s="1" l="15" c="15"/>
+<Pos s="1" c="15" l="15"/>
 </Attr>
 </Integer_Literal>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:1:2" value="sz_gates">
 <Attr>
-<Pos s="8" l="15" c="18"/>
+<Pos s="8" c="18" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:4:1:1:2:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="15" c="31"/>
+<Pos s="8" c="31" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1906,76 +1951,76 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="22" c="16"/>
+<Pos s="1" c="16" l="22"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="22" c="13"/>
+<Pos s="2" c="13" l="22"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:2" value="AIRPLANE" typref="1569085991">
+<Id typref="1569085991" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:1:2" value="AIRPLANE">
 <Attr>
-<Pos s="8" l="22" c="18"/>
+<Pos s="8" c="18" l="22"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="23" c="18"/>
+<Pos s="1" c="18" l="23"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:1" value="gg">
 <Attr>
-<Pos s="2" l="23" c="15"/>
+<Pos s="2" c="15" l="23"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:2:2" value="gate">
 <Attr>
-<Pos s="4" l="23" c="20"/>
+<Pos s="4" c="20" l="23"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos s="2" l="24" c="18"/>
+<Pos s="2" c="18" l="24"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:1" value="aa">
 <Attr>
-<Pos s="2" l="24" c="15"/>
+<Pos s="2" c="15" l="24"/>
 </Attr>
 </Id>
-<Unary_Exp op="ran" typref="1569085991">
+<Unary_Exp typref="1569085991" op="ran">
 <Attr>
-<Pos s="3" l="24" c="21"/>
+<Pos s="3" c="21" l="24"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:2:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:3:2:1" value="gates">
 <Attr>
-<Pos s="5" l="24" c="25"/>
+<Pos s="5" c="25" l="24"/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op="=">
 <Attr>
-<Pos s="1" l="25" c="25"/>
+<Pos s="1" c="25" l="25"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="25" c="20"/>
+<Pos s="0" c="20" l="25"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:1" value="gates">
 <Attr>
-<Pos s="5" l="25" c="15"/>
+<Pos s="5" c="15" l="25"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:1:2" value="gg">
 <Attr>
-<Pos s="2" l="25" c="21"/>
+<Pos s="2" c="21" l="25"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:1:2:1:4:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="25" c="27"/>
+<Pos s="11" c="27" l="25"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -2018,41 +2063,41 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="31" c="16"/>
+<Pos s="1" c="16" l="31"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:1" value="gg">
 <Attr>
-<Pos s="2" l="31" c="13"/>
+<Pos s="2" c="13" l="31"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:1:2" value="gate">
 <Attr>
-<Pos s="4" l="31" c="18"/>
+<Pos s="4" c="18" l="31"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/=">
 <Attr>
-<Pos s="2" l="32" c="25"/>
+<Pos s="2" c="25" l="32"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="32" c="20"/>
+<Pos s="0" c="20" l="32"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:1" value="gates">
 <Attr>
-<Pos s="5" l="32" c="15"/>
+<Pos s="5" c="15" l="32"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="32" c="21"/>
+<Pos s="2" c="21" l="32"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:2:2:1:2:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="32" c="28"/>
+<Pos s="11" c="28" l="32"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -2094,16 +2139,16 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="37" c="16"/>
+<Pos s="1" c="16" l="37"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:1" value="gg">
 <Attr>
-<Pos s="2" l="37" c="13"/>
+<Pos s="2" c="13" l="37"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:3:3:1:2" value="gate">
 <Attr>
-<Pos s="4" l="37" c="18"/>
+<Pos s="4" c="18" l="37"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -2114,9 +2159,9 @@
 <Nary_Pred op="&amp;">
 <Quantified_Pred type="!">
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="37" c="17"/>
+<Pos s="2" c="17" l="37"/>
 </Attr>
 </Id>
 </Variables>
@@ -2131,37 +2176,37 @@
 <Nary_Pred op="&amp;"/>
 <Nary_Pred op="&amp;"/>
 <Exp_Comparison op=":">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="37" c="38"/>
+<Pos s="2" c="38" l="37"/>
 </Attr>
 </Id>
 <Unary_Exp op="dom">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=":">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 <Binary_Exp op="+-&gt;">
 <Unary_Exp op="dom">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 </Unary_Exp>
 <Unary_Exp op="ran">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -2172,25 +2217,25 @@
 <Sub_Calculus>
 <Simple_Assignement_Sub>
 <Variables>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="37" c="23"/>
+<Pos s="2" c="23" l="37"/>
 </Attr>
 </Id>
 </Variables>
 <Values>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="2" l="37" c="23"/>
+<Pos s="2" c="23" l="37"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="37" c="38"/>
+<Pos s="2" c="38" l="37"/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -2205,16 +2250,16 @@
 <Binary_Pred op="=&gt;">
 <Exp_Comparison op="=">
 <Attr>
-<Pos s="1" l="38" c="23"/>
+<Pos s="1" c="23" l="38"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="38" c="20"/>
+<Pos s="2" c="20" l="38"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="38" c="25"/>
+<Pos s="11" c="25" l="38"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -2226,16 +2271,16 @@
 <Unary_Pred op="not">
 <Exp_Comparison op="=">
 <Attr>
-<Pos s="1" l="38" c="23"/>
+<Pos s="1" c="23" l="38"/>
 </Attr>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:1" value="aa" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:1" value="aa">
 <Attr>
-<Pos s="2" l="38" c="20"/>
+<Pos s="2" c="20" l="38"/>
 </Attr>
 </Id>
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:3:3:1:2:1:2:1:1:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="38" c="25"/>
+<Pos s="11" c="25" l="38"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -2278,41 +2323,41 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos s="1" l="46" c="16"/>
+<Pos s="1" c="16" l="46"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:1" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:1" value="gg">
 <Attr>
-<Pos s="2" l="46" c="13"/>
+<Pos s="2" c="13" l="46"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:2" value="gate" typref="3603043417">
+<Id typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:1:2" value="gate">
 <Attr>
-<Pos s="4" l="46" c="18"/>
+<Pos s="4" c="18" l="46"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/=">
 <Attr>
-<Pos s="2" l="47" c="25"/>
+<Pos s="2" c="25" l="47"/>
 </Attr>
-<Binary_Exp op="(" typref="1727109426">
+<Binary_Exp typref="1727109426" op="(">
 <Attr>
-<Pos s="0" l="47" c="20"/>
+<Pos s="0" c="20" l="47"/>
 </Attr>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:1" value="gates" typref="1731522284">
+<Id typref="1731522284" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:1" value="gates">
 <Attr>
-<Pos s="5" l="47" c="15"/>
+<Pos s="5" c="15" l="47"/>
 </Attr>
 </Id>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="47" c="21"/>
+<Pos s="2" c="21" l="47"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:2" value="plane_dummy" typref="1727109426">
+<Id typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Gate.bxml:1:5:4:3:1:2:2" value="plane_dummy">
 <Attr>
-<Pos s="11" l="47" c="28"/>
+<Pos s="11" c="28" l="47"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -2327,37 +2372,37 @@
 <Nary_Pred op="&amp;"/>
 <Nary_Pred op="&amp;"/>
 <Exp_Comparison op=":">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:2" value="gg" typref="2701647786">
+<Id typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:2" value="gg">
 <Attr>
-<Pos s="2" l="47" c="23"/>
+<Pos s="2" c="23" l="47"/>
 </Attr>
 </Id>
 <Unary_Exp op="dom">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=":">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 <Binary_Exp op="+-&gt;">
 <Unary_Exp op="dom">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 </Unary_Exp>
 <Unary_Exp op="ran">
-<Id tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1" typref="1731522284">
+<Id typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:3:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Gate_i.bxml:1:6:4:3:1:2:1:1," value="gates_i" suffix="1">
 <Attr>
-<Pos s="7" l="12" c="5"/>
+<Pos s="7" c="5" l="12"/>
 </Attr>
 </Id>
 </Unary_Exp>
