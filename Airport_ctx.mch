@@ -6,18 +6,26 @@ MACHINE
     Airport_ctx
 
 SETS
-    AIRPLANE; TRACK; GATE;
+    AIRPLANE;
     
-    STATUS = {boarding, flight_closed, taking_off, disembarking, confirmed, out};
-    OCCUPATION = {occupied, unoccupied}
-    
+    STATUS = { out, flighting, alighting, parked, boarding, departing };
+    OCCUPATION = {occupied, unoccupied}    
     
 CONSTANTS
-    sz_gates, sz_tracks, sz_airplanes
+    sz_gates, sz_tracks, sz_airplanes,
+
+    gate, track,
+    
+    plane_dummy
     
 PROPERTIES
       sz_gates : NAT1
-    & sz_tracks : NAT1 
+    & sz_tracks : NAT1
     & sz_airplanes : NAT1
+    
+    & gate = 0..sz_gates
+    & track = 0..sz_tracks
+    
+    & plane_dummy : AIRPLANE
     
 END

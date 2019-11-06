@@ -1,0 +1,66 @@
+﻿THEORY BalanceX IS
+  Track,13,0,0,12,1,0,0;
+  Initialisation,1,0,0,0,1,0,0;
+  WellDefinedness_Precondition_occupy_track,2,0,0,2,0,0,0;
+  WellDefinedness_Precondition_track_belongs_to,2,0,0,2,0,0,0;
+  WellDefinedness_Precondition_vacate_track,2,0,0,2,0,0,0;
+  WellDefinedness_is_track_occupied,2,0,0,2,0,0,0;
+  WellDefinedness_track_belongs_to,2,0,0,2,0,0,0;
+  occupy_track,1,0,0,1,0,0,0;
+  vacate_track,1,0,0,1,0,0,0
+END
+&
+THEORY ProofState IS
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(1)
+END
+&
+THEORY MethodList IS
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr
+END
+&
+THEORY PassList IS
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(1),(?;0)
+END
+&
+THEORY ManForms 
+END
+&
+THEORY Version IS
+  PRVersion("svn")(CLT == "svn")
+END

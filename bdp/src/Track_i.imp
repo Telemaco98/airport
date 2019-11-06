@@ -1,0 +1,58 @@
+﻿/* Track_i
+ * Author: ohara
+ * Creation date: 05/11/2019
+ */
+
+IMPLEMENTATION Track_i
+REFINES Track
+
+SEES
+    Airport_ctx
+
+
+CONCRETE_VARIABLES
+    tracks_i , status_track_i
+
+INVARIANT
+    tracks_i : 0 .. sz_tracks --> AIRPLANE &
+    status_track_i : track --> OCCUPATION &
+
+    tracks = tracks_i &
+    status_track = status_track_i
+
+INITIALISATION
+    tracks_i := ( 0 .. sz_tracks ) * { plane_dummy } ;
+    status_track_i := track * { unoccupied }
+
+OPERATIONS
+    occupy_track ( tt , aa ) =
+        BEGIN
+            tracks_i ( tt ) := aa ;
+            status_track_i ( tt ) := occupied
+        END ;
+
+
+    vacate_track ( tt ) =
+        BEGIN
+            tracks_i ( tt ) := plane_dummy ;
+            status_track_i ( tt ) := unoccupied
+        END ;
+
+
+    bb <-- is_track_occupied ( tt ) =
+        BEGIN
+            VAR xx IN xx := status_track_i ( tt ) ;
+                IF xx = unoccupied
+                THEN bb := FALSE
+                ELSE bb := TRUE
+                END
+            END
+        END ;
+
+
+    aa <-- track_belongs_to ( tt ) =
+        BEGIN
+            aa := tracks_i ( tt )
+        END
+
+ END

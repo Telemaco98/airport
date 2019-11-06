@@ -1,0 +1,54 @@
+/* Airplane_i
+ * Author: ohara
+ * Creation date: 06/11/2019
+ */
+
+IMPLEMENTATION Airplane_i
+REFINES Airplane
+
+SEES
+    Airport_ctx
+
+
+CONCRETE_VARIABLES
+    airplanes_i,  pointer_i
+    
+INVARIANT
+    pointer_i = pointer
+    & airplanes_i : 0..sz_airplanes --> AIRPLANE 
+    & (0..(pointer_i-1) <| airplanes_i) : 0..(pointer_i-1) >-> AIRPLANE 
+    
+INITIALISATION
+    airplanes_i := (0..sz_airplanes) * {plane_dummy};
+    pointer_i := 0
+    
+OPERATIONS
+    add_plane(aa) =
+        BEGIN
+            airplanes_i(pointer_i) := aa;
+            pointer_i := pointer_i + 1
+        END;
+    
+    remove(aa) =
+        BEGIN
+            airplanes_i((0..pointer_i-1 <| airplanes_i)~(aa)) := airplanes_i(pointer_i -1);
+            pointer_i := pointer_i - 1
+        END;
+    
+    remove_on(pp) =
+        BEGIN 
+            airplanes_i(pp) := airplanes_i(pointer_i -1);
+            pointer_i := pointer_i - 1
+        END;
+        
+    bb <-- has_airplane (aa) =
+        BEGIN
+            VAR xx IN xx := ran(0..(pointer_i -1) <| airplanes_i);
+                IF aa : xx
+                THEN bb := TRUE
+                ELSE bb := FALSE
+                END
+            END
+        END    
+
+END

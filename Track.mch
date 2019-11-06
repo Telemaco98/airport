@@ -8,49 +8,49 @@ MACHINE
 SEES 
     Airport_ctx
     
-CONSTANTS
-    plane_dumb
-    
-PROPERTIES
-    plane_dumb : AIRPLANE
-    
 VARIABLES
-    tracks
+    tracks, 
+    status_track
     
 INVARIANT
-    tracks : 0..sz_tracks --> AIRPLANE
+    tracks : track --> AIRPLANE  &
+    status_track : track --> OCCUPATION 
     
 INITIALISATION
-    tracks := (0..sz_tracks) * {plane_dumb}
+    tracks := track * {plane_dummy} ||
+    status_track := track * {unoccupied}
     
 OPERATIONS
-    occupy (gg, aa) =
+    occupy_track (tt, aa) =
         PRE aa : AIRPLANE 
-            & gg : 0..sz_tracks
+            & tt : track
             & aa /: ran(tracks)
-            & tracks(gg) = plane_dumb
+            & tracks(tt) = plane_dummy
         THEN 
-            tracks (gg) := aa
+            tracks (tt) := aa || 
+            status_track(tt) := occupied
         END;
         
-    vacate (gg) =
-        PRE gg : 0..sz_tracks
-            & tracks(gg) /= plane_dumb
-        THEN tracks(gg) := plane_dumb
+    vacate_track (tt) =
+        PRE tt : track
+            & tracks(tt) /= plane_dummy
+        THEN 
+            tracks(tt) := plane_dummy || 
+            status_track(tt) := unoccupied
         END;
         
-    bb <-- is_occupied (gg) =
-        PRE gg : 0..sz_tracks
+    bb <-- is_track_occupied (tt) =
+        PRE tt : track
         THEN
-            IF tracks (gg) = plane_dumb
+            IF status_track (tt) = unoccupied
             THEN bb := FALSE
             ELSE bb := TRUE
             END
         END;
         
-    aa <-- belongs_to (gg) =
-        PRE gg : 0..sz_tracks 
-            & tracks(gg) /= plane_dumb
-        THEN aa := tracks(gg)
+    aa <-- track_belongs_to (tt) =
+        PRE tt : track
+            & tracks(tt) /= plane_dummy
+        THEN aa := tracks(tt)
         END
 END

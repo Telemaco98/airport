@@ -8,49 +8,43 @@ MACHINE
 SEES
     Airport_ctx
 
-CONCRETE_CONSTANTS
-    plane_dumb
-
-PROPERTIES
-    plane_dumb : AIRPLANE
-
 ABSTRACT_VARIABLES
     gates
 
 INVARIANT
-    gates : 0 .. sz_gates --> AIRPLANE
+    gates : gate --> AIRPLANE
 
 INITIALISATION
-    gates := ( 0 .. sz_gates ) * { plane_dumb }
+    gates := gate * { plane_dummy }
 
 OPERATIONS
-    occupy ( gg , aa ) =
+    occupy_gate ( gg , aa ) =
         PRE aa : AIRPLANE
-            & gg : 0 .. sz_gates
+            & gg : gate
             & aa /: ran ( gates )
-            & gates ( gg ) = plane_dumb
+            & gates ( gg ) = plane_dummy
         THEN
             gates ( gg ) := aa
         END ;
 
-    vacate ( gg ) =
-        PRE gg : 0 .. sz_gates
-            & gates ( gg ) /= plane_dumb
-        THEN gates ( gg ) := plane_dumb
+    vacate_gate ( gg ) =
+        PRE gg : gate
+            & gates ( gg ) /= plane_dummy
+        THEN gates ( gg ) := plane_dummy
         END ;
 
-    bb <-- is_occupied ( gg ) =
-        PRE gg : 0 .. sz_gates
+    bb <-- is_gate_occupied ( gg ) =
+        PRE gg : gate
         THEN
-            IF gates ( gg ) = plane_dumb
+            IF gates ( gg ) = plane_dummy
             THEN bb := FALSE
             ELSE bb := TRUE
             END
         END ;
 
-    aa <-- belongs_to ( gg ) =
-        PRE gg : 0 .. sz_gates
-            & gates ( gg ) /= plane_dumb
+    aa <-- gate_belongs_to ( gg ) =
+        PRE gg : gate
+            & gates ( gg ) /= plane_dummy
         THEN aa := gates ( gg )
         END
 END

@@ -1,0 +1,82 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(11) & _f(12) & _f(23) & WellDefinedness_track_belongs_to.2,(_f(50) => _f(52));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(23) & WellDefinedness_track_belongs_to.1,(_f(50) => _f(42));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(15) & WellDefinedness_is_track_occupied.2,(_f(50) => _f(51));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(15) & WellDefinedness_is_track_occupied.1,(_f(50) => _f(38));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(40) & track_belongs_to.2,(_f(15) & _f(24) & _f(37) => _f(42));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(40) & track_belongs_to.1,(_f(15) & _f(24) & _f(4) => _f(41));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(30) & is_track_occupied.3,(_f(15) & _f(37) => _f(38));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(30) & is_track_occupied.2,(_f(15) & _f(34) & _f(31) & _f(4) => _f(36));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(30) & is_track_occupied.1,(_f(15) & _f(33) & _f(32) & _f(4) => _f(35));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(3) & vacate_track.4,(_f(15) & _f(24) & _f(4) & _f(21) => _f(28));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(3) & vacate_track.3,(_f(15) & _f(24) & _f(4) & _f(9) => _f(27));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(3) & vacate_track.2,(_f(15) & _f(24) & _f(4) & _f(7) => _f(26));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(3) & vacate_track.1,(_f(15) & _f(24) & _f(4) & _f(5) => _f(25));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(3) & occupy_track.4,(_f(14) & _f(15) & _f(16) & _f(17) & _f(4) & _f(21) => _f(22));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(3) & occupy_track.3,(_f(14) & _f(15) & _f(16) & _f(17) & _f(4) & _f(9) => _f(20));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(3) & occupy_track.2,(_f(14) & _f(15) & _f(16) & _f(17) & _f(4) & _f(7) => _f(19));
+_f(1) & _f(2) & _f(11) & _f(12) & _f(3) & occupy_track.1,(_f(14) & _f(15) & _f(16) & _f(17) & _f(4) & _f(5) => _f(18));
+_f(1) & _f(2) & Initialisation.3,(_f(4) & _f(9) => _f(10));
+_f(1) & _f(2) & Initialisation.2,(_f(4) & _f(7) => _f(8));
+_f(1) & _f(2) & Initialisation.1,(_f(4) & _f(5) => _f(6))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & ((sz_tracks) : ((NAT-{0}))) & ((sz_airplanes) : ((NAT-{0}))) & ((gate) = (((0) .. (sz_gates)))) & ((track) = (((0) .. (sz_tracks)))) & ((plane_dummy) : (AIRPLANE));
+btrue;
+"Refinement is correct";
+"Check invariant ((tracks_i$1) : (((((0) .. (sz_tracks))) --> (AIRPLANE))))";
+(((((0) .. (sz_tracks)) * ({plane_dummy}))) : (((((0) .. (sz_tracks))) --> (AIRPLANE))));
+"Check invariant ((status_track_i$1) : (((track) --> (OCCUPATION))))";
+(((track * ({(2|->OCCUPATION)}))) : (((track) --> (((1..2)*{OCCUPATION})))));
+"Check invariant ((tracks) = (tracks_i$1))";
+(((track * ({plane_dummy}))) = ((((0) .. (sz_tracks)) * ({plane_dummy}))));
+tracks : track +-> AIRPLANE & dom(tracks) = track & ((tracks) : (((track) --> (AIRPLANE)))) & status_track : track +-> ((1..2)*{OCCUPATION}) & dom(status_track) = track & ((status_track) : (((track) --> (((1..2)*{OCCUPATION})))));
+tracks_i$1 : ((0) .. (sz_tracks)) +-> AIRPLANE & dom(tracks_i$1) = ((0) .. (sz_tracks)) & ((tracks_i$1) : (((((0) .. (sz_tracks))) --> (AIRPLANE)))) & status_track_i$1 : track +-> ((1..2)*{OCCUPATION}) & dom(status_track_i$1) = track & ((status_track_i$1) : (((track) --> (((1..2)*{OCCUPATION}))))) & ((tracks) = (tracks_i$1)) & ((status_track) = (status_track_i$1));
+((aa) : (AIRPLANE)) & ((tt) : (track)) & not(aa : ran(tracks)) & (((tracks )(tt)) = (plane_dummy));
+((aa) : (AIRPLANE));
+((tt) : (track));
+not(aa : ran(tracks));
+(((tracks )(tt)) = (plane_dummy));
+((((tracks_i$1) <+ (({((tt) |-> (aa))})))) : (((((0) .. (sz_tracks))) --> (AIRPLANE))));
+((((status_track_i$1) <+ (({((tt) |-> ((1|->OCCUPATION)))})))) : (((track) --> (((1..2)*{OCCUPATION})))));
+((((tracks) <+ (({((tt) |-> (aa))})))) = (((tracks_i$1) <+ (({((tt) |-> (aa))})))));
+"Check invariant ((status_track) = (status_track_i$1))";
+((((status_track) <+ (({((tt) |-> ((1|->OCCUPATION)))})))) = (((status_track_i$1) <+ (({((tt) |-> ((1|->OCCUPATION)))})))));
+((tt) : (track)) & not((tracks )(tt) = plane_dummy);
+not((tracks )(tt) = plane_dummy);
+((((tracks_i$1) <+ (({((tt) |-> (plane_dummy))})))) : (((((0) .. (sz_tracks))) --> (AIRPLANE))));
+((((status_track_i$1) <+ (({((tt) |-> ((2|->OCCUPATION)))})))) : (((track) --> (((1..2)*{OCCUPATION})))));
+((((tracks) <+ (({((tt) |-> (plane_dummy))})))) = (((tracks_i$1) <+ (({((tt) |-> (plane_dummy))})))));
+((((status_track) <+ (({((tt) |-> ((2|->OCCUPATION)))})))) = (((status_track_i$1) <+ (({((tt) |-> ((2|->OCCUPATION)))})))));
+((tt) : (track)) & ((bb) = (bb));
+((bb$1) = (bb));
+(((status_track )(tt)) = ((2|->OCCUPATION)));
+not((((status_track )(tt)) = ((2|->OCCUPATION))));
+(((status_track_i$1 )(tt)) = ((2|->OCCUPATION)));
+not((((status_track_i$1 )(tt)) = ((2|->OCCUPATION))));
+((FALSE) = (TRUE));
+((TRUE) = (FALSE));
+"Instruction Well Definess";
+((tt) : (dom(status_track_i$1)));
+((tt) : (track)) & not((tracks )(tt) = plane_dummy) & ((aa) = (aa));
+((aa$1) = (aa));
+(((tracks_i$1 )(tt)) = ((tracks )(tt)));
+((tt) : (dom(tracks_i$1)));
+((tracks) = (tracks_i$1));
+status_track_i$1 : track +-> ((1..2)*{OCCUPATION});
+dom(status_track_i$1) = track;
+((status_track_i$1) : (((track) --> (((1..2)*{OCCUPATION})))));
+tracks_i$1 : ((0) .. (sz_tracks)) +-> AIRPLANE;
+dom(tracks_i$1) = ((0) .. (sz_tracks));
+((tracks_i$1) : (((((0) .. (sz_tracks))) --> (AIRPLANE))));
+"Well definedness";
+((status_track_i$1) : (((dom(status_track_i$1)) +-> (ran(status_track_i$1)))));
+((tracks_i$1) : (((dom(tracks_i$1)) +-> (ran(tracks_i$1)))))
+END
+&
+THEORY EnumerateX IS
+OCCUPATION == {occupied,unoccupied};
+STATUS == {out,flighting,alighting,parked,boarding,departing}
+END

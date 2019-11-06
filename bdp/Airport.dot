@@ -1,12 +1,12 @@
 digraph {
-Airplane [ label=" Airplane " shape= box ]
+Airplane_i [ label=" Airplane\nAirplane_i " shape= box ]
 Airport_ctx_i [ label=" Airport_ctx\nAirport_ctx_i " shape= box ]
 Airport_i [ label=" Airport\nAirport_i " shape= box ]
-Gate [ label=" Gate " shape= box ]
-Track [ label=" Track " shape= box ]
+Gate_i [ label=" Gate\nGate_i " shape= box ]
+Track_i [ label=" Track\nTrack_i " shape= box ]
 
+"Airplane_i" -> "Airport_ctx_i" [style= dotted ]
 "Airport_i" -> "Airport_ctx_i" [style= dotted ]
-"Airport_i" -> "Gate" []
-"Gate" -> "Airport_ctx_i" [style= dotted ]
-"Track" -> "Airport_ctx_i" [style= dotted ]
+"Gate_i" -> "Airport_ctx_i" [style= dotted ]
+"Track_i" -> "Airport_ctx_i" [style= dotted ]
 }

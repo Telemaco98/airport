@@ -3,41 +3,52 @@
  * Creation date: 04/11/2019
  */
 MACHINE
-    Airplane
+    Airplane 
 
-SETS
-    AIRPLANE
-    
-CONSTANTS
-    sz, trash
-
-PROPERTIES
-     sz : NAT &
-     trash : AIRPLANE
+SEES
+    Airport_ctx
 
 VARIABLES
     airplanes,  pointer
     
 INVARIANT
-    pointer : 0..sz
-    & airplanes : 0..sz --> AIRPLANE 
+    pointer : 0..sz_airplanes
+    & airplanes : 0..sz_airplanes --> AIRPLANE 
+    & (0..(pointer-1) <| airplanes) : 0..(pointer-1) >-> AIRPLANE 
     
 INITIALISATION
-    airplanes := (0..sz) * {trash}
+    airplanes := (0..sz_airplanes) * {plane_dummy}
     || pointer := 0
     
 OPERATIONS
     add_plane(aa) =
         PRE aa : AIRPLANE &
-            aa /: ran(airplanes) &
-            pointer < sz
+            aa /= plane_dummy &
+            aa /: ran(0..(pointer -1) <| airplanes) &
+            pointer < sz_airplanes
         THEN airplanes(pointer) := aa ||
              pointer := pointer + 1
         END;
     
-    remove(pp) =
-        PRE pp : 0..pointer
-        THEN airplanes(pp) := airplanes(pointer)  ||
-             pointer := pointer - 1
-        END
+    remove(aa) =
+        PRE aa : AIRPLANE &
+            aa : ran(0..(pointer -1) <| airplanes)
+        THEN airplanes((0..pointer-1 <| airplanes)~(aa)) := airplanes(pointer -1)
+          || pointer := pointer - 1
+        END;
+    
+    remove_on(pp) =
+        PRE pp : 0..(pointer - 1) &
+            pointer > 0
+        THEN airplanes(pp) := airplanes(pointer -1)
+          || pointer := pointer - 1
+        END;
+        
+    bb <-- has_airplane (aa) =
+        PRE aa : AIRPLANE
+        THEN IF aa : ran(0..(pointer -1) <| airplanes)
+             THEN bb := TRUE
+             ELSE bb := FALSE
+             END
+        END    
 END

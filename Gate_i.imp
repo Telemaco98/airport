@@ -1,0 +1,49 @@
+/* Gate_i
+ * Author: ohara
+ * Creation date: 05/11/2019
+ */
+IMPLEMENTATION Gate_i
+REFINES Gate
+
+SEES
+    Airport_ctx
+
+CONCRETE_VARIABLES
+    gates_i
+    
+INVARIANT
+    gates_i : 0..sz_gates --> AIRPLANE &
+    gates_i = gates
+    
+INITIALISATION
+    gates_i := (0..sz_gates) * {plane_dummy}
+    
+
+OPERATIONS
+    occupy_gate (gg, aa) =
+        BEGIN
+            gates_i (gg) := aa
+        END;
+
+        
+    vacate_gate (gg) =
+        BEGIN
+            gates_i (gg) := plane_dummy
+        END;
+
+        
+    bb <-- is_gate_occupied (gg) =
+        BEGIN
+            VAR aa IN aa := gates_i (gg);
+                IF aa = plane_dummy
+                THEN bb := FALSE
+                ELSE bb := TRUE
+                END
+            END
+        END;
+
+        
+    aa <-- gate_belongs_to (gg) =
+        aa := gates_i(gg)
+
+ END

@@ -1,0 +1,68 @@
+﻿THEORY BalanceX IS
+  Gate_i,14,0,0,13,1,0,0;
+  Initialisation,1,0,0,0,1,0,0;
+  WellDefinedness_belongs_to,2,0,0,2,0,0,0;
+  WellDefinedness_is_occupied,2,0,0,2,0,0,0;
+  belongs_to,2,0,0,2,0,0,0;
+  is_occupied,3,0,0,3,0,0,0;
+  occupy,2,0,0,2,0,0,0;
+  vacate,2,0,0,2,0,0,0
+END
+&
+THEORY ProofState IS
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(0);
+  Proved(1)
+END
+&
+THEORY MethodList IS
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr;
+  pr
+END
+&
+THEORY PassList IS
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(0),?;
+  Force(1),(?;0)
+END
+&
+THEORY ManForms 
+END
+&
+THEORY Version IS
+  PRVersion("svn")(CLT == "svn")
+END

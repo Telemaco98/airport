@@ -3,12 +3,16 @@ END
 &
 THEORY Formulas IS
 ((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
-AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & TRACK: FIN(INTEGER) & not(TRACK = {}) & GATE: FIN(INTEGER) & not(GATE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & ((sz_tracks) : ((NAT-{0})));
+AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & ((sz_tracks) : ((NAT-{0}))) & ((sz_airplanes) : ((NAT-{0}))) & ((gate) = (((0) .. (sz_gates)))) & ((track) = (((0) .. (sz_tracks)))) & ((plane_dummy) : (AIRPLANE));
 AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {});
+((track) = (((0) .. (sz_tracks))));
+((gate) = (((0) .. (sz_gates))));
+((sz_airplanes) : ((NAT-{0})));
+((sz_tracks) : ((NAT-{0})));
 ((sz_gates) : ((NAT-{0})))
 END
 &
 THEORY EnumerateX IS
 OCCUPATION == {occupied,unoccupied};
-STATUS == {boarding,flight_closed,taking_off,disembarking,confirmed,out}
+STATUS == {out,flighting,alighting,parked,boarding,departing}
 END

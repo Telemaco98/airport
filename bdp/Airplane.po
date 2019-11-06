@@ -1,0 +1,65 @@
+THEORY ProofList IS
+_f(1) & _f(2) & _f(10) & _f(19) & WellDefinedness_remove_on.2,(_f(32) => _f(36));
+_f(1) & _f(2) & _f(10) & _f(19) & WellDefinedness_remove_on.1,(_f(32) => _f(35));
+_f(1) & _f(2) & _f(10) & _f(15) & WellDefinedness_remove.4,(_f(32) => _f(36));
+_f(1) & _f(2) & _f(10) & _f(15) & WellDefinedness_remove.3,(_f(32) => _f(35));
+_f(1) & _f(2) & _f(10) & _f(15) & WellDefinedness_remove.2,(_f(32) => _f(34));
+_f(1) & _f(2) & _f(10) & _f(15) & WellDefinedness_remove.1,(_f(32) => _f(33));
+_f(1) & _f(2) & _f(10) & _f(19) & remove_on.3,(_f(3) & _f(8) => _f(21));
+_f(1) & _f(2) & _f(10) & _f(19) & remove_on.2,(_f(3) & _f(6) => _f(20));
+_f(1) & _f(2) & _f(10) & _f(19) & remove_on.1,(_f(3) & _f(4) => _f(16));
+_f(1) & _f(2) & _f(10) & _f(15) & remove.3,(_f(3) & _f(8) => _f(18));
+_f(1) & _f(2) & _f(10) & _f(15) & remove.2,(_f(3) & _f(6) => _f(17));
+_f(1) & _f(2) & _f(10) & _f(15) & remove.1,(_f(3) & _f(4) => _f(16));
+_f(1) & _f(2) & _f(10) & _f(11) & add_plane.3,(_f(3) & _f(8) => _f(14));
+_f(1) & _f(2) & _f(10) & _f(11) & add_plane.2,(_f(3) & _f(6) => _f(13));
+_f(1) & _f(2) & _f(10) & _f(11) & add_plane.1,(_f(3) & _f(4) => _f(12));
+_f(1) & _f(2) & Initialisation.3,(_f(3) & _f(8) => _f(9));
+_f(1) & _f(2) & Initialisation.2,(_f(3) & _f(6) => _f(7));
+_f(1) & _f(2) & Initialisation.1,(_f(3) & _f(4) => _f(5))
+END
+&
+THEORY Formulas IS
+((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
+AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & ((sz_tracks) : ((NAT-{0}))) & ((sz_airplanes) : ((NAT-{0}))) & ((gate) = (((0) .. (sz_gates)))) & ((track) = (((0) .. (sz_tracks)))) & ((plane_dummy) : (AIRPLANE));
+"Invariant is preserved";
+"Check invariant ((pointer) : (((0) .. (sz_airplanes))))";
+((0) : (((0) .. (sz_airplanes))));
+"Check invariant ((airplanes) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))))";
+(((((0) .. (sz_airplanes)) * ({plane_dummy}))) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))));
+"Check invariant ((((((0) .. ((pointer - 1)))) <| (airplanes))) : (((((0) .. ((pointer - 1)))) >-> (AIRPLANE))))";
+((((((0) .. ((0 - 1)))) <| ((((0) .. (sz_airplanes)) * ({plane_dummy}))))) : (((((0) .. ((0 - 1)))) >-> (AIRPLANE))));
+((pointer) : (((0) .. (sz_airplanes)))) & airplanes : ((0) .. (sz_airplanes)) +-> AIRPLANE & dom(airplanes) = ((0) .. (sz_airplanes)) & ((airplanes) : (((((0) .. (sz_airplanes))) --> (AIRPLANE)))) & ((((0) .. ((pointer - 1)))) <| (airplanes)) : ((0) .. ((pointer - 1))) +-> AIRPLANE & ((((0) .. ((pointer - 1)))) <| (airplanes)) : ((0) .. ((pointer - 1))) --> AIRPLANE & ((((0) .. ((pointer - 1)))) <| (airplanes))~ : AIRPLANE +-> ((0) .. ((pointer - 1))) & ((((((0) .. ((pointer - 1)))) <| (airplanes))) : (((((0) .. ((pointer - 1)))) >-> (AIRPLANE))));
+((aa) : (AIRPLANE)) & not(aa = plane_dummy) & not(aa : ran(((((0) .. ((pointer - 1)))) <| (airplanes)))) & (pointer +1 <= sz_airplanes);
+(((pointer + 1)) : (((0) .. (sz_airplanes))));
+((((airplanes) <+ (({((pointer) |-> (aa))})))) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))));
+((((((0) .. (((pointer + 1) - 1)))) <| (((airplanes) <+ (({((pointer) |-> (aa))})))))) : (((((0) .. (((pointer + 1) - 1)))) >-> (AIRPLANE))));
+((aa) : (AIRPLANE)) & ((aa) : (ran(((((0) .. ((pointer - 1)))) <| (airplanes)))));
+(((pointer - 1)) : (((0) .. (sz_airplanes))));
+((((airplanes) <+ (({((((((((0) .. ((pointer - 1)))) <| (airplanes)))~ )(aa)) |-> ((airplanes )((pointer - 1))))})))) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))));
+((((((0) .. (((pointer - 1) - 1)))) <| (((airplanes) <+ (({((((((((0) .. ((pointer - 1)))) <| (airplanes)))~ )(aa)) |-> ((airplanes )((pointer - 1))))})))))) : (((((0) .. (((pointer - 1) - 1)))) >-> (AIRPLANE))));
+((pp) : (((0) .. ((pointer - 1))))) & (0 +1 <= pointer);
+((((airplanes) <+ (({((pp) |-> ((airplanes )((pointer - 1))))})))) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))));
+((((((0) .. (((pointer - 1) - 1)))) <| (((airplanes) <+ (({((pp) |-> ((airplanes )((pointer - 1))))})))))) : (((((0) .. (((pointer - 1) - 1)))) >-> (AIRPLANE))));
+((aa) : (AIRPLANE));
+((aa) : (ran(((((0) .. ((pointer - 1)))) <| (airplanes)))));
+not(((aa) : (ran(((((0) .. ((pointer - 1)))) <| (airplanes))))));
+btrue;
+airplanes : ((0) .. (sz_airplanes)) +-> AIRPLANE;
+dom(airplanes) = ((0) .. (sz_airplanes));
+((airplanes) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))));
+((pointer) : (((0) .. (sz_airplanes))));
+not(aa : ran(((((0) .. ((pointer - 1)))) <| (airplanes))));
+not(aa = plane_dummy);
+"Well definedness";
+((aa) : (dom((((((0) .. ((pointer - 1)))) <| (airplanes)))~)));
+(((((((0) .. ((pointer - 1)))) <| (airplanes)))~) : (((dom((((((0) .. ((pointer - 1)))) <| (airplanes)))~)) +-> (ran((((((0) .. ((pointer - 1)))) <| (airplanes)))~)))));
+(((pointer - 1)) : (dom(airplanes)));
+((airplanes) : (((dom(airplanes)) +-> (ran(airplanes)))));
+((pp) : (((0) .. ((pointer - 1)))))
+END
+&
+THEORY EnumerateX IS
+OCCUPATION == {occupied,unoccupied};
+STATUS == {out,flighting,alighting,parked,boarding,departing}
+END

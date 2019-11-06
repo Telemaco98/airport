@@ -1,33 +1,32 @@
 THEORY ProofList IS
-_f(1) & _f(2) & _f(3) & _f(6) & _f(9) & WellDefinedness_belongs_to.2,(_f(17) => _f(19));
-_f(1) & _f(2) & _f(3) & _f(6) & _f(9) & WellDefinedness_belongs_to.1,(_f(17) => _f(18));
-_f(1) & _f(2) & _f(3) & _f(6) & WellDefinedness_Precondition_belongs_to.2,(_f(11) & _f(17) => _f(19));
-_f(1) & _f(2) & _f(3) & _f(6) & WellDefinedness_Precondition_belongs_to.1,(_f(11) & _f(17) => _f(18));
-_f(1) & _f(2) & _f(3) & _f(6) & _f(11) & WellDefinedness_is_occupied.2,(_f(17) => _f(19));
-_f(1) & _f(2) & _f(3) & _f(6) & _f(11) & WellDefinedness_is_occupied.1,(_f(17) => _f(18));
-_f(1) & _f(2) & _f(3) & _f(6) & WellDefinedness_Precondition_vacate.2,(_f(11) & _f(17) => _f(19));
-_f(1) & _f(2) & _f(3) & _f(6) & WellDefinedness_Precondition_vacate.1,(_f(11) & _f(17) => _f(18));
-_f(1) & _f(2) & _f(3) & _f(6) & WellDefinedness_Precondition_occupy.2,(_f(16) & _f(11) & _f(15) & _f(17) => _f(19));
-_f(1) & _f(2) & _f(3) & _f(6) & WellDefinedness_Precondition_occupy.1,(_f(16) & _f(11) & _f(15) & _f(17) => _f(18));
-_f(1) & _f(2) & _f(3) & _f(6) & _f(9) & vacate.1,(_f(4) => _f(10));
-_f(1) & _f(2) & _f(3) & _f(6) & _f(7) & occupy.1,(_f(4) => _f(8));
-_f(1) & _f(2) & _f(3) & Initialisation.1,(_f(4) => _f(5))
+_f(1) & _f(2) & _f(5) & _f(8) & WellDefinedness_gate_belongs_to.2,(_f(16) => _f(18));
+_f(1) & _f(2) & _f(5) & _f(8) & WellDefinedness_gate_belongs_to.1,(_f(16) => _f(17));
+_f(1) & _f(2) & _f(5) & WellDefinedness_Precondition_gate_belongs_to.2,(_f(10) & _f(16) => _f(18));
+_f(1) & _f(2) & _f(5) & WellDefinedness_Precondition_gate_belongs_to.1,(_f(10) & _f(16) => _f(17));
+_f(1) & _f(2) & _f(5) & _f(10) & WellDefinedness_is_gate_occupied.2,(_f(16) => _f(18));
+_f(1) & _f(2) & _f(5) & _f(10) & WellDefinedness_is_gate_occupied.1,(_f(16) => _f(17));
+_f(1) & _f(2) & _f(5) & WellDefinedness_Precondition_vacate_gate.2,(_f(10) & _f(16) => _f(18));
+_f(1) & _f(2) & _f(5) & WellDefinedness_Precondition_vacate_gate.1,(_f(10) & _f(16) => _f(17));
+_f(1) & _f(2) & _f(5) & WellDefinedness_Precondition_occupy_gate.2,(_f(15) & _f(10) & _f(14) & _f(16) => _f(18));
+_f(1) & _f(2) & _f(5) & WellDefinedness_Precondition_occupy_gate.1,(_f(15) & _f(10) & _f(14) & _f(16) => _f(17));
+_f(1) & _f(2) & _f(5) & _f(8) & vacate_gate.1,(_f(3) => _f(9));
+_f(1) & _f(2) & _f(5) & _f(6) & occupy_gate.1,(_f(3) => _f(7));
+_f(1) & _f(2) & Initialisation.1,(_f(3) => _f(4))
 END
 &
 THEORY Formulas IS
 ((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
-AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & TRACK: FIN(INTEGER) & not(TRACK = {}) & GATE: FIN(INTEGER) & not(GATE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & ((sz_tracks) : ((NAT-{0})));
-((plane_dumb) : (AIRPLANE));
+AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & ((sz_tracks) : ((NAT-{0}))) & ((sz_airplanes) : ((NAT-{0}))) & ((gate) = (((0) .. (sz_gates)))) & ((track) = (((0) .. (sz_tracks)))) & ((plane_dummy) : (AIRPLANE));
 "Invariant is preserved";
-(((((0) .. (sz_gates)) * ({plane_dumb}))) : (((((0) .. (sz_gates))) --> (AIRPLANE))));
-gates : ((0) .. (sz_gates)) +-> AIRPLANE & dom(gates) = ((0) .. (sz_gates)) & ((gates) : (((((0) .. (sz_gates))) --> (AIRPLANE))));
-((aa) : (AIRPLANE)) & ((gg) : (((0) .. (sz_gates)))) & not(aa : ran(gates)) & (((gates )(gg)) = (plane_dumb));
-((((gates) <+ (({((gg) |-> (aa))})))) : (((((0) .. (sz_gates))) --> (AIRPLANE))));
-((gg) : (((0) .. (sz_gates)))) & not((gates )(gg) = plane_dumb);
-((((gates) <+ (({((gg) |-> (plane_dumb))})))) : (((((0) .. (sz_gates))) --> (AIRPLANE))));
-((gg) : (((0) .. (sz_gates))));
-(((gates )(gg)) = (plane_dumb));
-not((((gates )(gg)) = (plane_dumb)));
+(((gate * ({plane_dummy}))) : (((gate) --> (AIRPLANE))));
+gates : gate +-> AIRPLANE & dom(gates) = gate & ((gates) : (((gate) --> (AIRPLANE))));
+((aa) : (AIRPLANE)) & ((gg) : (gate)) & not(aa : ran(gates)) & (((gates )(gg)) = (plane_dummy));
+((((gates) <+ (({((gg) |-> (aa))})))) : (((gate) --> (AIRPLANE))));
+((gg) : (gate)) & not((gates )(gg) = plane_dummy);
+((((gates) <+ (({((gg) |-> (plane_dummy))})))) : (((gate) --> (AIRPLANE))));
+((gg) : (gate));
+(((gates )(gg)) = (plane_dummy));
+not((((gates )(gg)) = (plane_dummy)));
 btrue;
 not(aa : ran(gates));
 ((aa) : (AIRPLANE));
@@ -38,5 +37,5 @@ END
 &
 THEORY EnumerateX IS
 OCCUPATION == {occupied,unoccupied};
-STATUS == {boarding,flight_closed,taking_off,disembarking,confirmed,out}
+STATUS == {out,flighting,alighting,parked,boarding,departing}
 END

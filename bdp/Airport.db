@@ -7,6 +7,9 @@
         <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Airplane" suffix="mch" user="ohara">
             <component name="Airplane" type="specification" />
         </component_file>
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Airplane_i" suffix="imp" user="ohara">
+            <component name="Airplane_i" type="implementation" />
+        </component_file>
         <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Airport" suffix="mch" user="ohara">
             <component name="Airport" type="specification" />
         </component_file>
@@ -22,8 +25,14 @@
         <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Gate" suffix="mch" user="ohara">
             <component name="Gate" type="specification" />
         </component_file>
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Gate_i" suffix="imp" user="ohara">
+            <component name="Gate_i" type="implementation" />
+        </component_file>
         <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Track" suffix="mch" user="ohara">
             <component name="Track" type="specification" />
+        </component_file>
+        <component_file path="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport" name="Track_i" suffix="imp" user="ohara">
+            <component name="Track_i" type="implementation" />
         </component_file>
     </project>
 </db_xml>

@@ -110,9 +110,9 @@ THEORY ListPreconditionX END
 THEORY ListSubstitutionX END
 &
 THEORY ListConstantsX IS
-  List_Valuable_Constants(Machine(Airport_ctx))==(sz_gates,sz_tracks);
+  List_Valuable_Constants(Machine(Airport_ctx))==(sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
   Inherited_List_Constants(Machine(Airport_ctx))==(?);
-  List_Constants(Machine(Airport_ctx))==(sz_gates,sz_tracks)
+  List_Constants(Machine(Airport_ctx))==(sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy)
 END
 &
 THEORY ListSetsX IS
@@ -120,16 +120,14 @@ THEORY ListSetsX IS
   Context_List_Enumerated(Machine(Airport_ctx))==(?);
   Context_List_Defered(Machine(Airport_ctx))==(?);
   Context_List_Sets(Machine(Airport_ctx))==(?);
-  List_Valuable_Sets(Machine(Airport_ctx))==(AIRPLANE,TRACK,GATE);
+  List_Valuable_Sets(Machine(Airport_ctx))==(AIRPLANE);
   Inherited_List_Enumerated(Machine(Airport_ctx))==(?);
   Inherited_List_Defered(Machine(Airport_ctx))==(?);
   Inherited_List_Sets(Machine(Airport_ctx))==(?);
   List_Enumerated(Machine(Airport_ctx))==(STATUS,OCCUPATION);
-  List_Defered(Machine(Airport_ctx))==(AIRPLANE,TRACK,GATE);
-  List_Sets(Machine(Airport_ctx))==(AIRPLANE,TRACK,GATE,STATUS,OCCUPATION);
-  Set_Definition(Machine(Airport_ctx),TRACK)==(?);
-  Set_Definition(Machine(Airport_ctx),GATE)==(?);
-  Set_Definition(Machine(Airport_ctx),STATUS)==({boarding,flight_closed,taking_off,disembarking,confirmed,out});
+  List_Defered(Machine(Airport_ctx))==(AIRPLANE);
+  List_Sets(Machine(Airport_ctx))==(AIRPLANE,STATUS,OCCUPATION);
+  Set_Definition(Machine(Airport_ctx),STATUS)==({out,flighting,alighting,parked,boarding,departing});
   Set_Definition(Machine(Airport_ctx),OCCUPATION)==({occupied,unoccupied})
 END
 &
@@ -144,7 +142,7 @@ THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(Airport_ctx))==(btrue);
   Context_List_Properties(Machine(Airport_ctx))==(btrue);
   Inherited_List_Properties(Machine(Airport_ctx))==(btrue);
-  List_Properties(Machine(Airport_ctx))==(sz_gates: NAT1 & sz_tracks: NAT1 & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & TRACK: FIN(INTEGER) & not(TRACK = {}) & GATE: FIN(INTEGER) & not(GATE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}))
+  List_Properties(Machine(Airport_ctx))==(sz_gates: NAT1 & sz_tracks: NAT1 & sz_airplanes: NAT1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}))
 END
 &
 THEORY ListSeenInfoX END
@@ -152,19 +150,19 @@ THEORY ListSeenInfoX END
 THEORY ListANYVarX END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,AIRPLANE,TRACK,GATE,STATUS,OCCUPATION,boarding,flight_closed,taking_off,disembarking,confirmed,out,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
+  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
   List_Of_HiddenCst_Ids(Machine(Airport_ctx)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks);
+  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
   List_Of_VisibleVar_Ids(Machine(Airport_ctx)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Airport_ctx)) == (?: ?)
 END
 &
 THEORY SetsEnvX IS
-  Sets(Machine(Airport_ctx)) == (Type(AIRPLANE) == Cst(SetOf(atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")));Type(TRACK) == Cst(SetOf(atype(TRACK,"[TRACK","]TRACK")));Type(GATE) == Cst(SetOf(atype(GATE,"[GATE","]GATE")));Type(STATUS) == Cst(SetOf(etype(STATUS,0,5)));Type(OCCUPATION) == Cst(SetOf(etype(OCCUPATION,0,1))))
+  Sets(Machine(Airport_ctx)) == (Type(AIRPLANE) == Cst(SetOf(atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")));Type(STATUS) == Cst(SetOf(etype(STATUS,0,5)));Type(OCCUPATION) == Cst(SetOf(etype(OCCUPATION,0,1))))
 END
 &
 THEORY ConstantsEnvX IS
-  Constants(Machine(Airport_ctx)) == (Type(boarding) == Cst(etype(STATUS,0,5));Type(flight_closed) == Cst(etype(STATUS,0,5));Type(taking_off) == Cst(etype(STATUS,0,5));Type(disembarking) == Cst(etype(STATUS,0,5));Type(confirmed) == Cst(etype(STATUS,0,5));Type(out) == Cst(etype(STATUS,0,5));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?)))
+  Constants(Machine(Airport_ctx)) == (Type(out) == Cst(etype(STATUS,0,5));Type(flighting) == Cst(etype(STATUS,0,5));Type(alighting) == Cst(etype(STATUS,0,5));Type(parked) == Cst(etype(STATUS,0,5));Type(boarding) == Cst(etype(STATUS,0,5));Type(departing) == Cst(etype(STATUS,0,5));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?));Type(sz_airplanes) == Cst(btype(INTEGER,?,?));Type(gate) == Cst(SetOf(btype(INTEGER,"[gate","]gate")));Type(track) == Cst(SetOf(btype(INTEGER,"[track","]track")));Type(plane_dummy) == Cst(atype(AIRPLANE,?,?)))
 END
 &
 THEORY TCIntRdX IS
