@@ -12,9 +12,6 @@ VALUES
     sz_tracks = 5 ;
     sz_airplanes = 1000 ;
 
-    gate = 0 .. sz_gates ;
-    track = 0 .. sz_tracks ;
-
     AIRPLANE = 0 .. sz_airplanes ;
 
     plane_dummy = 1000

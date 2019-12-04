@@ -16,15 +16,15 @@ END
 &
 THEORY Formulas IS
 ((NAT) = (((0) .. (2147483647)))) & ((INT) = (((-2147483647) .. (2147483647))));
-AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & (1 +1 <= sz_gates) & ((sz_tracks) : ((NAT-{0}))) & (1 +1 <= sz_tracks) & ((sz_airplanes) : ((NAT-{0}))) & (1 +1 <= sz_airplanes) & ((gate) = (((0) .. (sz_gates)))) & ((track) = (((0) .. (sz_tracks)))) & ((plane_dummy) : (AIRPLANE));
+AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & (1 +1 <= sz_gates) & ((sz_tracks) : ((NAT-{0}))) & (1 +1 <= sz_tracks) & ((sz_airplanes) : ((NAT-{0}))) & (1 +1 <= sz_airplanes) & ((plane_dummy) : (AIRPLANE));
 "Invariant is preserved";
-(((gate * ({plane_dummy}))) : (((gate) --> (AIRPLANE))));
-gates : gate +-> AIRPLANE & dom(gates) = gate & ((gates) : (((gate) --> (AIRPLANE))));
-((aa) : (AIRPLANE)) & ((gg) : (gate)) & not(aa : ran(gates)) & (((gates )(gg)) = (plane_dummy));
-((((gates) <+ (({((gg) |-> (aa))})))) : (((gate) --> (AIRPLANE))));
-((gg) : (gate)) & not((gates )(gg) = plane_dummy);
-((((gates) <+ (({((gg) |-> (plane_dummy))})))) : (((gate) --> (AIRPLANE))));
-((gg) : (gate));
+(((((0) .. (sz_gates)) * ({plane_dummy}))) : (((((0) .. (sz_gates))) --> (AIRPLANE))));
+gates : ((0) .. (sz_gates)) +-> AIRPLANE & dom(gates) = ((0) .. (sz_gates)) & ((gates) : (((((0) .. (sz_gates))) --> (AIRPLANE))));
+((aa) : (AIRPLANE)) & ((gg) : (((0) .. (sz_gates)))) & not(aa : ran(gates)) & (((gates )(gg)) = (plane_dummy));
+((((gates) <+ (({((gg) |-> (aa))})))) : (((((0) .. (sz_gates))) --> (AIRPLANE))));
+((gg) : (((0) .. (sz_gates)))) & not((gates )(gg) = plane_dummy);
+((((gates) <+ (({((gg) |-> (plane_dummy))})))) : (((((0) .. (sz_gates))) --> (AIRPLANE))));
+((gg) : (((0) .. (sz_gates))));
 (((gates )(gg)) = (plane_dummy));
 not((((gates )(gg)) = (plane_dummy)));
 btrue;

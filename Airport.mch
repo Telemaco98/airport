@@ -16,8 +16,8 @@ VARIABLES
     status_airplane
 
 INVARIANT
-    landing : AIRPLANE >+> track &
-    parking : AIRPLANE >+> gate &
+    landing : AIRPLANE >+> 0..sz_tracks &
+    parking : AIRPLANE >+> 0..sz_gates &
     
     status_airplane : AIRPLANE --> STATUS
 
@@ -31,15 +31,15 @@ OPERATIONS
         PRE aa : AIRPLANE
           & aa /= plane_dummy
           & status_airplane (aa) = out
-          & aa /: ran(0..(pointer -1) <| airplanes)
-          & pointer < sz_airplanes 
+          & aa /: ran(airplanes)
         THEN add_plane(aa) ||
              status_airplane (aa) := flighting
         END;
     
     land (aa, tt) =
-        PRE tt : track
-          & aa : ran(0..(pointer -1) <| airplanes)
+        PRE tt : 0..sz_tracks
+          & aa : AIRPLANE
+          & aa : ran(airplanes)
           & aa /: dom (landing)
           & tt /: ran (landing)
           & aa /: dom(parking)
@@ -51,12 +51,13 @@ OPERATIONS
         END;
             
     park (aa, gg) =
-        PRE gg : gate
+        PRE gg : 0..sz_gates
+          & aa : AIRPLANE
           & aa : dom (landing)
           & gg /: ran (parking)
           & aa /: dom (parking)
           & status_airplane(aa) = alighting
-          & aa : ran(0..(pointer -1) <| airplanes)
+          & aa : ran(airplanes)
         THEN 
              occupy_gate(gg, aa)
           || vacate_track (landing(aa))
@@ -66,15 +67,17 @@ OPERATIONS
         END;
         
     board (aa) =
-        PRE aa : dom(parking) &
-            status_airplane(aa) = parked &
-            aa : ran(0..pointer-1 <| airplanes)
+        PRE aa : AIRPLANE
+          & aa : dom(parking)
+          & status_airplane(aa) = parked
+          & aa : ran(airplanes)
         THEN status_airplane(aa) := boarding
         END;
         
     take_track (aa, tt) =
-        PRE tt : track 
-          & aa : ran(0..pointer-1 <| airplanes)
+        PRE tt : 0..sz_tracks 
+          & aa : AIRPLANE
+          & aa : ran(airplanes)
           & aa : dom(parking) 
           & tt /: ran (landing)  
           & aa /: dom (landing) 
@@ -88,7 +91,8 @@ OPERATIONS
         END;
         
     depart (aa) = 
-        PRE aa : ran(0..pointer-1 <| airplanes)
+        PRE aa : AIRPLANE
+          & aa : ran(airplanes) 
           & aa /: dom(parking)
           & aa : dom (landing)
           & (status_airplane(aa) = alighting or status_airplane(aa) = departing)
@@ -99,7 +103,7 @@ OPERATIONS
         
     exclude_airplane(aa) =
         PRE aa : AIRPLANE
-          & aa : ran(0..pointer-1 <| airplanes)
+          & aa : ran(airplanes)
           & status_airplane(aa) = flighting
         THEN remove(aa) ||
              status_airplane(aa) := out
@@ -109,7 +113,7 @@ OPERATIONS
      * Ask if can land on a track
      */
     bb <-- can_landing (tt) =
-        PRE tt : track
+        PRE tt : 0..sz_tracks
         THEN 
             IF tt : ran(landing)
             THEN bb := FALSE

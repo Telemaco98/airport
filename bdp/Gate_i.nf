@@ -51,7 +51,7 @@ END
 THEORY ListInvariantX IS
   Gluing_Seen_List_Invariant(Implementation(Gate_i))==(btrue);
   Expanded_List_Invariant(Implementation(Gate_i))==(btrue);
-  Abstract_List_Invariant(Implementation(Gate_i))==(gates: gate --> AIRPLANE);
+  Abstract_List_Invariant(Implementation(Gate_i))==(gates: 0..sz_gates --> AIRPLANE);
   Context_List_Invariant(Implementation(Gate_i))==(btrue);
   List_Invariant(Implementation(Gate_i))==(gates_i: 0..sz_gates --> AIRPLANE & gates_i = gates)
 END
@@ -118,20 +118,20 @@ END
 &
 THEORY ListPreconditionX IS
   Own_Precondition(Implementation(Gate_i),occupy_gate)==(btrue);
-  List_Precondition(Implementation(Gate_i),occupy_gate)==(aa: AIRPLANE & gg: gate & aa/:ran(gates) & gates(gg) = plane_dummy);
+  List_Precondition(Implementation(Gate_i),occupy_gate)==(aa: AIRPLANE & gg: 0..sz_gates & aa/:ran(gates) & gates(gg) = plane_dummy);
   Own_Precondition(Implementation(Gate_i),vacate_gate)==(btrue);
-  List_Precondition(Implementation(Gate_i),vacate_gate)==(gg: gate & gates(gg)/=plane_dummy);
+  List_Precondition(Implementation(Gate_i),vacate_gate)==(gg: 0..sz_gates & gates(gg)/=plane_dummy);
   Own_Precondition(Implementation(Gate_i),is_gate_occupied)==(btrue);
-  List_Precondition(Implementation(Gate_i),is_gate_occupied)==(gg: gate);
+  List_Precondition(Implementation(Gate_i),is_gate_occupied)==(gg: 0..sz_gates);
   Own_Precondition(Implementation(Gate_i),gate_belongs_to)==(btrue);
-  List_Precondition(Implementation(Gate_i),gate_belongs_to)==(gg: gate & gates(gg)/=plane_dummy)
+  List_Precondition(Implementation(Gate_i),gate_belongs_to)==(gg: 0..sz_gates & gates(gg)/=plane_dummy)
 END
 &
 THEORY ListSubstitutionX IS
-  Expanded_List_Substitution(Implementation(Gate_i),gate_belongs_to)==(gg: gate & gates(gg)/=plane_dummy & gg: dom(gates_i) | aa:=gates_i(gg));
-  Expanded_List_Substitution(Implementation(Gate_i),is_gate_occupied)==(gg: gate | @aa.((gg: dom(gates_i) | aa:=gates_i(gg));(aa = plane_dummy ==> bb:=FALSE [] not(aa = plane_dummy) ==> bb:=TRUE)));
-  Expanded_List_Substitution(Implementation(Gate_i),vacate_gate)==(gg: gate & gates(gg)/=plane_dummy & gg: dom(gates_i) | gates_i:=gates_i<+{gg|->plane_dummy});
-  Expanded_List_Substitution(Implementation(Gate_i),occupy_gate)==(aa: AIRPLANE & gg: gate & aa/:ran(gates) & gates(gg) = plane_dummy & gg: dom(gates_i) | gates_i:=gates_i<+{gg|->aa});
+  Expanded_List_Substitution(Implementation(Gate_i),gate_belongs_to)==(gg: 0..sz_gates & gates(gg)/=plane_dummy & gg: dom(gates_i) | aa:=gates_i(gg));
+  Expanded_List_Substitution(Implementation(Gate_i),is_gate_occupied)==(gg: 0..sz_gates | @aa.((gg: dom(gates_i) | aa:=gates_i(gg));(aa = plane_dummy ==> bb:=FALSE [] not(aa = plane_dummy) ==> bb:=TRUE)));
+  Expanded_List_Substitution(Implementation(Gate_i),vacate_gate)==(gg: 0..sz_gates & gates(gg)/=plane_dummy & gg: dom(gates_i) | gates_i:=gates_i<+{gg|->plane_dummy});
+  Expanded_List_Substitution(Implementation(Gate_i),occupy_gate)==(aa: AIRPLANE & gg: 0..sz_gates & aa/:ran(gates) & gates(gg) = plane_dummy & gg: dom(gates_i) | gates_i:=gates_i<+{gg|->aa});
   List_Substitution(Implementation(Gate_i),occupy_gate)==(gates_i(gg):=aa);
   List_Substitution(Implementation(Gate_i),vacate_gate)==(gates_i(gg):=plane_dummy);
   List_Substitution(Implementation(Gate_i),is_gate_occupied)==(VAR aa IN aa:=gates_i(gg);IF aa = plane_dummy THEN bb:=FALSE ELSE bb:=TRUE END END);
@@ -169,7 +169,7 @@ END
 &
 THEORY ListPropertiesX IS
   Abstract_List_Properties(Implementation(Gate_i))==(btrue);
-  Context_List_Properties(Implementation(Gate_i))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
+  Context_List_Properties(Implementation(Gate_i))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
   Inherited_List_Properties(Implementation(Gate_i))==(btrue);
   List_Properties(Implementation(Gate_i))==(btrue)
 END
@@ -198,8 +198,8 @@ THEORY InheritedEnvX IS
 END
 &
 THEORY ListVisibleStaticX IS
-  List_Constants(Implementation(Gate_i),Machine(Airport_ctx))==(sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
-  List_Constants_Env(Implementation(Gate_i),Machine(Airport_ctx))==(Type(out) == Cst(etype(STATUS,0,5));Type(flighting) == Cst(etype(STATUS,0,5));Type(alighting) == Cst(etype(STATUS,0,5));Type(parked) == Cst(etype(STATUS,0,5));Type(boarding) == Cst(etype(STATUS,0,5));Type(departing) == Cst(etype(STATUS,0,5));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?));Type(sz_airplanes) == Cst(btype(INTEGER,?,?));Type(gate) == Cst(SetOf(btype(INTEGER,"[gate","]gate")));Type(track) == Cst(SetOf(btype(INTEGER,"[track","]track")));Type(plane_dummy) == Cst(atype(AIRPLANE,?,?)));
+  List_Constants(Implementation(Gate_i),Machine(Airport_ctx))==(sz_gates,sz_tracks,sz_airplanes,plane_dummy);
+  List_Constants_Env(Implementation(Gate_i),Machine(Airport_ctx))==(Type(out) == Cst(etype(STATUS,0,5));Type(flighting) == Cst(etype(STATUS,0,5));Type(alighting) == Cst(etype(STATUS,0,5));Type(parked) == Cst(etype(STATUS,0,5));Type(boarding) == Cst(etype(STATUS,0,5));Type(departing) == Cst(etype(STATUS,0,5));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?));Type(sz_airplanes) == Cst(btype(INTEGER,?,?));Type(plane_dummy) == Cst(atype(AIRPLANE,?,?)));
   List_Defered_Sets(Implementation(Gate_i),Machine(Airport_ctx))==(AIRPLANE);
   Enumerate_Definition(Implementation(Gate_i),Machine(Airport_ctx),OCCUPATION)==({occupied,unoccupied});
   Enumerate_Definition(Implementation(Gate_i),Machine(Airport_ctx),STATUS)==({out,flighting,alighting,parked,boarding,departing})
@@ -211,9 +211,9 @@ THEORY ListOfIdsX IS
   List_Of_VisibleCst_Ids(Implementation(Gate_i)) == (?);
   List_Of_VisibleVar_Ids(Implementation(Gate_i)) == (gates_i | ?);
   List_Of_Ids_SeenBNU(Implementation(Gate_i)) == (?: ?);
-  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
+  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
   List_Of_HiddenCst_Ids(Machine(Airport_ctx)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
+  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,plane_dummy);
   List_Of_VisibleVar_Ids(Machine(Airport_ctx)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Airport_ctx)) == (?: ?)
 END

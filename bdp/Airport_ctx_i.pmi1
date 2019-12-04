@@ -1,35 +1,37 @@
-﻿THEORY BalanceX IS
-  Airport_ctx_i,5,0,0,5,0,0,0;
-  ValuesLemmas,5,0,0,5,0,0,0
+THEORY BalanceX IS
+Airport_ctx_i,8,0,0,8,0,0,0;
+ValuesLemmas,8,0,0,8,0,0,0
 END
 &
 THEORY ProofState IS
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0);
-  Proved(0)
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0);
+Proved(0)
 END
 &
 THEORY MethodList IS
-  pr;
-  pr;
-  pr;
-  pr;
-  pr
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr;
+pr
 END
 &
 THEORY PassList IS
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?;
-  Force(0),?
-END
-&
-THEORY ManForms 
-END
-&
-THEORY Version IS
-  PRVersion("svn")(CLT == "svn")
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?;
+Force(0),?
 END

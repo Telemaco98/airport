@@ -13,17 +13,17 @@ VARIABLES
     status_track
     
 INVARIANT
-    tracks : track --> AIRPLANE  &
-    status_track : track --> OCCUPATION 
+    tracks : 0..sz_tracks --> AIRPLANE  &
+    status_track : 0..sz_tracks --> OCCUPATION 
     
 INITIALISATION
-    tracks := track * {plane_dummy} ||
-    status_track := track * {unoccupied}
+    tracks := (0..sz_tracks) * {plane_dummy} ||
+    status_track := (0..sz_tracks) * {unoccupied}
     
 OPERATIONS
     occupy_track (tt, aa) =
         PRE aa : AIRPLANE 
-            & tt : track
+            & tt : 0..sz_tracks
             & aa /: ran(tracks)
             & tracks(tt) = plane_dummy
         THEN 
@@ -32,7 +32,7 @@ OPERATIONS
         END;
         
     vacate_track (tt) =
-        PRE tt : track
+        PRE tt : 0..sz_tracks
             & tracks(tt) /= plane_dummy
         THEN 
             tracks(tt) := plane_dummy || 
@@ -40,7 +40,7 @@ OPERATIONS
         END;
         
     bb <-- is_track_occupied (tt) =
-        PRE tt : track
+        PRE tt : 0..sz_tracks
         THEN
             IF status_track (tt) = unoccupied
             THEN bb := FALSE
@@ -49,7 +49,7 @@ OPERATIONS
         END;
         
     aa <-- track_belongs_to (tt) =
-        PRE tt : track
+        PRE tt : 0..sz_tracks
             & tracks(tt) /= plane_dummy
         THEN aa := tracks(tt)
         END

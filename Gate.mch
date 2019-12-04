@@ -12,15 +12,15 @@ VARIABLES
     gates
     
 INVARIANT
-    gates : gate --> AIRPLANE
+    gates : 0..sz_gates --> AIRPLANE
     
 INITIALISATION
-    gates := gate * {plane_dummy}
+    gates := (0..sz_gates) * {plane_dummy}
     
 OPERATIONS
     occupy_gate (gg, aa) =
         PRE aa : AIRPLANE 
-            & gg : gate
+            & gg : 0..sz_gates
             & aa /: ran(gates)
             & gates(gg) = plane_dummy
         THEN 
@@ -28,13 +28,13 @@ OPERATIONS
         END;
         
     vacate_gate (gg) =
-        PRE gg : gate
+        PRE gg : 0..sz_gates
             & gates(gg) /= plane_dummy
         THEN gates(gg) := plane_dummy
         END;
         
     bb <-- is_gate_occupied (gg) =
-        PRE gg : gate
+        PRE gg : 0..sz_gates
         THEN
             IF gates (gg) = plane_dummy
             THEN bb := FALSE
@@ -43,7 +43,7 @@ OPERATIONS
         END;
         
     aa <-- gate_belongs_to (gg) =
-        PRE gg : gate
+        PRE gg : 0..sz_gates
             & gates(gg) /= plane_dummy
         THEN aa := gates(gg)
         END

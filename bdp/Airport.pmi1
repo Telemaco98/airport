@@ -1,15 +1,14 @@
 ﻿THEORY BalanceX IS
-  Airport,70,0,0,57,3,1,0;
+  Airport,64,0,0,54,0,0,0;
   Initialisation,3,0,0,3,0,0,0;
   WellDefinedness_Precondition_add_airplane,2,0,0,2,0,0,0;
   WellDefinedness_Precondition_board,2,0,0,2,0,0,0;
   WellDefinedness_Precondition_depart,4,0,0,4,0,0,0;
   WellDefinedness_Precondition_exclude_airplane,2,0,0,2,0,0,0;
-  WellDefinedness_Precondition_land,4,0,0,3,1,0,0;
+  WellDefinedness_Precondition_land,4,0,0,4,0,0,0;
   WellDefinedness_Precondition_park,2,0,0,2,0,0,0;
   WellDefinedness_Precondition_take_track,4,0,0,4,0,0,0;
   WellDefinedness_depart,2,0,0,2,0,0,0;
-  WellDefinedness_exclude_airplane,4,0,0,1,2,1,0;
   WellDefinedness_land,2,0,0,2,0,0,0;
   WellDefinedness_park,4,0,0,4,0,0,0;
   WellDefinedness_query_parked,1,0,0,1,0,0,0;
@@ -18,10 +17,10 @@
   add_airplane,1,0,0,1,0,0,0;
   board,1,0,0,1,0,0,0;
   depart,4,0,0,3,0,0,0;
-  exclude_airplane,1,0,0,1,0,0,0;
-  land,5,0,0,3,0,0,0;
-  park,8,0,0,5,0,0,0;
-  take_track,8,0,0,5,0,0,0
+  exclude_airplane,2,0,0,1,0,0,0;
+  land,4,0,0,2,0,0,0;
+  park,7,0,0,4,0,0,0;
+  take_track,7,0,0,4,0,0,0
 END
 &
 THEORY ProofState IS
@@ -29,9 +28,6 @@ THEORY ProofState IS
   Proved(0);
   Proved(0);
   Proved(0);
-  Proved(2);
-  Proved(1);
-  Proved(1);
   Proved(0);
   Proved(0);
   Proved(0);
@@ -59,12 +55,12 @@ THEORY ProofState IS
   Proved(0);
   Proved(0);
   Proved(0);
-  Proved(1);
   Proved(0);
   Proved(0);
   Proved(0);
   Proved(0);
   Proved(0);
+  Unproved;
   Proved(0);
   Proved(0);
   Unproved;
@@ -80,17 +76,14 @@ THEORY ProofState IS
   Proved(0);
   Proved(0);
   Proved(0);
-  Proved(0);
   Unproved;
   Proved(0);
   Unproved;
   Unproved;
   Proved(0);
   Proved(0);
-  Proved(0);
   Unproved;
   Unproved;
-  Proved(0);
   Proved(0);
   Proved(0);
   Proved(0);
@@ -134,10 +127,7 @@ THEORY MethodList IS
   pr;
   pr;
   pr;
-  pr;
-  pr;
-  pr;
-  pr;
+  ?;
   pr;
   pr;
   ?;
@@ -153,17 +143,14 @@ THEORY MethodList IS
   pr;
   pr;
   pr;
-  pr;
   ?;
   pr;
   ?;
   ?;
   pr;
   pr;
-  pr;
   ?;
   ?;
-  pr;
   pr;
   pr;
   pr;
@@ -175,9 +162,6 @@ THEORY PassList IS
   Force(0),?;
   Force(0),?;
   Force(0),?;
-  Force(2),(?;0;1);
-  Force(1),(?;0);
-  Force(1),(?;0);
   Force(0),?;
   Force(0),?;
   Force(0),?;
@@ -205,12 +189,12 @@ THEORY PassList IS
   Force(0),?;
   Force(0),?;
   Force(0),?;
-  Force(1),(?;0);
   Force(0),?;
   Force(0),?;
   Force(0),?;
   Force(0),?;
   Force(0),?;
+  Force(0),(?;0;1;2;3);
   Force(0),?;
   Force(0),?;
   Force(0),(?;0;1;2;3);
@@ -226,17 +210,14 @@ THEORY PassList IS
   Force(0),?;
   Force(0),?;
   Force(0),?;
-  Force(0),?;
   Force(0),(?;0;1;2;3);
   Force(0),?;
   Force(0),(?;0;1;2;3);
   Force(0),(?;0;1;2;3);
   Force(0),?;
   Force(0),?;
-  Force(0),?;
   Force(0),(?;0;1;2;3);
   Force(0),(?;0;1;2;3);
-  Force(0),?;
   Force(0),?;
   Force(0),?;
   Force(0),?;

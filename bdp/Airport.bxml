@@ -76,11 +76,21 @@
 <Pos l='19' c='15' s='8'/>
 </Attr>
 </Id>
-<Id value='track' typref='3603043417'>
+<Binary_Exp op='..' typref='3603043417'>
 <Attr>
-<Pos l='19' c='28' s='5'/>
+<Pos l='19' c='29' s='2'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='19' c='28' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='sz_tracks' typref='2701647786'>
+<Attr>
+<Pos l='19' c='31' s='9'/>
 </Attr>
 </Id>
+</Binary_Exp>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
@@ -101,11 +111,21 @@
 <Pos l='20' c='15' s='8'/>
 </Attr>
 </Id>
-<Id value='gate' typref='3603043417'>
+<Binary_Exp op='..' typref='3603043417'>
 <Attr>
-<Pos l='20' c='28' s='4'/>
+<Pos l='20' c='29' s='2'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='20' c='28' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='sz_gates' typref='2701647786'>
+<Attr>
+<Pos l='20' c='31' s='8'/>
 </Attr>
 </Id>
+</Binary_Exp>
 </Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
@@ -217,7 +237,7 @@
 <Operations>
 <Operation name='add_airplane'>
 <Attr>
-<Pos l='30' c='5' s='12' endLine='38'/>
+<Pos l='30' c='5' s='12' endLine='37'/>
 </Attr>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
@@ -296,57 +316,12 @@
 <Attr>
 <Pos l='34' c='19' s='3'/>
 </Attr>
-<Binary_Exp op='&lt;|' typref='1731522284'>
-<Attr>
-<Pos l='34' c='39' s='2'/>
-</Attr>
-<Binary_Exp op='..' typref='3603043417'>
-<Attr>
-<Pos l='34' c='24' s='2'/>
-</Attr>
-<Integer_Literal value='0' typref='2701647786'>
-<Attr>
-<Pos l='34' c='23' s='1'/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp op='-' typref='2701647786'>
-<Attr>
-<Pos l='34' c='35' s='1'/>
-</Attr>
-<Id value='pointer' typref='2701647786'>
-<Attr>
-<Pos l='34' c='27' s='7'/>
-</Attr>
-</Id>
-<Integer_Literal value='1' typref='2701647786'>
-<Attr>
-<Pos l='34' c='36' s='1'/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
 <Id value='airplanes' typref='1731522284'>
 <Attr>
-<Pos l='34' c='42' s='9'/>
+<Pos l='34' c='23' s='9'/>
 </Attr>
 </Id>
-</Binary_Exp>
 </Unary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op='&lt;'>
-<Attr>
-<Pos l='35' c='21' s='1'/>
-</Attr>
-<Id value='pointer' typref='2701647786'>
-<Attr>
-<Pos l='35' c='13' s='7'/>
-</Attr>
-</Id>
-<Id value='sz_airplanes' typref='2701647786'>
-<Attr>
-<Pos l='35' c='23' s='12'/>
-</Attr>
-</Id>
 </Exp_Comparison>
 </Nary_Pred>
 </Precondition>
@@ -354,40 +329,40 @@
 <Nary_Sub op='||'>
 <Operation_Call>
 <Attr>
-<Pos l='36' c='23' s='0'/>
+<Pos l='35' c='23' s='0'/>
 </Attr>
 <Name>
 <Id value='add_plane'>
 <Attr>
-<Pos l='36' c='14' s='9'/>
+<Pos l='35' c='14' s='9'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='36' c='24' s='2'/>
+<Pos l='35' c='24' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 </Operation_Call>
 <Assignement_Sub>
 <Attr>
-<Pos l='37' c='35' s='2'/>
+<Pos l='36' c='35' s='2'/>
 </Attr>
 <Variables>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='37' c='30' s='0'/>
+<Pos l='36' c='30' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='37' c='14' s='15'/>
+<Pos l='36' c='14' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='37' c='31' s='2'/>
+<Pos l='36' c='31' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -395,7 +370,7 @@
 <Values>
 <Id value='flighting' typref='2246778642'>
 <Attr>
-<Pos l='37' c='38' s='9'/>
+<Pos l='36' c='38' s='9'/>
 </Attr>
 </Id>
 </Values>
@@ -405,17 +380,17 @@
 </Operation>
 <Operation name='land'>
 <Attr>
-<Pos l='40' c='5' s='4' endLine='51'/>
+<Pos l='39' c='5' s='4' endLine='51'/>
 </Attr>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='40' c='11' s='2'/>
+<Pos l='39' c='11' s='2'/>
 </Attr>
 </Id>
 <Id value='tt' typref='2701647786'>
 <Attr>
-<Pos l='40' c='15' s='2'/>
+<Pos l='39' c='15' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -423,16 +398,41 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='41' c='16' s='1'/>
+<Pos l='40' c='16' s='1'/>
 </Attr>
 <Id value='tt' typref='2701647786'>
+<Attr>
+<Pos l='40' c='13' s='2'/>
+</Attr>
+</Id>
+<Binary_Exp op='..' typref='3603043417'>
+<Attr>
+<Pos l='40' c='19' s='2'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='40' c='18' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='sz_tracks' typref='2701647786'>
+<Attr>
+<Pos l='40' c='21' s='9'/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='41' c='16' s='1'/>
+</Attr>
+<Id value='aa' typref='1727109426'>
 <Attr>
 <Pos l='41' c='13' s='2'/>
 </Attr>
 </Id>
-<Id value='track' typref='3603043417'>
+<Id value='AIRPLANE' typref='1569085991'>
 <Attr>
-<Pos l='41' c='18' s='5'/>
+<Pos l='41' c='18' s='8'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -449,41 +449,11 @@
 <Attr>
 <Pos l='42' c='18' s='3'/>
 </Attr>
-<Binary_Exp op='&lt;|' typref='1731522284'>
-<Attr>
-<Pos l='42' c='38' s='2'/>
-</Attr>
-<Binary_Exp op='..' typref='3603043417'>
-<Attr>
-<Pos l='42' c='23' s='2'/>
-</Attr>
-<Integer_Literal value='0' typref='2701647786'>
-<Attr>
-<Pos l='42' c='22' s='1'/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp op='-' typref='2701647786'>
-<Attr>
-<Pos l='42' c='34' s='1'/>
-</Attr>
-<Id value='pointer' typref='2701647786'>
-<Attr>
-<Pos l='42' c='26' s='7'/>
-</Attr>
-</Id>
-<Integer_Literal value='1' typref='2701647786'>
-<Attr>
-<Pos l='42' c='35' s='1'/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
 <Id value='airplanes' typref='1731522284'>
 <Attr>
-<Pos l='42' c='41' s='9'/>
+<Pos l='42' c='22' s='9'/>
 </Attr>
 </Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op='/:'>
@@ -702,7 +672,7 @@
 </Operation>
 <Operation name='park'>
 <Attr>
-<Pos l='53' c='5' s='4' endLine='66'/>
+<Pos l='53' c='5' s='4' endLine='67'/>
 </Attr>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
@@ -727,11 +697,21 @@
 <Pos l='54' c='13' s='2'/>
 </Attr>
 </Id>
-<Id value='gate' typref='3603043417'>
+<Binary_Exp op='..' typref='3603043417'>
 <Attr>
-<Pos l='54' c='18' s='4'/>
+<Pos l='54' c='19' s='2'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='54' c='18' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='sz_gates' typref='2701647786'>
+<Attr>
+<Pos l='54' c='21' s='8'/>
 </Attr>
 </Id>
+</Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
@@ -742,33 +722,28 @@
 <Pos l='55' c='13' s='2'/>
 </Attr>
 </Id>
-<Unary_Exp op='dom' typref='1569085991'>
+<Id value='AIRPLANE' typref='1569085991'>
 <Attr>
-<Pos l='55' c='18' s='3'/>
-</Attr>
-<Id value='landing' typref='3692640428'>
-<Attr>
-<Pos l='55' c='23' s='7'/>
+<Pos l='55' c='18' s='8'/>
 </Attr>
 </Id>
-</Unary_Exp>
 </Exp_Comparison>
-<Exp_Comparison op='/:'>
+<Exp_Comparison op=':'>
 <Attr>
-<Pos l='56' c='16' s='2'/>
+<Pos l='56' c='16' s='1'/>
 </Attr>
-<Id value='gg' typref='2701647786'>
+<Id value='aa' typref='1727109426'>
 <Attr>
 <Pos l='56' c='13' s='2'/>
 </Attr>
 </Id>
-<Unary_Exp op='ran' typref='3603043417'>
+<Unary_Exp op='dom' typref='1569085991'>
 <Attr>
-<Pos l='56' c='19' s='3'/>
+<Pos l='56' c='18' s='3'/>
 </Attr>
-<Id value='parking' typref='3692640428'>
+<Id value='landing' typref='3692640428'>
 <Attr>
-<Pos l='56' c='24' s='7'/>
+<Pos l='56' c='23' s='7'/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -777,12 +752,12 @@
 <Attr>
 <Pos l='57' c='16' s='2'/>
 </Attr>
-<Id value='aa' typref='1727109426'>
+<Id value='gg' typref='2701647786'>
 <Attr>
 <Pos l='57' c='13' s='2'/>
 </Attr>
 </Id>
-<Unary_Exp op='dom' typref='1569085991'>
+<Unary_Exp op='ran' typref='3603043417'>
 <Attr>
 <Pos l='57' c='19' s='3'/>
 </Attr>
@@ -793,79 +768,69 @@
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
+<Exp_Comparison op='/:'>
+<Attr>
+<Pos l='58' c='16' s='2'/>
+</Attr>
+<Id value='aa' typref='1727109426'>
+<Attr>
+<Pos l='58' c='13' s='2'/>
+</Attr>
+</Id>
+<Unary_Exp op='dom' typref='1569085991'>
+<Attr>
+<Pos l='58' c='19' s='3'/>
+</Attr>
+<Id value='parking' typref='3692640428'>
+<Attr>
+<Pos l='58' c='24' s='7'/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='58' c='33' s='1'/>
+<Pos l='59' c='33' s='1'/>
 </Attr>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='58' c='28' s='0'/>
+<Pos l='59' c='28' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='58' c='13' s='15'/>
+<Pos l='59' c='13' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='58' c='29' s='2'/>
+<Pos l='59' c='29' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='alighting' typref='2246778642'>
 <Attr>
-<Pos l='58' c='35' s='9'/>
+<Pos l='59' c='35' s='9'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='59' c='16' s='1'/>
+<Pos l='60' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='59' c='13' s='2'/>
+<Pos l='60' c='13' s='2'/>
 </Attr>
 </Id>
 <Unary_Exp op='ran' typref='1569085991'>
 <Attr>
-<Pos l='59' c='18' s='3'/>
+<Pos l='60' c='18' s='3'/>
 </Attr>
-<Binary_Exp op='&lt;|' typref='1731522284'>
-<Attr>
-<Pos l='59' c='38' s='2'/>
-</Attr>
-<Binary_Exp op='..' typref='3603043417'>
-<Attr>
-<Pos l='59' c='23' s='2'/>
-</Attr>
-<Integer_Literal value='0' typref='2701647786'>
-<Attr>
-<Pos l='59' c='22' s='1'/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp op='-' typref='2701647786'>
-<Attr>
-<Pos l='59' c='34' s='1'/>
-</Attr>
-<Id value='pointer' typref='2701647786'>
-<Attr>
-<Pos l='59' c='26' s='7'/>
-</Attr>
-</Id>
-<Integer_Literal value='1' typref='2701647786'>
-<Attr>
-<Pos l='59' c='35' s='1'/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
 <Id value='airplanes' typref='1731522284'>
 <Attr>
-<Pos l='59' c='41' s='9'/>
+<Pos l='60' c='22' s='9'/>
 </Attr>
 </Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 </Nary_Pred>
@@ -874,52 +839,52 @@
 <Nary_Sub op='||'>
 <Operation_Call>
 <Attr>
-<Pos l='61' c='25' s='0'/>
+<Pos l='62' c='25' s='0'/>
 </Attr>
 <Name>
 <Id value='occupy_gate'>
 <Attr>
-<Pos l='61' c='14' s='11'/>
+<Pos l='62' c='14' s='11'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='gg' typref='2701647786'>
 <Attr>
-<Pos l='61' c='26' s='2'/>
+<Pos l='62' c='26' s='2'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='61' c='30' s='2'/>
+<Pos l='62' c='30' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 </Operation_Call>
 <Operation_Call>
 <Attr>
-<Pos l='62' c='27' s='0'/>
+<Pos l='63' c='27' s='0'/>
 </Attr>
 <Name>
 <Id value='vacate_track'>
 <Attr>
-<Pos l='62' c='14' s='12'/>
+<Pos l='63' c='14' s='12'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Binary_Exp op='(' typref='2701647786'>
 <Attr>
-<Pos l='62' c='35' s='0'/>
+<Pos l='63' c='35' s='0'/>
 </Attr>
 <Id value='landing' typref='3692640428'>
 <Attr>
-<Pos l='62' c='28' s='7'/>
+<Pos l='63' c='28' s='7'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='62' c='36' s='2'/>
+<Pos l='63' c='36' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -927,75 +892,75 @@
 </Operation_Call>
 <Assignement_Sub>
 <Attr>
-<Pos l='63' c='22' s='2'/>
-</Attr>
-<Variables>
-<Id value='landing' typref='3692640428'>
-<Attr>
-<Pos l='63' c='14' s='7'/>
-</Attr>
-</Id>
-</Variables>
-<Values>
-<Binary_Exp op='&lt;&lt;|' typref='3692640428'>
-<Attr>
-<Pos l='63' c='30' s='3'/>
-</Attr>
-<Nary_Exp op='{' typref='1569085991'>
-<Attr>
-<Pos l='63' c='25' s='1'/>
-</Attr>
-<Id value='aa' typref='1727109426'>
-<Attr>
-<Pos l='63' c='26' s='2'/>
-</Attr>
-</Id>
-</Nary_Exp>
-<Id value='landing' typref='3692640428'>
-<Attr>
-<Pos l='63' c='34' s='7'/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Values>
-</Assignement_Sub>
-<Assignement_Sub>
-<Attr>
 <Pos l='64' c='22' s='2'/>
 </Attr>
 <Variables>
-<Id value='parking' typref='3692640428'>
+<Id value='landing' typref='3692640428'>
 <Attr>
 <Pos l='64' c='14' s='7'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
+<Binary_Exp op='&lt;&lt;|' typref='3692640428'>
+<Attr>
+<Pos l='64' c='30' s='3'/>
+</Attr>
+<Nary_Exp op='{' typref='1569085991'>
+<Attr>
+<Pos l='64' c='25' s='1'/>
+</Attr>
+<Id value='aa' typref='1727109426'>
+<Attr>
+<Pos l='64' c='26' s='2'/>
+</Attr>
+</Id>
+</Nary_Exp>
+<Id value='landing' typref='3692640428'>
+<Attr>
+<Pos l='64' c='34' s='7'/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Values>
+</Assignement_Sub>
+<Assignement_Sub>
+<Attr>
+<Pos l='65' c='22' s='2'/>
+</Attr>
+<Variables>
+<Id value='parking' typref='3692640428'>
+<Attr>
+<Pos l='65' c='14' s='7'/>
+</Attr>
+</Id>
+</Variables>
+<Values>
 <Binary_Exp op='\/' typref='3692640428'>
 <Attr>
-<Pos l='64' c='33' s='2'/>
+<Pos l='65' c='33' s='2'/>
 </Attr>
 <Id value='parking' typref='3692640428'>
 <Attr>
-<Pos l='64' c='25' s='7'/>
+<Pos l='65' c='25' s='7'/>
 </Attr>
 </Id>
 <Nary_Exp op='{' typref='3692640428'>
 <Attr>
-<Pos l='64' c='36' s='1'/>
+<Pos l='65' c='36' s='1'/>
 </Attr>
 <Binary_Exp op='|-&gt;' typref='327041133'>
 <Attr>
-<Pos l='64' c='40' s='3'/>
+<Pos l='65' c='40' s='3'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='64' c='37' s='2'/>
+<Pos l='65' c='37' s='2'/>
 </Attr>
 </Id>
 <Id value='gg' typref='2701647786'>
 <Attr>
-<Pos l='64' c='44' s='2'/>
+<Pos l='65' c='44' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1005,21 +970,21 @@
 </Assignement_Sub>
 <Assignement_Sub>
 <Attr>
-<Pos l='65' c='34' s='2'/>
+<Pos l='66' c='34' s='2'/>
 </Attr>
 <Variables>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='65' c='29' s='0'/>
+<Pos l='66' c='29' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='65' c='14' s='15'/>
+<Pos l='66' c='14' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='65' c='30' s='2'/>
+<Pos l='66' c='30' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1027,7 +992,7 @@
 <Values>
 <Id value='parked' typref='2246778642'>
 <Attr>
-<Pos l='65' c='37' s='6'/>
+<Pos l='66' c='37' s='6'/>
 </Attr>
 </Id>
 </Values>
@@ -1037,12 +1002,12 @@
 </Operation>
 <Operation name='board'>
 <Attr>
-<Pos l='68' c='5' s='5' endLine='73'/>
+<Pos l='69' c='5' s='5' endLine='75'/>
 </Attr>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='68' c='12' s='2'/>
+<Pos l='69' c='12' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -1050,46 +1015,16 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='69' c='16' s='1'/>
+<Pos l='70' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='69' c='13' s='2'/>
+<Pos l='70' c='13' s='2'/>
 </Attr>
 </Id>
-<Unary_Exp op='dom' typref='1569085991'>
+<Id value='AIRPLANE' typref='1569085991'>
 <Attr>
-<Pos l='69' c='18' s='3'/>
-</Attr>
-<Id value='parking' typref='3692640428'>
-<Attr>
-<Pos l='69' c='22' s='7'/>
-</Attr>
-</Id>
-</Unary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op='='>
-<Attr>
-<Pos l='70' c='33' s='1'/>
-</Attr>
-<Binary_Exp op='(' typref='2246778642'>
-<Attr>
-<Pos l='70' c='28' s='0'/>
-</Attr>
-<Id value='status_airplane' typref='1148858160'>
-<Attr>
-<Pos l='70' c='13' s='15'/>
-</Attr>
-</Id>
-<Id value='aa' typref='1727109426'>
-<Attr>
-<Pos l='70' c='29' s='2'/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Id value='parked' typref='2246778642'>
-<Attr>
-<Pos l='70' c='35' s='6'/>
+<Pos l='70' c='18' s='8'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1102,45 +1037,60 @@
 <Pos l='71' c='13' s='2'/>
 </Attr>
 </Id>
-<Unary_Exp op='ran' typref='1569085991'>
+<Unary_Exp op='dom' typref='1569085991'>
 <Attr>
 <Pos l='71' c='18' s='3'/>
 </Attr>
-<Binary_Exp op='&lt;|' typref='1731522284'>
+<Id value='parking' typref='3692640428'>
 <Attr>
-<Pos l='71' c='35' s='2'/>
-</Attr>
-<Binary_Exp op='..' typref='3603043417'>
-<Attr>
-<Pos l='71' c='23' s='2'/>
-</Attr>
-<Integer_Literal value='0' typref='2701647786'>
-<Attr>
-<Pos l='71' c='22' s='1'/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp op='-' typref='2701647786'>
-<Attr>
-<Pos l='71' c='32' s='1'/>
-</Attr>
-<Id value='pointer' typref='2701647786'>
-<Attr>
-<Pos l='71' c='25' s='7'/>
+<Pos l='71' c='22' s='7'/>
 </Attr>
 </Id>
-<Integer_Literal value='1' typref='2701647786'>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='='>
 <Attr>
-<Pos l='71' c='33' s='1'/>
+<Pos l='72' c='33' s='1'/>
 </Attr>
-</Integer_Literal>
+<Binary_Exp op='(' typref='2246778642'>
+<Attr>
+<Pos l='72' c='28' s='0'/>
+</Attr>
+<Id value='status_airplane' typref='1148858160'>
+<Attr>
+<Pos l='72' c='13' s='15'/>
+</Attr>
+</Id>
+<Id value='aa' typref='1727109426'>
+<Attr>
+<Pos l='72' c='29' s='2'/>
+</Attr>
+</Id>
 </Binary_Exp>
-</Binary_Exp>
+<Id value='parked' typref='2246778642'>
+<Attr>
+<Pos l='72' c='35' s='6'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='73' c='16' s='1'/>
+</Attr>
+<Id value='aa' typref='1727109426'>
+<Attr>
+<Pos l='73' c='13' s='2'/>
+</Attr>
+</Id>
+<Unary_Exp op='ran' typref='1569085991'>
+<Attr>
+<Pos l='73' c='18' s='3'/>
+</Attr>
 <Id value='airplanes' typref='1731522284'>
 <Attr>
-<Pos l='71' c='38' s='9'/>
+<Pos l='73' c='22' s='9'/>
 </Attr>
 </Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 </Nary_Pred>
@@ -1148,21 +1098,21 @@
 <Body>
 <Assignement_Sub>
 <Attr>
-<Pos l='72' c='34' s='2'/>
+<Pos l='74' c='34' s='2'/>
 </Attr>
 <Variables>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='72' c='29' s='0'/>
+<Pos l='74' c='29' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='72' c='14' s='15'/>
+<Pos l='74' c='14' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='72' c='30' s='2'/>
+<Pos l='74' c='30' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1170,7 +1120,7 @@
 <Values>
 <Id value='boarding' typref='2246778642'>
 <Attr>
-<Pos l='72' c='37' s='8'/>
+<Pos l='74' c='37' s='8'/>
 </Attr>
 </Id>
 </Values>
@@ -1179,17 +1129,17 @@
 </Operation>
 <Operation name='take_track'>
 <Attr>
-<Pos l='75' c='5' s='10' endLine='88'/>
+<Pos l='77' c='5' s='10' endLine='91'/>
 </Attr>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='75' c='17' s='2'/>
+<Pos l='77' c='17' s='2'/>
 </Attr>
 </Id>
 <Id value='tt' typref='2701647786'>
 <Attr>
-<Pos l='75' c='21' s='2'/>
+<Pos l='77' c='21' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -1197,176 +1147,171 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='76' c='16' s='1'/>
-</Attr>
-<Id value='tt' typref='2701647786'>
-<Attr>
-<Pos l='76' c='13' s='2'/>
-</Attr>
-</Id>
-<Id value='track' typref='3603043417'>
-<Attr>
-<Pos l='76' c='18' s='5'/>
-</Attr>
-</Id>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
-<Pos l='77' c='16' s='1'/>
-</Attr>
-<Id value='aa' typref='1727109426'>
-<Attr>
-<Pos l='77' c='13' s='2'/>
-</Attr>
-</Id>
-<Unary_Exp op='ran' typref='1569085991'>
-<Attr>
-<Pos l='77' c='18' s='3'/>
-</Attr>
-<Binary_Exp op='&lt;|' typref='1731522284'>
-<Attr>
-<Pos l='77' c='35' s='2'/>
-</Attr>
-<Binary_Exp op='..' typref='3603043417'>
-<Attr>
-<Pos l='77' c='23' s='2'/>
-</Attr>
-<Integer_Literal value='0' typref='2701647786'>
-<Attr>
-<Pos l='77' c='22' s='1'/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp op='-' typref='2701647786'>
-<Attr>
-<Pos l='77' c='32' s='1'/>
-</Attr>
-<Id value='pointer' typref='2701647786'>
-<Attr>
-<Pos l='77' c='25' s='7'/>
-</Attr>
-</Id>
-<Integer_Literal value='1' typref='2701647786'>
-<Attr>
-<Pos l='77' c='33' s='1'/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id value='airplanes' typref='1731522284'>
-<Attr>
-<Pos l='77' c='38' s='9'/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Unary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op=':'>
-<Attr>
 <Pos l='78' c='16' s='1'/>
 </Attr>
-<Id value='aa' typref='1727109426'>
+<Id value='tt' typref='2701647786'>
 <Attr>
 <Pos l='78' c='13' s='2'/>
 </Attr>
 </Id>
-<Unary_Exp op='dom' typref='1569085991'>
+<Binary_Exp op='..' typref='3603043417'>
 <Attr>
-<Pos l='78' c='18' s='3'/>
+<Pos l='78' c='19' s='2'/>
 </Attr>
-<Id value='parking' typref='3692640428'>
+<Integer_Literal value='0' typref='2701647786'>
 <Attr>
-<Pos l='78' c='22' s='7'/>
+<Pos l='78' c='18' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='sz_tracks' typref='2701647786'>
+<Attr>
+<Pos l='78' c='21' s='9'/>
 </Attr>
 </Id>
-</Unary_Exp>
+</Binary_Exp>
 </Exp_Comparison>
-<Exp_Comparison op='/:'>
+<Exp_Comparison op=':'>
 <Attr>
-<Pos l='79' c='16' s='2'/>
+<Pos l='79' c='16' s='1'/>
 </Attr>
-<Id value='tt' typref='2701647786'>
+<Id value='aa' typref='1727109426'>
 <Attr>
 <Pos l='79' c='13' s='2'/>
 </Attr>
 </Id>
-<Unary_Exp op='ran' typref='3603043417'>
+<Id value='AIRPLANE' typref='1569085991'>
 <Attr>
-<Pos l='79' c='19' s='3'/>
-</Attr>
-<Id value='landing' typref='3692640428'>
-<Attr>
-<Pos l='79' c='24' s='7'/>
+<Pos l='79' c='18' s='8'/>
 </Attr>
 </Id>
-</Unary_Exp>
 </Exp_Comparison>
-<Exp_Comparison op='/:'>
+<Exp_Comparison op=':'>
 <Attr>
-<Pos l='80' c='16' s='2'/>
+<Pos l='80' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
 <Pos l='80' c='13' s='2'/>
 </Attr>
 </Id>
+<Unary_Exp op='ran' typref='1569085991'>
+<Attr>
+<Pos l='80' c='18' s='3'/>
+</Attr>
+<Id value='airplanes' typref='1731522284'>
+<Attr>
+<Pos l='80' c='22' s='9'/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='81' c='16' s='1'/>
+</Attr>
+<Id value='aa' typref='1727109426'>
+<Attr>
+<Pos l='81' c='13' s='2'/>
+</Attr>
+</Id>
 <Unary_Exp op='dom' typref='1569085991'>
 <Attr>
-<Pos l='80' c='19' s='3'/>
+<Pos l='81' c='18' s='3'/>
+</Attr>
+<Id value='parking' typref='3692640428'>
+<Attr>
+<Pos l='81' c='22' s='7'/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='/:'>
+<Attr>
+<Pos l='82' c='16' s='2'/>
+</Attr>
+<Id value='tt' typref='2701647786'>
+<Attr>
+<Pos l='82' c='13' s='2'/>
+</Attr>
+</Id>
+<Unary_Exp op='ran' typref='3603043417'>
+<Attr>
+<Pos l='82' c='19' s='3'/>
 </Attr>
 <Id value='landing' typref='3692640428'>
 <Attr>
-<Pos l='80' c='24' s='7'/>
+<Pos l='82' c='24' s='7'/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op='/:'>
+<Attr>
+<Pos l='83' c='16' s='2'/>
+</Attr>
+<Id value='aa' typref='1727109426'>
+<Attr>
+<Pos l='83' c='13' s='2'/>
+</Attr>
+</Id>
+<Unary_Exp op='dom' typref='1569085991'>
+<Attr>
+<Pos l='83' c='19' s='3'/>
+</Attr>
+<Id value='landing' typref='3692640428'>
+<Attr>
+<Pos l='83' c='24' s='7'/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='81' c='34' s='1'/>
+<Pos l='84' c='34' s='1'/>
 </Attr>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='81' c='29' s='0'/>
+<Pos l='84' c='29' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='81' c='13' s='15'/>
+<Pos l='84' c='13' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='81' c='30' s='2'/>
+<Pos l='84' c='30' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='boarding' typref='2246778642'>
 <Attr>
-<Pos l='81' c='36' s='8'/>
+<Pos l='84' c='36' s='8'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='82' c='31' s='1'/>
+<Pos l='85' c='31' s='1'/>
 </Attr>
 <Binary_Exp op='(' typref='2702565625'>
 <Attr>
-<Pos l='82' c='26' s='0'/>
+<Pos l='85' c='26' s='0'/>
 </Attr>
 <Id value='status_track' typref='4032523621'>
 <Attr>
-<Pos l='82' c='13' s='12'/>
+<Pos l='85' c='13' s='12'/>
 </Attr>
 </Id>
 <Id value='tt' typref='2701647786'>
 <Attr>
-<Pos l='82' c='27' s='2'/>
+<Pos l='85' c='27' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='unoccupied' typref='2702565625'>
 <Attr>
-<Pos l='82' c='33' s='10'/>
+<Pos l='85' c='33' s='10'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1376,52 +1321,52 @@
 <Nary_Sub op='||'>
 <Operation_Call>
 <Attr>
-<Pos l='83' c='26' s='0'/>
+<Pos l='86' c='26' s='0'/>
 </Attr>
 <Name>
 <Id value='occupy_track'>
 <Attr>
-<Pos l='83' c='14' s='12'/>
+<Pos l='86' c='14' s='12'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='tt' typref='2701647786'>
 <Attr>
-<Pos l='83' c='27' s='2'/>
+<Pos l='86' c='27' s='2'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='83' c='31' s='2'/>
+<Pos l='86' c='31' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 </Operation_Call>
 <Operation_Call>
 <Attr>
-<Pos l='84' c='25' s='0'/>
+<Pos l='87' c='25' s='0'/>
 </Attr>
 <Name>
 <Id value='vacate_gate'>
 <Attr>
-<Pos l='84' c='14' s='11'/>
+<Pos l='87' c='14' s='11'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Binary_Exp op='(' typref='2701647786'>
 <Attr>
-<Pos l='84' c='33' s='0'/>
+<Pos l='87' c='33' s='0'/>
 </Attr>
 <Id value='parking' typref='3692640428'>
 <Attr>
-<Pos l='84' c='26' s='7'/>
+<Pos l='87' c='26' s='7'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='84' c='34' s='2'/>
+<Pos l='87' c='34' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1429,21 +1374,21 @@
 </Operation_Call>
 <Assignement_Sub>
 <Attr>
-<Pos l='85' c='34' s='2'/>
+<Pos l='88' c='34' s='2'/>
 </Attr>
 <Variables>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='85' c='29' s='0'/>
+<Pos l='88' c='29' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='85' c='14' s='15'/>
+<Pos l='88' c='14' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='85' c='30' s='2'/>
+<Pos l='88' c='30' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1451,40 +1396,40 @@
 <Values>
 <Id value='departing' typref='2246778642'>
 <Attr>
-<Pos l='85' c='37' s='9'/>
+<Pos l='88' c='37' s='9'/>
 </Attr>
 </Id>
 </Values>
 </Assignement_Sub>
 <Assignement_Sub>
 <Attr>
-<Pos l='86' c='22' s='2'/>
+<Pos l='89' c='22' s='2'/>
 </Attr>
 <Variables>
 <Id value='parking' typref='3692640428'>
 <Attr>
-<Pos l='86' c='14' s='7'/>
+<Pos l='89' c='14' s='7'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Binary_Exp op='&lt;&lt;|' typref='3692640428'>
 <Attr>
-<Pos l='86' c='30' s='3'/>
+<Pos l='89' c='30' s='3'/>
 </Attr>
 <Nary_Exp op='{' typref='1569085991'>
 <Attr>
-<Pos l='86' c='25' s='1'/>
+<Pos l='89' c='25' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='86' c='26' s='2'/>
+<Pos l='89' c='26' s='2'/>
 </Attr>
 </Id>
 </Nary_Exp>
 <Id value='parking' typref='3692640428'>
 <Attr>
-<Pos l='86' c='34' s='7'/>
+<Pos l='89' c='34' s='7'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1492,21 +1437,21 @@
 </Assignement_Sub>
 <Assignement_Sub>
 <Attr>
-<Pos l='87' c='26' s='2'/>
+<Pos l='90' c='26' s='2'/>
 </Attr>
 <Variables>
 <Binary_Exp op='(' typref='2701647786'>
 <Attr>
-<Pos l='87' c='21' s='0'/>
+<Pos l='90' c='21' s='0'/>
 </Attr>
 <Id value='landing' typref='3692640428'>
 <Attr>
-<Pos l='87' c='14' s='7'/>
+<Pos l='90' c='14' s='7'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='87' c='22' s='2'/>
+<Pos l='90' c='22' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1514,7 +1459,7 @@
 <Values>
 <Id value='tt' typref='2701647786'>
 <Attr>
-<Pos l='87' c='29' s='2'/>
+<Pos l='90' c='29' s='2'/>
 </Attr>
 </Id>
 </Values>
@@ -1524,12 +1469,12 @@
 </Operation>
 <Operation name='depart'>
 <Attr>
-<Pos l='90' c='5' s='6' endLine='98'/>
+<Pos l='93' c='5' s='6' endLine='102'/>
 </Attr>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='90' c='13' s='2'/>
+<Pos l='93' c='13' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -1537,145 +1482,130 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='91' c='16' s='1'/>
+<Pos l='94' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='91' c='13' s='2'/>
+<Pos l='94' c='13' s='2'/>
+</Attr>
+</Id>
+<Id value='AIRPLANE' typref='1569085991'>
+<Attr>
+<Pos l='94' c='18' s='8'/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=':'>
+<Attr>
+<Pos l='95' c='16' s='1'/>
+</Attr>
+<Id value='aa' typref='1727109426'>
+<Attr>
+<Pos l='95' c='13' s='2'/>
 </Attr>
 </Id>
 <Unary_Exp op='ran' typref='1569085991'>
 <Attr>
-<Pos l='91' c='18' s='3'/>
+<Pos l='95' c='18' s='3'/>
 </Attr>
-<Binary_Exp op='&lt;|' typref='1731522284'>
-<Attr>
-<Pos l='91' c='35' s='2'/>
-</Attr>
-<Binary_Exp op='..' typref='3603043417'>
-<Attr>
-<Pos l='91' c='23' s='2'/>
-</Attr>
-<Integer_Literal value='0' typref='2701647786'>
-<Attr>
-<Pos l='91' c='22' s='1'/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp op='-' typref='2701647786'>
-<Attr>
-<Pos l='91' c='32' s='1'/>
-</Attr>
-<Id value='pointer' typref='2701647786'>
-<Attr>
-<Pos l='91' c='25' s='7'/>
-</Attr>
-</Id>
-<Integer_Literal value='1' typref='2701647786'>
-<Attr>
-<Pos l='91' c='33' s='1'/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
 <Id value='airplanes' typref='1731522284'>
 <Attr>
-<Pos l='91' c='38' s='9'/>
+<Pos l='95' c='22' s='9'/>
 </Attr>
 </Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op='/:'>
 <Attr>
-<Pos l='92' c='16' s='2'/>
+<Pos l='96' c='16' s='2'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='92' c='13' s='2'/>
+<Pos l='96' c='13' s='2'/>
 </Attr>
 </Id>
 <Unary_Exp op='dom' typref='1569085991'>
 <Attr>
-<Pos l='92' c='19' s='3'/>
+<Pos l='96' c='19' s='3'/>
 </Attr>
 <Id value='parking' typref='3692640428'>
 <Attr>
-<Pos l='92' c='23' s='7'/>
+<Pos l='96' c='23' s='7'/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='93' c='16' s='1'/>
+<Pos l='97' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='93' c='13' s='2'/>
+<Pos l='97' c='13' s='2'/>
 </Attr>
 </Id>
 <Unary_Exp op='dom' typref='1569085991'>
 <Attr>
-<Pos l='93' c='18' s='3'/>
+<Pos l='97' c='18' s='3'/>
 </Attr>
 <Id value='landing' typref='3692640428'>
 <Attr>
-<Pos l='93' c='23' s='7'/>
+<Pos l='97' c='23' s='7'/>
 </Attr>
 </Id>
 </Unary_Exp>
 </Exp_Comparison>
 <Binary_Pred op='or'>
 <Attr>
-<Pos l='94' c='46' s='2'/>
+<Pos l='98' c='46' s='2'/>
 </Attr>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='94' c='34' s='1'/>
+<Pos l='98' c='34' s='1'/>
 </Attr>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='94' c='29' s='0'/>
+<Pos l='98' c='29' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='94' c='14' s='15'/>
+<Pos l='98' c='14' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='94' c='30' s='2'/>
+<Pos l='98' c='30' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='alighting' typref='2246778642'>
 <Attr>
-<Pos l='94' c='36' s='9'/>
+<Pos l='98' c='36' s='9'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='94' c='69' s='1'/>
+<Pos l='98' c='69' s='1'/>
 </Attr>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='94' c='64' s='0'/>
+<Pos l='98' c='64' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='94' c='49' s='15'/>
+<Pos l='98' c='49' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='94' c='65' s='2'/>
+<Pos l='98' c='65' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='departing' typref='2246778642'>
 <Attr>
-<Pos l='94' c='71' s='9'/>
+<Pos l='98' c='71' s='9'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1686,28 +1616,28 @@
 <Nary_Sub op='||'>
 <Operation_Call>
 <Attr>
-<Pos l='95' c='26' s='0'/>
+<Pos l='99' c='26' s='0'/>
 </Attr>
 <Name>
 <Id value='vacate_track'>
 <Attr>
-<Pos l='95' c='14' s='12'/>
+<Pos l='99' c='14' s='12'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Binary_Exp op='(' typref='2701647786'>
 <Attr>
-<Pos l='95' c='34' s='0'/>
+<Pos l='99' c='34' s='0'/>
 </Attr>
 <Id value='landing' typref='3692640428'>
 <Attr>
-<Pos l='95' c='27' s='7'/>
+<Pos l='99' c='27' s='7'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='95' c='35' s='2'/>
+<Pos l='99' c='35' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1715,33 +1645,33 @@
 </Operation_Call>
 <Assignement_Sub>
 <Attr>
-<Pos l='96' c='22' s='2'/>
+<Pos l='100' c='22' s='2'/>
 </Attr>
 <Variables>
 <Id value='landing' typref='3692640428'>
 <Attr>
-<Pos l='96' c='14' s='7'/>
+<Pos l='100' c='14' s='7'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Binary_Exp op='&lt;&lt;|' typref='3692640428'>
 <Attr>
-<Pos l='96' c='30' s='3'/>
+<Pos l='100' c='30' s='3'/>
 </Attr>
 <Nary_Exp op='{' typref='1569085991'>
 <Attr>
-<Pos l='96' c='25' s='1'/>
+<Pos l='100' c='25' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='96' c='26' s='2'/>
+<Pos l='100' c='26' s='2'/>
 </Attr>
 </Id>
 </Nary_Exp>
 <Id value='landing' typref='3692640428'>
 <Attr>
-<Pos l='96' c='34' s='7'/>
+<Pos l='100' c='34' s='7'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1749,21 +1679,21 @@
 </Assignement_Sub>
 <Assignement_Sub>
 <Attr>
-<Pos l='97' c='34' s='2'/>
+<Pos l='101' c='34' s='2'/>
 </Attr>
 <Variables>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='97' c='29' s='0'/>
+<Pos l='101' c='29' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='97' c='14' s='15'/>
+<Pos l='101' c='14' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='97' c='30' s='2'/>
+<Pos l='101' c='30' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1771,7 +1701,7 @@
 <Values>
 <Id value='flighting' typref='2246778642'>
 <Attr>
-<Pos l='97' c='37' s='9'/>
+<Pos l='101' c='37' s='9'/>
 </Attr>
 </Id>
 </Values>
@@ -1781,12 +1711,12 @@
 </Operation>
 <Operation name='exclude_airplane'>
 <Attr>
-<Pos l='100' c='5' s='16' endLine='106'/>
+<Pos l='104' c='5' s='16' endLine='110'/>
 </Attr>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='100' c='22' s='2'/>
+<Pos l='104' c='22' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -1794,91 +1724,61 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='101' c='16' s='1'/>
+<Pos l='105' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='101' c='13' s='2'/>
+<Pos l='105' c='13' s='2'/>
 </Attr>
 </Id>
 <Id value='AIRPLANE' typref='1569085991'>
 <Attr>
-<Pos l='101' c='18' s='8'/>
+<Pos l='105' c='18' s='8'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='102' c='16' s='1'/>
+<Pos l='106' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='102' c='13' s='2'/>
+<Pos l='106' c='13' s='2'/>
 </Attr>
 </Id>
 <Unary_Exp op='ran' typref='1569085991'>
 <Attr>
-<Pos l='102' c='18' s='3'/>
+<Pos l='106' c='18' s='3'/>
 </Attr>
-<Binary_Exp op='&lt;|' typref='1731522284'>
-<Attr>
-<Pos l='102' c='35' s='2'/>
-</Attr>
-<Binary_Exp op='..' typref='3603043417'>
-<Attr>
-<Pos l='102' c='23' s='2'/>
-</Attr>
-<Integer_Literal value='0' typref='2701647786'>
-<Attr>
-<Pos l='102' c='22' s='1'/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp op='-' typref='2701647786'>
-<Attr>
-<Pos l='102' c='32' s='1'/>
-</Attr>
-<Id value='pointer' typref='2701647786'>
-<Attr>
-<Pos l='102' c='25' s='7'/>
-</Attr>
-</Id>
-<Integer_Literal value='1' typref='2701647786'>
-<Attr>
-<Pos l='102' c='33' s='1'/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
 <Id value='airplanes' typref='1731522284'>
 <Attr>
-<Pos l='102' c='38' s='9'/>
+<Pos l='106' c='22' s='9'/>
 </Attr>
 </Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op='='>
 <Attr>
-<Pos l='103' c='33' s='1'/>
+<Pos l='107' c='33' s='1'/>
 </Attr>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='103' c='28' s='0'/>
+<Pos l='107' c='28' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='103' c='13' s='15'/>
+<Pos l='107' c='13' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='103' c='29' s='2'/>
+<Pos l='107' c='29' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
 <Id value='flighting' typref='2246778642'>
 <Attr>
-<Pos l='103' c='35' s='9'/>
+<Pos l='107' c='35' s='9'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -1888,40 +1788,40 @@
 <Nary_Sub op='||'>
 <Operation_Call>
 <Attr>
-<Pos l='104' c='20' s='0'/>
+<Pos l='108' c='20' s='0'/>
 </Attr>
 <Name>
 <Id value='remove'>
 <Attr>
-<Pos l='104' c='14' s='6'/>
+<Pos l='108' c='14' s='6'/>
 </Attr>
 </Id>
 </Name>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='104' c='21' s='2'/>
+<Pos l='108' c='21' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 </Operation_Call>
 <Assignement_Sub>
 <Attr>
-<Pos l='105' c='34' s='2'/>
+<Pos l='109' c='34' s='2'/>
 </Attr>
 <Variables>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='105' c='29' s='0'/>
+<Pos l='109' c='29' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='105' c='14' s='15'/>
+<Pos l='109' c='14' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='105' c='30' s='2'/>
+<Pos l='109' c='30' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -1929,7 +1829,7 @@
 <Values>
 <Id value='out' typref='2246778642'>
 <Attr>
-<Pos l='105' c='37' s='3'/>
+<Pos l='109' c='37' s='3'/>
 </Attr>
 </Id>
 </Values>
@@ -1939,61 +1839,71 @@
 </Operation>
 <Operation name='can_landing'>
 <Attr>
-<Pos l='111' c='5' s='2' endLine='118'/>
+<Pos l='115' c='5' s='2' endLine='122'/>
 </Attr>
 <Output_Parameters>
 <Id value='bb' typref='2043437594'>
 <Attr>
-<Pos l='111' c='5' s='2'/>
+<Pos l='115' c='5' s='2'/>
 </Attr>
 </Id>
 </Output_Parameters>
 <Input_Parameters>
 <Id value='tt' typref='2701647786'>
 <Attr>
-<Pos l='111' c='25' s='2'/>
+<Pos l='115' c='25' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 <Precondition>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='112' c='16' s='1'/>
+<Pos l='116' c='16' s='1'/>
 </Attr>
 <Id value='tt' typref='2701647786'>
 <Attr>
-<Pos l='112' c='13' s='2'/>
+<Pos l='116' c='13' s='2'/>
 </Attr>
 </Id>
-<Id value='track' typref='3603043417'>
+<Binary_Exp op='..' typref='3603043417'>
 <Attr>
-<Pos l='112' c='18' s='5'/>
+<Pos l='116' c='19' s='2'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='116' c='18' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='sz_tracks' typref='2701647786'>
+<Attr>
+<Pos l='116' c='21' s='9'/>
 </Attr>
 </Id>
+</Binary_Exp>
 </Exp_Comparison>
 </Precondition>
 <Body>
 <If_Sub elseif='no'>
 <Attr>
-<Pos l='114' c='13' s='2'/>
+<Pos l='118' c='13' s='2'/>
 </Attr>
 <Condition>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='114' c='19' s='1'/>
+<Pos l='118' c='19' s='1'/>
 </Attr>
 <Id value='tt' typref='2701647786'>
 <Attr>
-<Pos l='114' c='16' s='2'/>
+<Pos l='118' c='16' s='2'/>
 </Attr>
 </Id>
 <Unary_Exp op='ran' typref='3603043417'>
 <Attr>
-<Pos l='114' c='21' s='3'/>
+<Pos l='118' c='21' s='3'/>
 </Attr>
 <Id value='landing' typref='3692640428'>
 <Attr>
-<Pos l='114' c='25' s='7'/>
+<Pos l='118' c='25' s='7'/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -2002,19 +1912,19 @@
 <Then>
 <Assignement_Sub>
 <Attr>
-<Pos l='115' c='21' s='2'/>
+<Pos l='119' c='21' s='2'/>
 </Attr>
 <Variables>
 <Id value='bb' typref='2043437594'>
 <Attr>
-<Pos l='115' c='18' s='2'/>
+<Pos l='119' c='18' s='2'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Boolean_Literal value='FALSE' typref='2043437594'>
 <Attr>
-<Pos l='115' c='24' s='5'/>
+<Pos l='119' c='24' s='5'/>
 </Attr>
 </Boolean_Literal>
 </Values>
@@ -2023,19 +1933,19 @@
 <Else>
 <Assignement_Sub>
 <Attr>
-<Pos l='116' c='21' s='2'/>
+<Pos l='120' c='21' s='2'/>
 </Attr>
 <Variables>
 <Id value='bb' typref='2043437594'>
 <Attr>
-<Pos l='116' c='18' s='2'/>
+<Pos l='120' c='18' s='2'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Boolean_Literal value='TRUE' typref='2043437594'>
 <Attr>
-<Pos l='116' c='24' s='4'/>
+<Pos l='120' c='24' s='4'/>
 </Attr>
 </Boolean_Literal>
 </Values>
@@ -2046,35 +1956,35 @@
 </Operation>
 <Operation name='query_status'>
 <Attr>
-<Pos l='123' c='5' s='2' endLine='126'/>
+<Pos l='127' c='5' s='2' endLine='130'/>
 </Attr>
 <Output_Parameters>
 <Id value='bb' typref='2246778642'>
 <Attr>
-<Pos l='123' c='5' s='2'/>
+<Pos l='127' c='5' s='2'/>
 </Attr>
 </Id>
 </Output_Parameters>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='123' c='26' s='2'/>
+<Pos l='127' c='26' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
 <Precondition>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='124' c='16' s='1'/>
+<Pos l='128' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='124' c='13' s='2'/>
+<Pos l='128' c='13' s='2'/>
 </Attr>
 </Id>
 <Id value='AIRPLANE' typref='1569085991'>
 <Attr>
-<Pos l='124' c='18' s='8'/>
+<Pos l='128' c='18' s='8'/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -2082,28 +1992,28 @@
 <Body>
 <Assignement_Sub>
 <Attr>
-<Pos l='125' c='17' s='2'/>
+<Pos l='129' c='17' s='2'/>
 </Attr>
 <Variables>
 <Id value='bb' typref='2246778642'>
 <Attr>
-<Pos l='125' c='14' s='2'/>
+<Pos l='129' c='14' s='2'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Binary_Exp op='(' typref='2246778642'>
 <Attr>
-<Pos l='125' c='35' s='0'/>
+<Pos l='129' c='35' s='0'/>
 </Attr>
 <Id value='status_airplane' typref='1148858160'>
 <Attr>
-<Pos l='125' c='20' s='15'/>
+<Pos l='129' c='20' s='15'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='125' c='36' s='2'/>
+<Pos l='129' c='36' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -2113,19 +2023,19 @@
 </Operation>
 <Operation name='query_parked'>
 <Attr>
-<Pos l='131' c='5' s='2' endLine='135'/>
+<Pos l='135' c='5' s='2' endLine='139'/>
 </Attr>
 <Output_Parameters>
 <Id value='gg' typref='2701647786'>
 <Attr>
-<Pos l='131' c='5' s='2'/>
+<Pos l='135' c='5' s='2'/>
 </Attr>
 </Id>
 </Output_Parameters>
 <Input_Parameters>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='131' c='26' s='2'/>
+<Pos l='135' c='26' s='2'/>
 </Attr>
 </Id>
 </Input_Parameters>
@@ -2133,35 +2043,35 @@
 <Nary_Pred op='&amp;'>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='132' c='16' s='1'/>
+<Pos l='136' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='132' c='13' s='2'/>
+<Pos l='136' c='13' s='2'/>
 </Attr>
 </Id>
 <Id value='AIRPLANE' typref='1569085991'>
 <Attr>
-<Pos l='132' c='18' s='8'/>
+<Pos l='136' c='18' s='8'/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=':'>
 <Attr>
-<Pos l='133' c='16' s='1'/>
+<Pos l='137' c='16' s='1'/>
 </Attr>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='133' c='13' s='2'/>
+<Pos l='137' c='13' s='2'/>
 </Attr>
 </Id>
 <Unary_Exp op='dom' typref='1569085991'>
 <Attr>
-<Pos l='133' c='18' s='3'/>
+<Pos l='137' c='18' s='3'/>
 </Attr>
 <Id value='parking' typref='3692640428'>
 <Attr>
-<Pos l='133' c='22' s='7'/>
+<Pos l='137' c='22' s='7'/>
 </Attr>
 </Id>
 </Unary_Exp>
@@ -2171,28 +2081,28 @@
 <Body>
 <Assignement_Sub>
 <Attr>
-<Pos l='134' c='17' s='2'/>
+<Pos l='138' c='17' s='2'/>
 </Attr>
 <Variables>
 <Id value='gg' typref='2701647786'>
 <Attr>
-<Pos l='134' c='14' s='2'/>
+<Pos l='138' c='14' s='2'/>
 </Attr>
 </Id>
 </Variables>
 <Values>
 <Binary_Exp op='(' typref='2701647786'>
 <Attr>
-<Pos l='134' c='27' s='0'/>
+<Pos l='138' c='27' s='0'/>
 </Attr>
 <Id value='parking' typref='3692640428'>
 <Attr>
-<Pos l='134' c='20' s='7'/>
+<Pos l='138' c='20' s='7'/>
 </Attr>
 </Id>
 <Id value='aa' typref='1727109426'>
 <Attr>
-<Pos l='134' c='28' s='2'/>
+<Pos l='138' c='28' s='2'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -2238,6 +2148,9 @@
 <Id value='INTEGER'/>
 </Unary_Exp>
 </Type>
+<Type id='2701647786'>
+<Id value='INTEGER'/>
+</Type>
 <Type id='1339719635'>
 <Unary_Exp op='POW'>
 <Unary_Exp op='POW'>
@@ -2271,9 +2184,6 @@
 <Id value='AIRPLANE'/>
 </Binary_Exp>
 </Unary_Exp>
-</Type>
-<Type id='2701647786'>
-<Id value='INTEGER'/>
 </Type>
 <Type id='2702565625'>
 <Id value='OCCUPATION'/>

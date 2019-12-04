@@ -22,7 +22,7 @@ void Track__INITIALISATION(void)
     {
         Track__tracks_i[i] = Airport_ctx__plane_dummy;
     }
-    for(i = 0; i <= Airport_ctx__track__max-1;i++)
+    for(i = 0; i <= Airport_ctx__sz_tracks;i++)
     {
         Track__status_track_i[i] = Airport_ctx__unoccupied;
     }

@@ -25,7 +25,6 @@ extern void Airplane__INITIALISATION(void);
 
 extern void Airplane__add_plane(Airport_ctx__AIRPLANE aa);
 extern void Airplane__remove(Airport_ctx__AIRPLANE aa);
-extern void Airplane__remove_on(int32_t pp);
 extern void Airplane__has_airplane(Airport_ctx__AIRPLANE aa, bool *bb);
 
 #ifdef __cplusplus

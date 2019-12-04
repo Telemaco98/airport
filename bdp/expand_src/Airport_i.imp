@@ -18,20 +18,20 @@ CONCRETE_VARIABLES
     status_airplane_i
 
 INVARIANT
-    landing_i : track --> AIRPLANE
+    landing_i : 0 .. sz_tracks --> AIRPLANE
     & dom ( landing_i ) = ran ( landing )
-    & landing_i ~ = landing
+    & ( landing_i |>> { plane_dummy } ) ~ = landing
 
-    & parking_i : gate --> AIRPLANE
+    & parking_i : 0 .. sz_gates --> AIRPLANE
     & dom ( parking_i ) = ran ( parking )
-    & parking_i ~ = parking
+    & ( parking_i |>> { plane_dummy } ) ~ = parking
 
     & status_airplane_i : AIRPLANE --> STATUS
     & status_airplane_i = status_airplane
 
 INITIALISATION
-    landing_i := track * { plane_dummy } ;
-    parking_i := gate * { plane_dummy } ;
+    landing_i := ( 0 .. sz_tracks ) * { plane_dummy } ;
+    parking_i := ( 0 .. sz_gates ) * { plane_dummy } ;
     status_airplane_i := AIRPLANE * { out }
 
 OPERATIONS
@@ -51,10 +51,27 @@ OPERATIONS
     park ( aa , gg ) =
         BEGIN
             occupy_gate ( gg , aa ) ;
-            vacate_track ( landing_i ~ ( aa ) ) ;
-            landing_i ( landing_i ~ ( aa ) ) := plane_dummy ;
-            parking_i ( gg ) := aa ;
-            status_airplane_i ( aa ) := parked
+
+            VAR ii , nsz IN
+                ii :=  0 ;
+                nsz := sz_tracks ;
+
+                WHILE ii < nsz
+                DO VAR cc IN
+                       cc := landing_i ( ii ) ;
+
+                       IF cc = aa
+                       THEN vacate_track ( ii ) ;
+                            landing_i ( ii ) := plane_dummy
+                       END
+                   END ;
+                   ii := ii + 1
+                INVARIANT ii : 0 .. sz_tracks
+                VARIANT nsz - ii
+                END ;
+                parking_i ( gg ) := aa ;
+                status_airplane_i ( aa ) := parked
+            END
         END ;
 
     board ( aa ) =
@@ -65,17 +82,49 @@ OPERATIONS
     take_track ( aa , tt ) =
         BEGIN
             occupy_track ( tt , aa ) ;
-            vacate_gate ( parking_i ~ ( aa ) ) ;
-            status_airplane_i ( aa ) := departing ;
-            parking_i ( parking_i ~ ( aa ) ) := plane_dummy ;
-            landing_i ( tt ) := aa
+
+            VAR ii , nsz IN
+                ii :=  0 ;
+                nsz := sz_tracks ;
+
+                WHILE ii < nsz
+                DO VAR cc IN
+                       cc := parking_i ( ii ) ;
+                       IF cc = aa
+                       THEN vacate_gate ( ii ) ;
+                            status_airplane_i ( aa ) := departing ;
+                            parking_i ( ii ) := plane_dummy
+
+                       END
+                   END ;
+                   ii := ii + 1
+                INVARIANT ii : 0 .. sz_tracks
+                VARIANT nsz - ii
+                END ;
+                landing_i ( tt ) := aa
+            END
         END ;
 
     depart ( aa ) =
         BEGIN
-            vacate_track ( landing_i ~ ( aa ) ) ;
-            landing_i ( landing_i ~ ( aa ) ) := plane_dummy ;
-            status_airplane_i ( aa ) := flighting
+            VAR ii , nsz IN
+                ii :=  0 ;
+                nsz := sz_tracks ;
+
+                WHILE ii < nsz
+                DO VAR cc IN
+                       cc := landing_i ( ii ) ;
+                       IF cc = aa
+                       THEN vacate_track ( ii ) ;
+                            landing_i ( ii ) := plane_dummy
+                       END
+                   END ;
+                   ii := ii + 1
+                INVARIANT ii : 0 .. sz_tracks
+                VARIANT nsz - ii
+                END ;
+                status_airplane_i ( aa ) := flighting
+            END
         END ;
 
     exclude_airplane ( aa ) =
@@ -89,19 +138,21 @@ OPERATIONS
      */
     bb <-- can_landing ( tt ) =
        BEGIN
-            VAR ii , nsz , plane_current IN
+            VAR ii , nsz IN
                 ii := 0 ;
-                nsz := sz_gates ;
                 bb := FALSE ;
-                plane_current := landing_i ( ii ) ;
-                WHILE ( ii < sz_gates )
-                DO
-                   plane_current := landing_i ( ii ) ;
-                   IF plane_dummy = plane_current & tt = ii
-                   THEN bb := TRUE
+                nsz := sz_gates ;
+
+                WHILE ( ii < sz_tracks )
+                DO VAR pp IN
+                       pp := landing_i ( ii ) ;
+                       IF tt = ii & plane_dummy = pp
+                       THEN bb := TRUE
+                       END
                    END ;
                    ii := ii + 1
-                INVARIANT ii : NAT & ii <= nsz
+                INVARIANT ii : 0 .. sz_tracks
+//                        & (bb = TRUE <=> #xx.(xx : 0..ii - 1 & landing_i(xx) = plane_dummy))
                 VARIANT nsz - ii
                 END
             END
@@ -120,6 +171,23 @@ OPERATIONS
      */
     gg <-- query_parked ( aa ) =
         BEGIN
-            gg := parking_i ~ ( aa )
+            VAR ii , nsz , pp IN
+                ii := 0 ;
+                gg := sz_gates ;
+                nsz := sz_gates ;
+                pp := landing_i ( ii ) ;
+
+                WHILE ( ii < sz_gates )
+                DO
+                   pp := parking_i ( ii ) ;
+                   IF aa = pp
+                   THEN gg := ii
+                   END ;
+                   ii := ii + 1
+                INVARIANT ii : 0 .. sz_gates
+//                          (gg = ii <=> #xx.(xx : 0..ii -1 & parking_i(xx) = aa))
+                VARIANT nsz - ii
+                END
+            END
         END
 END

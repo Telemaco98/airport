@@ -38,8 +38,8 @@ THEORY ListVariablesX IS
   Context_List_Variables(Machine(Airport))==(?);
   Abstract_List_Variables(Machine(Airport))==(?);
   Local_List_Variables(Machine(Airport))==(status_airplane,parking,landing);
-  List_Variables(Machine(Airport))==(status_airplane,parking,landing,gates,status_track,tracks,pointer,airplanes);
-  External_List_Variables(Machine(Airport))==(status_airplane,parking,landing,gates,status_track,tracks,pointer,airplanes)
+  List_Variables(Machine(Airport))==(status_airplane,parking,landing,gates,status_track,tracks,airplanes);
+  External_List_Variables(Machine(Airport))==(status_airplane,parking,landing,gates,status_track,tracks,airplanes)
 END
 &
 THEORY ListVisibleVariablesX IS
@@ -55,9 +55,9 @@ THEORY ListInvariantX IS
   Gluing_Seen_List_Invariant(Machine(Airport))==(btrue);
   Gluing_List_Invariant(Machine(Airport))==(btrue);
   Abstract_List_Invariant(Machine(Airport))==(btrue);
-  Expanded_List_Invariant(Machine(Airport))==(gates: gate --> AIRPLANE & tracks: track --> AIRPLANE & status_track: track --> OCCUPATION & pointer: 0..sz_airplanes & airplanes: 0..sz_airplanes --> AIRPLANE & 0..pointer-1<|airplanes: 0..pointer-1 >-> AIRPLANE);
+  Expanded_List_Invariant(Machine(Airport))==(gates: 0..sz_gates --> AIRPLANE & tracks: 0..sz_tracks --> AIRPLANE & status_track: 0..sz_tracks --> OCCUPATION & airplanes: 0..sz_airplanes >+> AIRPLANE);
   Context_List_Invariant(Machine(Airport))==(btrue);
-  List_Invariant(Machine(Airport))==(landing: AIRPLANE >+> track & parking: AIRPLANE >+> gate & status_airplane: AIRPLANE --> STATUS)
+  List_Invariant(Machine(Airport))==(landing: AIRPLANE >+> 0..sz_tracks & parking: AIRPLANE >+> 0..sz_gates & status_airplane: AIRPLANE --> STATUS)
 END
 &
 THEORY ListAssertionsX IS
@@ -76,7 +76,7 @@ THEORY ListExclusivityX IS
 END
 &
 THEORY ListInitialisationX IS
-  Expanded_List_Initialisation(Machine(Airport))==(gates:=gate*{plane_dummy};tracks,status_track:=track*{plane_dummy},track*{unoccupied};airplanes,pointer:=(0..sz_airplanes)*{plane_dummy},0;landing,parking,status_airplane:={},{},AIRPLANE*{out});
+  Expanded_List_Initialisation(Machine(Airport))==(gates:=(0..sz_gates)*{plane_dummy};tracks,status_track:=(0..sz_tracks)*{plane_dummy},(0..sz_tracks)*{unoccupied};airplanes:={};landing,parking,status_airplane:={},{},AIRPLANE*{out});
   Context_List_Initialisation(Machine(Airport))==(skip);
   List_Initialisation(Machine(Airport))==(landing:={} || parking:={} || status_airplane:=AIRPLANE*{out})
 END
@@ -147,14 +147,14 @@ END
 THEORY ListOperationGuardX END
 &
 THEORY ListPreconditionX IS
-  List_Precondition(Machine(Airport),add_airplane)==(aa: AIRPLANE & aa/=plane_dummy & status_airplane(aa) = out & aa/:ran(0..pointer-1<|airplanes) & pointer<sz_airplanes);
-  List_Precondition(Machine(Airport),land)==(tt: track & aa: ran(0..pointer-1<|airplanes) & aa/:dom(landing) & tt/:ran(landing) & aa/:dom(parking) & status_track(tt) = unoccupied & status_airplane(aa) = flighting);
-  List_Precondition(Machine(Airport),park)==(gg: gate & aa: dom(landing) & gg/:ran(parking) & aa/:dom(parking) & status_airplane(aa) = alighting & aa: ran(0..pointer-1<|airplanes));
-  List_Precondition(Machine(Airport),board)==(aa: dom(parking) & status_airplane(aa) = parked & aa: ran(0..pointer-1<|airplanes));
-  List_Precondition(Machine(Airport),take_track)==(tt: track & aa: ran(0..pointer-1<|airplanes) & aa: dom(parking) & tt/:ran(landing) & aa/:dom(landing) & status_airplane(aa) = boarding & status_track(tt) = unoccupied);
-  List_Precondition(Machine(Airport),depart)==(aa: ran(0..pointer-1<|airplanes) & aa/:dom(parking) & aa: dom(landing) & (status_airplane(aa) = alighting or status_airplane(aa) = departing));
-  List_Precondition(Machine(Airport),exclude_airplane)==(aa: AIRPLANE & aa: ran(0..pointer-1<|airplanes) & status_airplane(aa) = flighting);
-  List_Precondition(Machine(Airport),can_landing)==(tt: track);
+  List_Precondition(Machine(Airport),add_airplane)==(aa: AIRPLANE & aa/=plane_dummy & status_airplane(aa) = out & aa/:ran(airplanes));
+  List_Precondition(Machine(Airport),land)==(tt: 0..sz_tracks & aa: AIRPLANE & aa: ran(airplanes) & aa/:dom(landing) & tt/:ran(landing) & aa/:dom(parking) & status_track(tt) = unoccupied & status_airplane(aa) = flighting);
+  List_Precondition(Machine(Airport),park)==(gg: 0..sz_gates & aa: AIRPLANE & aa: dom(landing) & gg/:ran(parking) & aa/:dom(parking) & status_airplane(aa) = alighting & aa: ran(airplanes));
+  List_Precondition(Machine(Airport),board)==(aa: AIRPLANE & aa: dom(parking) & status_airplane(aa) = parked & aa: ran(airplanes));
+  List_Precondition(Machine(Airport),take_track)==(tt: 0..sz_tracks & aa: AIRPLANE & aa: ran(airplanes) & aa: dom(parking) & tt/:ran(landing) & aa/:dom(landing) & status_airplane(aa) = boarding & status_track(tt) = unoccupied);
+  List_Precondition(Machine(Airport),depart)==(aa: AIRPLANE & aa: ran(airplanes) & aa/:dom(parking) & aa: dom(landing) & (status_airplane(aa) = alighting or status_airplane(aa) = departing));
+  List_Precondition(Machine(Airport),exclude_airplane)==(aa: AIRPLANE & aa: ran(airplanes) & status_airplane(aa) = flighting);
+  List_Precondition(Machine(Airport),can_landing)==(tt: 0..sz_tracks);
   List_Precondition(Machine(Airport),query_status)==(aa: AIRPLANE);
   List_Precondition(Machine(Airport),query_parked)==(aa: AIRPLANE & aa: dom(parking))
 END
@@ -162,14 +162,14 @@ END
 THEORY ListSubstitutionX IS
   Expanded_List_Substitution(Machine(Airport),query_parked)==(aa: AIRPLANE & aa: dom(parking) | gg:=parking(aa));
   Expanded_List_Substitution(Machine(Airport),query_status)==(aa: AIRPLANE | bb:=status_airplane(aa));
-  Expanded_List_Substitution(Machine(Airport),can_landing)==(tt: track | tt: ran(landing) ==> bb:=FALSE [] not(tt: ran(landing)) ==> bb:=TRUE);
-  Expanded_List_Substitution(Machine(Airport),exclude_airplane)==(aa: AIRPLANE & aa: ran(0..pointer-1<|airplanes) & status_airplane(aa) = flighting & aa: AIRPLANE & aa: ran(0..pointer-1<|airplanes) | airplanes,pointer:=airplanes<+{(0..pointer-1<|airplanes)~(aa)|->airplanes(pointer-1)},pointer-1 || status_airplane:=status_airplane<+{aa|->out});
-  Expanded_List_Substitution(Machine(Airport),depart)==(aa: ran(0..pointer-1<|airplanes) & aa/:dom(parking) & aa: dom(landing) & (status_airplane(aa) = alighting or status_airplane(aa) = departing) & landing(aa): track & tracks(landing(aa))/=plane_dummy | tracks,status_track:=tracks<+{landing(aa)|->plane_dummy},status_track<+{landing(aa)|->unoccupied} || landing:={aa}<<|landing || status_airplane:=status_airplane<+{aa|->flighting});
-  Expanded_List_Substitution(Machine(Airport),take_track)==(tt: track & aa: ran(0..pointer-1<|airplanes) & aa: dom(parking) & tt/:ran(landing) & aa/:dom(landing) & status_airplane(aa) = boarding & status_track(tt) = unoccupied & aa: AIRPLANE & tt: track & aa/:ran(tracks) & tracks(tt) = plane_dummy & parking(aa): gate & gates(parking(aa))/=plane_dummy | tracks,status_track:=tracks<+{tt|->aa},status_track<+{tt|->occupied} || gates:=gates<+{parking(aa)|->plane_dummy} || status_airplane:=status_airplane<+{aa|->departing} || parking:={aa}<<|parking || landing:=landing<+{aa|->tt});
-  Expanded_List_Substitution(Machine(Airport),board)==(aa: dom(parking) & status_airplane(aa) = parked & aa: ran(0..pointer-1<|airplanes) | status_airplane:=status_airplane<+{aa|->boarding});
-  Expanded_List_Substitution(Machine(Airport),park)==(gg: gate & aa: dom(landing) & gg/:ran(parking) & aa/:dom(parking) & status_airplane(aa) = alighting & aa: ran(0..pointer-1<|airplanes) & aa: AIRPLANE & gg: gate & aa/:ran(gates) & gates(gg) = plane_dummy & landing(aa): track & tracks(landing(aa))/=plane_dummy | gates:=gates<+{gg|->aa} || tracks,status_track:=tracks<+{landing(aa)|->plane_dummy},status_track<+{landing(aa)|->unoccupied} || landing:={aa}<<|landing || parking:=parking\/{aa|->gg} || status_airplane:=status_airplane<+{aa|->parked});
-  Expanded_List_Substitution(Machine(Airport),land)==(tt: track & aa: ran(0..pointer-1<|airplanes) & aa/:dom(landing) & tt/:ran(landing) & aa/:dom(parking) & status_track(tt) = unoccupied & status_airplane(aa) = flighting & aa: AIRPLANE & tt: track & aa/:ran(tracks) & tracks(tt) = plane_dummy | tracks,status_track:=tracks<+{tt|->aa},status_track<+{tt|->occupied} || landing:=landing<+{aa|->tt} || status_airplane:=status_airplane<+{aa|->alighting});
-  Expanded_List_Substitution(Machine(Airport),add_airplane)==(aa: AIRPLANE & aa/=plane_dummy & status_airplane(aa) = out & aa/:ran(0..pointer-1<|airplanes) & pointer<sz_airplanes & aa: AIRPLANE & aa/=plane_dummy & aa/:ran(0..pointer-1<|airplanes) & pointer<sz_airplanes | airplanes,pointer:=airplanes<+{pointer|->aa},pointer+1 || status_airplane:=status_airplane<+{aa|->flighting});
+  Expanded_List_Substitution(Machine(Airport),can_landing)==(tt: 0..sz_tracks | tt: ran(landing) ==> bb:=FALSE [] not(tt: ran(landing)) ==> bb:=TRUE);
+  Expanded_List_Substitution(Machine(Airport),exclude_airplane)==(aa: AIRPLANE & aa: ran(airplanes) & status_airplane(aa) = flighting & aa: AIRPLANE & aa/=plane_dummy & aa: ran(airplanes) | airplanes:=airplanes|>>{aa} || status_airplane:=status_airplane<+{aa|->out});
+  Expanded_List_Substitution(Machine(Airport),depart)==(aa: AIRPLANE & aa: ran(airplanes) & aa/:dom(parking) & aa: dom(landing) & (status_airplane(aa) = alighting or status_airplane(aa) = departing) & landing(aa): 0..sz_tracks & tracks(landing(aa))/=plane_dummy | tracks,status_track:=tracks<+{landing(aa)|->plane_dummy},status_track<+{landing(aa)|->unoccupied} || landing:={aa}<<|landing || status_airplane:=status_airplane<+{aa|->flighting});
+  Expanded_List_Substitution(Machine(Airport),take_track)==(tt: 0..sz_tracks & aa: AIRPLANE & aa: ran(airplanes) & aa: dom(parking) & tt/:ran(landing) & aa/:dom(landing) & status_airplane(aa) = boarding & status_track(tt) = unoccupied & aa: AIRPLANE & tt: 0..sz_tracks & aa/:ran(tracks) & tracks(tt) = plane_dummy & parking(aa): 0..sz_gates & gates(parking(aa))/=plane_dummy | tracks,status_track:=tracks<+{tt|->aa},status_track<+{tt|->occupied} || gates:=gates<+{parking(aa)|->plane_dummy} || status_airplane:=status_airplane<+{aa|->departing} || parking:={aa}<<|parking || landing:=landing<+{aa|->tt});
+  Expanded_List_Substitution(Machine(Airport),board)==(aa: AIRPLANE & aa: dom(parking) & status_airplane(aa) = parked & aa: ran(airplanes) | status_airplane:=status_airplane<+{aa|->boarding});
+  Expanded_List_Substitution(Machine(Airport),park)==(gg: 0..sz_gates & aa: AIRPLANE & aa: dom(landing) & gg/:ran(parking) & aa/:dom(parking) & status_airplane(aa) = alighting & aa: ran(airplanes) & aa: AIRPLANE & gg: 0..sz_gates & aa/:ran(gates) & gates(gg) = plane_dummy & landing(aa): 0..sz_tracks & tracks(landing(aa))/=plane_dummy | gates:=gates<+{gg|->aa} || tracks,status_track:=tracks<+{landing(aa)|->plane_dummy},status_track<+{landing(aa)|->unoccupied} || landing:={aa}<<|landing || parking:=parking\/{aa|->gg} || status_airplane:=status_airplane<+{aa|->parked});
+  Expanded_List_Substitution(Machine(Airport),land)==(tt: 0..sz_tracks & aa: AIRPLANE & aa: ran(airplanes) & aa/:dom(landing) & tt/:ran(landing) & aa/:dom(parking) & status_track(tt) = unoccupied & status_airplane(aa) = flighting & aa: AIRPLANE & tt: 0..sz_tracks & aa/:ran(tracks) & tracks(tt) = plane_dummy | tracks,status_track:=tracks<+{tt|->aa},status_track<+{tt|->occupied} || landing:=landing<+{aa|->tt} || status_airplane:=status_airplane<+{aa|->alighting});
+  Expanded_List_Substitution(Machine(Airport),add_airplane)==(aa: AIRPLANE & aa/=plane_dummy & status_airplane(aa) = out & aa/:ran(airplanes) & aa: AIRPLANE & aa/=plane_dummy & aa/:ran(airplanes) | @xx.(xx: 0..sz_airplanes & xx/:dom(airplanes) ==> airplanes:=airplanes<+{xx|->aa}) || status_airplane:=status_airplane<+{aa|->flighting});
   List_Substitution(Machine(Airport),add_airplane)==(add_plane(aa) || status_airplane(aa):=flighting);
   List_Substitution(Machine(Airport),land)==(occupy_track(tt,aa) || landing(aa):=tt || status_airplane:=status_airplane<+{aa|->alighting});
   List_Substitution(Machine(Airport),park)==(occupy_gate(gg,aa) || vacate_track(landing(aa)) || landing:={aa}<<|landing || parking:=parking\/{aa|->gg} || status_airplane(aa):=parked);
@@ -212,7 +212,7 @@ END
 &
 THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(Airport))==(btrue);
-  Context_List_Properties(Machine(Airport))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
+  Context_List_Properties(Machine(Airport))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
   Inherited_List_Properties(Machine(Airport))==(btrue);
   List_Properties(Machine(Airport))==(btrue)
 END
@@ -242,19 +242,19 @@ THEORY ListANYVarX IS
 END
 &
 THEORY ListOfIdsX IS
-  List_Of_Ids(Machine(Airport)) == (? | ? | status_airplane,parking,landing | pointer,airplanes,status_track,tracks,gates | add_airplane,land,park,board,take_track,depart,exclude_airplane,can_landing,query_status,query_parked | ? | seen(Machine(Airport_ctx)),included(Machine(Gate)),included(Machine(Track)),included(Machine(Airplane)) | ? | Airport);
+  List_Of_Ids(Machine(Airport)) == (? | ? | status_airplane,parking,landing | airplanes,status_track,tracks,gates | add_airplane,land,park,board,take_track,depart,exclude_airplane,can_landing,query_status,query_parked | ? | seen(Machine(Airport_ctx)),included(Machine(Gate)),included(Machine(Track)),included(Machine(Airplane)) | ? | Airport);
   List_Of_HiddenCst_Ids(Machine(Airport)) == (? | ?);
   List_Of_VisibleCst_Ids(Machine(Airport)) == (?);
   List_Of_VisibleVar_Ids(Machine(Airport)) == (? | ?);
-  List_Of_Ids_SeenBNU(Machine(Airport)) == (seen(Machine(Airport_ctx)): (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | ?));
-  List_Of_Ids(Machine(Airplane)) == (? | ? | pointer,airplanes | ? | add_plane,remove,remove_on,has_airplane | ? | seen(Machine(Airport_ctx)) | ? | Airplane);
+  List_Of_Ids_SeenBNU(Machine(Airport)) == (seen(Machine(Airport_ctx)): (sz_gates,sz_tracks,sz_airplanes,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | ?));
+  List_Of_Ids(Machine(Airplane)) == (? | ? | airplanes | ? | add_plane,remove,has_airplane | ? | seen(Machine(Airport_ctx)) | ? | Airplane);
   List_Of_HiddenCst_Ids(Machine(Airplane)) == (? | ?);
   List_Of_VisibleCst_Ids(Machine(Airplane)) == (?);
   List_Of_VisibleVar_Ids(Machine(Airplane)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Airplane)) == (?: ?);
-  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
+  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
   List_Of_HiddenCst_Ids(Machine(Airport_ctx)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
+  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,plane_dummy);
   List_Of_VisibleVar_Ids(Machine(Airport_ctx)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Airport_ctx)) == (?: ?);
   List_Of_Ids(Machine(Track)) == (? | ? | status_track,tracks | ? | occupy_track,vacate_track,is_track_occupied,track_belongs_to | ? | seen(Machine(Airport_ctx)) | ? | Track);
@@ -270,7 +270,7 @@ THEORY ListOfIdsX IS
 END
 &
 THEORY VariablesEnvX IS
-  Variables(Machine(Airport)) == (Type(gates) == Mvl(SetOf(btype(INTEGER,"[gate","]gate")*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")));Type(tracks) == Mvl(SetOf(btype(INTEGER,"[track","]track")*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")));Type(status_track) == Mvl(SetOf(btype(INTEGER,"[track","]track")*etype(OCCUPATION,0,1)));Type(airplanes) == Mvl(SetOf(btype(INTEGER,0,sz_airplanes)*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")));Type(pointer) == Mvl(btype(INTEGER,?,?));Type(status_airplane) == Mvl(SetOf(atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")*etype(STATUS,0,5)));Type(parking) == Mvl(SetOf(atype(AIRPLANE,?,?)*btype(INTEGER,?,?)));Type(landing) == Mvl(SetOf(atype(AIRPLANE,?,?)*btype(INTEGER,?,?))))
+  Variables(Machine(Airport)) == (Type(gates) == Mvl(SetOf(btype(INTEGER,0,sz_gates)*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")));Type(tracks) == Mvl(SetOf(btype(INTEGER,0,sz_tracks)*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")));Type(status_track) == Mvl(SetOf(btype(INTEGER,0,sz_tracks)*etype(OCCUPATION,0,1)));Type(airplanes) == Mvl(SetOf(btype(INTEGER,?,?)*atype(AIRPLANE,?,?)));Type(status_airplane) == Mvl(SetOf(atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")*etype(STATUS,0,5)));Type(parking) == Mvl(SetOf(atype(AIRPLANE,?,?)*btype(INTEGER,?,?)));Type(landing) == Mvl(SetOf(atype(AIRPLANE,?,?)*btype(INTEGER,?,?))))
 END
 &
 THEORY OperationsEnvX IS

@@ -38,12 +38,8 @@ typedef enum
 #define Airport_ctx__sz_gates 100
 #define Airport_ctx__sz_tracks 5
 #define Airport_ctx__sz_airplanes 1000
-#define Airport_ctx__gate 0Airport_ctx__sz_gates
-#define Airport_ctx__track 0Airport_ctx__sz_tracks
 #define Airport_ctx__plane_dummy 1000
 /* Array and record constants */
-
-
 
 
 

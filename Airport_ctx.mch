@@ -13,8 +13,6 @@ SETS
     
 CONSTANTS
     sz_gates, sz_tracks, sz_airplanes,
-
-    gate, track,
     
     plane_dummy
     
@@ -22,9 +20,6 @@ PROPERTIES
       sz_gates : NAT1 & sz_gates > 1
     & sz_tracks : NAT1 & sz_tracks > 1
     & sz_airplanes : NAT1 & sz_airplanes > 1
-    
-    & gate = 0..sz_gates
-    & track = 0..sz_tracks
     
     & plane_dummy : AIRPLANE
     

@@ -57,7 +57,7 @@ THEORY ListInvariantX IS
   Expanded_List_Invariant(Machine(Gate))==(btrue);
   Abstract_List_Invariant(Machine(Gate))==(btrue);
   Context_List_Invariant(Machine(Gate))==(btrue);
-  List_Invariant(Machine(Gate))==(gates: gate --> AIRPLANE)
+  List_Invariant(Machine(Gate))==(gates: 0..sz_gates --> AIRPLANE)
 END
 &
 THEORY ListAssertionsX IS
@@ -76,9 +76,9 @@ THEORY ListExclusivityX IS
 END
 &
 THEORY ListInitialisationX IS
-  Expanded_List_Initialisation(Machine(Gate))==(gates:=gate*{plane_dummy});
+  Expanded_List_Initialisation(Machine(Gate))==(gates:=(0..sz_gates)*{plane_dummy});
   Context_List_Initialisation(Machine(Gate))==(skip);
-  List_Initialisation(Machine(Gate))==(gates:=gate*{plane_dummy})
+  List_Initialisation(Machine(Gate))==(gates:=(0..sz_gates)*{plane_dummy})
 END
 &
 THEORY ListParametersX IS
@@ -123,17 +123,17 @@ END
 THEORY ListOperationGuardX END
 &
 THEORY ListPreconditionX IS
-  List_Precondition(Machine(Gate),occupy_gate)==(aa: AIRPLANE & gg: gate & aa/:ran(gates) & gates(gg) = plane_dummy);
-  List_Precondition(Machine(Gate),vacate_gate)==(gg: gate & gates(gg)/=plane_dummy);
-  List_Precondition(Machine(Gate),is_gate_occupied)==(gg: gate);
-  List_Precondition(Machine(Gate),gate_belongs_to)==(gg: gate & gates(gg)/=plane_dummy)
+  List_Precondition(Machine(Gate),occupy_gate)==(aa: AIRPLANE & gg: 0..sz_gates & aa/:ran(gates) & gates(gg) = plane_dummy);
+  List_Precondition(Machine(Gate),vacate_gate)==(gg: 0..sz_gates & gates(gg)/=plane_dummy);
+  List_Precondition(Machine(Gate),is_gate_occupied)==(gg: 0..sz_gates);
+  List_Precondition(Machine(Gate),gate_belongs_to)==(gg: 0..sz_gates & gates(gg)/=plane_dummy)
 END
 &
 THEORY ListSubstitutionX IS
-  Expanded_List_Substitution(Machine(Gate),gate_belongs_to)==(gg: gate & gates(gg)/=plane_dummy | aa:=gates(gg));
-  Expanded_List_Substitution(Machine(Gate),is_gate_occupied)==(gg: gate | gates(gg) = plane_dummy ==> bb:=FALSE [] not(gates(gg) = plane_dummy) ==> bb:=TRUE);
-  Expanded_List_Substitution(Machine(Gate),vacate_gate)==(gg: gate & gates(gg)/=plane_dummy | gates:=gates<+{gg|->plane_dummy});
-  Expanded_List_Substitution(Machine(Gate),occupy_gate)==(aa: AIRPLANE & gg: gate & aa/:ran(gates) & gates(gg) = plane_dummy | gates:=gates<+{gg|->aa});
+  Expanded_List_Substitution(Machine(Gate),gate_belongs_to)==(gg: 0..sz_gates & gates(gg)/=plane_dummy | aa:=gates(gg));
+  Expanded_List_Substitution(Machine(Gate),is_gate_occupied)==(gg: 0..sz_gates | gates(gg) = plane_dummy ==> bb:=FALSE [] not(gates(gg) = plane_dummy) ==> bb:=TRUE);
+  Expanded_List_Substitution(Machine(Gate),vacate_gate)==(gg: 0..sz_gates & gates(gg)/=plane_dummy | gates:=gates<+{gg|->plane_dummy});
+  Expanded_List_Substitution(Machine(Gate),occupy_gate)==(aa: AIRPLANE & gg: 0..sz_gates & aa/:ran(gates) & gates(gg) = plane_dummy | gates:=gates<+{gg|->aa});
   List_Substitution(Machine(Gate),occupy_gate)==(gates(gg):=aa);
   List_Substitution(Machine(Gate),vacate_gate)==(gates(gg):=plane_dummy);
   List_Substitution(Machine(Gate),is_gate_occupied)==(IF gates(gg) = plane_dummy THEN bb:=FALSE ELSE bb:=TRUE END);
@@ -170,7 +170,7 @@ END
 &
 THEORY ListPropertiesX IS
   Abstract_List_Properties(Machine(Gate))==(btrue);
-  Context_List_Properties(Machine(Gate))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
+  Context_List_Properties(Machine(Gate))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
   Inherited_List_Properties(Machine(Gate))==(btrue);
   List_Properties(Machine(Gate))==(btrue)
 END
@@ -199,15 +199,15 @@ THEORY ListOfIdsX IS
   List_Of_VisibleCst_Ids(Machine(Gate)) == (?);
   List_Of_VisibleVar_Ids(Machine(Gate)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Gate)) == (?: ?);
-  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
+  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
   List_Of_HiddenCst_Ids(Machine(Airport_ctx)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
+  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,plane_dummy);
   List_Of_VisibleVar_Ids(Machine(Airport_ctx)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Airport_ctx)) == (?: ?)
 END
 &
 THEORY VariablesEnvX IS
-  Variables(Machine(Gate)) == (Type(gates) == Mvl(SetOf(btype(INTEGER,"[gate","]gate")*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE"))))
+  Variables(Machine(Gate)) == (Type(gates) == Mvl(SetOf(btype(INTEGER,0,sz_gates)*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE"))))
 END
 &
 THEORY OperationsEnvX IS

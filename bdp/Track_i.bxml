@@ -77,16 +77,26 @@
 </Id>
 <Binary_Exp op='--&gt;' typref='2956504756'>
 <Attr>
-<Pos l='18' c='28' s='3'/>
+<Pos l='18' c='35' s='3'/>
 </Attr>
-<Id value='track' typref='3603043417'>
+<Binary_Exp op='..' typref='3603043417'>
 <Attr>
-<Pos l='18' c='22' s='5'/>
+<Pos l='18' c='23' s='2'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='18' c='22' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='sz_tracks' typref='2701647786'>
+<Attr>
+<Pos l='18' c='25' s='9'/>
 </Attr>
 </Id>
+</Binary_Exp>
 <Id value='OCCUPATION' typref='1900168096'>
 <Attr>
-<Pos l='18' c='32' s='10'/>
+<Pos l='18' c='39' s='10'/>
 </Attr>
 </Id>
 </Binary_Exp>
@@ -186,20 +196,30 @@
 <Values>
 <Binary_Exp op='*' typref='4032523621'>
 <Attr>
-<Pos l='25' c='29' s='1'/>
+<Pos l='25' c='38' s='1'/>
 </Attr>
-<Id value='track' typref='3603043417'>
+<Binary_Exp op='..' typref='3603043417'>
 <Attr>
-<Pos l='25' c='23' s='5'/>
+<Pos l='25' c='25' s='2'/>
+</Attr>
+<Integer_Literal value='0' typref='2701647786'>
+<Attr>
+<Pos l='25' c='24' s='1'/>
+</Attr>
+</Integer_Literal>
+<Id value='sz_tracks' typref='2701647786'>
+<Attr>
+<Pos l='25' c='27' s='9'/>
 </Attr>
 </Id>
+</Binary_Exp>
 <Nary_Exp op='{' typref='1900168096'>
 <Attr>
-<Pos l='25' c='31' s='1'/>
+<Pos l='25' c='40' s='1'/>
 </Attr>
 <Id value='unoccupied' typref='2702565625'>
 <Attr>
-<Pos l='25' c='32' s='10'/>
+<Pos l='25' c='41' s='10'/>
 </Attr>
 </Id>
 </Nary_Exp>

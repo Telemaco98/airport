@@ -1,5 +1,5 @@
 <Proof_Obligations>
-<Define name="B definitions" merge="=">
+<Define merge="=" name="B definitions">
 <Nary_Pred op="&amp;">
 <Exp_Comparison op="=">
 <Id value="NAT"/>
@@ -17,50 +17,50 @@
 </Exp_Comparison>
 </Nary_Pred>
 </Define>
-<Define name="ctx" merge="=">
+<Define merge="-" name="ctx">
 <Attr>
 <Pos c="1" s="4" l="8"/>
 </Attr>
 <Set>
-<Id typref="1569085991" value="AIRPLANE" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:1:1">
+<Id value="AIRPLANE" typref="1569085991" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:1:1">
 <Attr>
 <Pos c="5" s="8" l="9"/>
 </Attr>
 </Id>
 </Set>
 <Set>
-<Id typref="515940807" value="STATUS" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:1">
+<Id value="STATUS" typref="515940807" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:1">
 <Attr>
 <Pos c="5" s="6" l="11"/>
 </Attr>
 </Id>
 <Enumerated_Values>
-<Id typref="2246778642" value="out" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:1">
+<Id value="out" typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:1">
 <Attr>
 <Pos c="16" s="3" l="11"/>
 </Attr>
 </Id>
-<Id typref="2246778642" value="flighting" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:2">
+<Id value="flighting" typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:2">
 <Attr>
 <Pos c="21" s="9" l="11"/>
 </Attr>
 </Id>
-<Id typref="2246778642" value="alighting" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:3">
+<Id value="alighting" typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:3">
 <Attr>
 <Pos c="32" s="9" l="11"/>
 </Attr>
 </Id>
-<Id typref="2246778642" value="parked" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:4">
+<Id value="parked" typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:4">
 <Attr>
 <Pos c="43" s="6" l="11"/>
 </Attr>
 </Id>
-<Id typref="2246778642" value="boarding" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:5">
+<Id value="boarding" typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:5">
 <Attr>
 <Pos c="51" s="8" l="11"/>
 </Attr>
 </Id>
-<Id typref="2246778642" value="departing" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:6">
+<Id value="departing" typref="2246778642" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:2:2:6">
 <Attr>
 <Pos c="61" s="9" l="11"/>
 </Attr>
@@ -68,18 +68,18 @@
 </Enumerated_Values>
 </Set>
 <Set>
-<Id typref="1900168096" value="OCCUPATION" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:1">
+<Id value="OCCUPATION" typref="1900168096" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:1">
 <Attr>
 <Pos c="5" s="10" l="12"/>
 </Attr>
 </Id>
 <Enumerated_Values>
-<Id typref="2702565625" value="occupied" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:2:1">
+<Id value="occupied" typref="2702565625" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:2:1">
 <Attr>
 <Pos c="19" s="8" l="12"/>
 </Attr>
 </Id>
-<Id typref="2702565625" value="unoccupied" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:2:2">
+<Id value="unoccupied" typref="2702565625" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:1:3:2:2">
 <Attr>
 <Pos c="29" s="10" l="12"/>
 </Attr>
@@ -87,314 +87,162 @@
 </Enumerated_Values>
 </Set>
 <Attr>
-<Pos c="1" s="10" l="21"/>
+<Pos c="1" s="10" l="19"/>
 </Attr>
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="16" s="1" l="22"/>
+<Pos c="16" s="1" l="20"/>
 </Attr>
-<Id typref="2701647786" value="sz_gates" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:1:1">
+<Id value="sz_gates" typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:1:1">
 <Attr>
-<Pos c="7" s="8" l="22"/>
-</Attr>
-</Id>
-<Id typref="3603043417" value="NAT1" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:1:2">
-<Attr>
-<Pos c="18" s="4" l="22"/>
+<Pos c="7" s="8" l="20"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=">">
+<Id value="NAT1" typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:1:2">
 <Attr>
-<Pos c="34" s="1" l="22"/>
-</Attr>
-<Id typref="2701647786" value="sz_gates" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:2:1">
-<Attr>
-<Pos c="25" s="8" l="22"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:2:2">
-<Attr>
-<Pos c="36" s="1" l="22"/>
-</Attr>
-</Integer_Literal>
-</Exp_Comparison>
-<Exp_Comparison op=":">
-<Attr>
-<Pos c="17" s="1" l="23"/>
-</Attr>
-<Id typref="2701647786" value="sz_tracks" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:3:1">
-<Attr>
-<Pos c="7" s="9" l="23"/>
-</Attr>
-</Id>
-<Id typref="3603043417" value="NAT1" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:3:2">
-<Attr>
-<Pos c="19" s="4" l="23"/>
+<Pos c="18" s="4" l="20"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=">">
 <Attr>
-<Pos c="36" s="1" l="23"/>
+<Pos c="34" s="1" l="20"/>
 </Attr>
-<Id typref="2701647786" value="sz_tracks" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:4:1">
+<Id value="sz_gates" typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:2:1">
 <Attr>
-<Pos c="26" s="9" l="23"/>
+<Pos c="25" s="8" l="20"/>
 </Attr>
 </Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:4:2">
+<Integer_Literal value="1" typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:2:2">
 <Attr>
-<Pos c="38" s="1" l="23"/>
+<Pos c="36" s="1" l="20"/>
 </Attr>
 </Integer_Literal>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="20" s="1" l="24"/>
+<Pos c="17" s="1" l="21"/>
 </Attr>
-<Id typref="2701647786" value="sz_airplanes" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:5:1">
+<Id value="sz_tracks" typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:3:1">
 <Attr>
-<Pos c="7" s="12" l="24"/>
+<Pos c="7" s="9" l="21"/>
 </Attr>
 </Id>
-<Id typref="3603043417" value="NAT1" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:5:2">
+<Id value="NAT1" typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:3:2">
 <Attr>
-<Pos c="22" s="4" l="24"/>
+<Pos c="19" s="4" l="21"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op=">">
 <Attr>
-<Pos c="42" s="1" l="24"/>
+<Pos c="36" s="1" l="21"/>
 </Attr>
-<Id typref="2701647786" value="sz_airplanes" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:6:1">
+<Id value="sz_tracks" typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:4:1">
 <Attr>
-<Pos c="29" s="12" l="24"/>
+<Pos c="26" s="9" l="21"/>
 </Attr>
 </Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:6:2">
+<Integer_Literal value="1" typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:4:2">
 <Attr>
-<Pos c="44" s="1" l="24"/>
+<Pos c="38" s="1" l="21"/>
 </Attr>
 </Integer_Literal>
-</Exp_Comparison>
-<Exp_Comparison op="=">
-<Attr>
-<Pos c="12" s="1" l="26"/>
-</Attr>
-<Id typref="3603043417" value="gate" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:7:1">
-<Attr>
-<Pos c="7" s="4" l="26"/>
-</Attr>
-</Id>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="15" s="2" l="26"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:7:2:1">
-<Attr>
-<Pos c="14" s="1" l="26"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_gates" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:7:2:2">
-<Attr>
-<Pos c="17" s="8" l="26"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op="=">
-<Attr>
-<Pos c="13" s="1" l="27"/>
-</Attr>
-<Id typref="3603043417" value="track" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:8:1">
-<Attr>
-<Pos c="7" s="5" l="27"/>
-</Attr>
-</Id>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="16" s="2" l="27"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:8:2:1">
-<Attr>
-<Pos c="15" s="1" l="27"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_tracks" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:8:2:2">
-<Attr>
-<Pos c="18" s="9" l="27"/>
-</Attr>
-</Id>
-</Binary_Exp>
 </Exp_Comparison>
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="19" s="1" l="29"/>
+<Pos c="20" s="1" l="22"/>
 </Attr>
-<Id typref="1727109426" value="plane_dummy" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:9:1">
+<Id value="sz_airplanes" typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:5:1">
 <Attr>
-<Pos c="7" s="11" l="29"/>
+<Pos c="7" s="12" l="22"/>
 </Attr>
 </Id>
-<Id typref="1569085991" value="AIRPLANE" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:9:2">
+<Id value="NAT1" typref="3603043417" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:5:2">
 <Attr>
-<Pos c="21" s="8" l="29"/>
+<Pos c="22" s="4" l="22"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=">">
+<Attr>
+<Pos c="42" s="1" l="22"/>
+</Attr>
+<Id value="sz_airplanes" typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:6:1">
+<Attr>
+<Pos c="29" s="12" l="22"/>
+</Attr>
+</Id>
+<Integer_Literal value="1" typref="2701647786" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:6:2">
+<Attr>
+<Pos c="44" s="1" l="22"/>
+</Attr>
+</Integer_Literal>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
+<Pos c="19" s="1" l="24"/>
+</Attr>
+<Id value="plane_dummy" typref="1727109426" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:7:1">
+<Attr>
+<Pos c="7" s="11" l="24"/>
+</Attr>
+</Id>
+<Id value="AIRPLANE" typref="1569085991" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:3:1:7:2">
+<Attr>
+<Pos c="21" s="8" l="24"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 </Nary_Pred>
 </Define>
-<Define name="seext" merge="="/>
-<Define name="lprp" merge="="/>
-<Define name="inprp" merge="="/>
-<Define name="inext" merge="="/>
-<Define name="inv" merge="=">
+<Define merge="=" name="seext"/>
+<Define merge="=" name="lprp"/>
+<Define merge="=" name="inprp"/>
+<Define merge="=" name="inext"/>
+<Define merge="-" name="inv">
 <Attr>
 <Pos c="1" s="9" l="14"/>
 </Attr>
-<Nary_Pred op="&amp;">
-<Exp_Comparison initialTag="((pointer) : (((0) .. (sz_airplanes))))" op=":">
-<Attr>
-<Pos c="13" s="1" l="15"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:1">
-<Attr>
-<Pos c="5" s="7" l="15"/>
-</Attr>
-</Id>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="16" s="2" l="15"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:1">
+<Exp_Comparison op=":">
 <Attr>
 <Pos c="15" s="1" l="15"/>
 </Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:2">
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1" initialTag="airplanes">
 <Attr>
-<Pos c="18" s="12" l="15"/>
+<Pos c="5" s="9" l="15"/>
+</Attr>
+</Id>
+<Binary_Exp op=">+>" typref="2971351405" initialTag="((((0) .. (sz_airplanes))) >+> (AIRPLANE))">
+<Attr>
+<Pos c="33" s="3" l="15"/>
+</Attr>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos c="18" s="2" l="15"/>
+</Attr>
+<Integer_Literal value="0" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1:1">
+<Attr>
+<Pos c="17" s="1" l="15"/>
+</Attr>
+</Integer_Literal>
+<Id value="sz_airplanes" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1:2">
+<Attr>
+<Pos c="20" s="12" l="15"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2">
+<Attr>
+<Pos c="37" s="8" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
-<Exp_Comparison initialTag="((airplanes) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="17" s="1" l="16"/>
-</Attr>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1">
-<Attr>
-<Pos c="7" s="9" l="16"/>
-</Attr>
-</Id>
-<Binary_Exp typref="2971351405" op="-->">
-<Attr>
-<Pos c="35" s="3" l="16"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="20" s="2" l="16"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:1">
-<Attr>
-<Pos c="19" s="1" l="16"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:2">
-<Attr>
-<Pos c="22" s="12" l="16"/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:2">
-<Attr>
-<Pos c="39" s="8" l="16"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-<Exp_Comparison initialTag="((((((0) .. ((pointer - 1)))) &lt;| (airplanes))) : (((((0) .. ((pointer - 1)))) >-> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="37" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="23" s="2" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="9" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:1">
-<Attr>
-<Pos c="8" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="19" s="1" l="17"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:1">
-<Attr>
-<Pos c="12" s="7" l="17"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:2">
-<Attr>
-<Pos c="20" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:2">
-<Attr>
-<Pos c="26" s="9" l="17"/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Binary_Exp typref="2971351405" op=">->">
-<Attr>
-<Pos c="54" s="3" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="40" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:1">
-<Attr>
-<Pos c="39" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="50" s="1" l="17"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:1">
-<Attr>
-<Pos c="43" s="7" l="17"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:2">
-<Attr>
-<Pos c="51" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:2">
-<Attr>
-<Pos c="58" s="8" l="17"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Nary_Pred>
 </Define>
-<Define name="ass" merge="="/>
-<Define name="cst" merge="="/>
+<Define merge="=" name="ass"/>
+<Define merge="=" name="cst"/>
 <Proof_Obligation>
 <Comment>Initialisation dans une machine abstraite</Comment>
 <Tag>Initialisation</Tag>
@@ -414,212 +262,44 @@
 <Goal>
 <Binary_Pred op="=>">
 <Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((pointer) : (((0) .. (sz_airplanes))))" op=":">
-<Attr>
-<Pos c="13" s="1" l="15"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:2:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:2:1:1">
-<Attr>
-<Pos c="8" s="7" l="21"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="16" s="2" l="15"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:1">
+<Exp_Comparison op=":" goalTag="Invariant is preserved">
 <Attr>
 <Pos c="15" s="1" l="15"/>
 </Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:2">
+<EmptySet typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:1:1">
 <Attr>
-<Pos c="18" s="12" l="15"/>
+<Pos c="5" s="9" l="18"/>
+</Attr>
+</EmptySet>
+<Binary_Exp op=">+>" typref="2971351405" initialTag="((((0) .. (sz_airplanes))) >+> (AIRPLANE))">
+<Attr>
+<Pos c="33" s="3" l="15"/>
+</Attr>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos c="18" s="2" l="15"/>
+</Attr>
+<Integer_Literal value="0" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1:1">
+<Attr>
+<Pos c="17" s="1" l="15"/>
+</Attr>
+</Integer_Literal>
+<Id value="sz_airplanes" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1:2">
+<Attr>
+<Pos c="20" s="12" l="15"/>
+</Attr>
+</Id>
+</Binary_Exp>
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2">
+<Attr>
+<Pos c="37" s="8" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 </Binary_Pred>
 </Goal>
-<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Invariant is preserved</Tag>
-<Goal>
-<Binary_Pred op="=>">
-<Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((airplanes) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="17" s="1" l="16"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="*" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:1:1:1">
-<Attr>
-<Pos c="5" s="9" l="20"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="20" s="2" l="20"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:1:2:1:1:1">
-<Attr>
-<Pos c="19" s="1" l="20"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:1:2:1:1:2">
-<Attr>
-<Pos c="22" s="12" l="20"/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Nary_Exp typref="1569085991" op="{">
-<Attr>
-<Pos c="38" s="1" l="20"/>
-</Attr>
-<Id typref="1727109426" value="plane_dummy" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:1:2:1:2:1">
-<Attr>
-<Pos c="39" s="11" l="20"/>
-</Attr>
-</Id>
-</Nary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="2971351405" op="-->">
-<Attr>
-<Pos c="35" s="3" l="16"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="20" s="2" l="16"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:1">
-<Attr>
-<Pos c="19" s="1" l="16"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:2">
-<Attr>
-<Pos c="22" s="12" l="16"/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:2">
-<Attr>
-<Pos c="39" s="8" l="16"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Binary_Pred>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(1)" passList="Force(1),(?; 0)"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Invariant is preserved</Tag>
-<Goal>
-<Binary_Pred op="=>">
-<Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((((((0) .. ((pointer - 1)))) &lt;| (airplanes))) : (((((0) .. ((pointer - 1)))) >-> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="37" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="23" s="2" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="9" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:1">
-<Attr>
-<Pos c="8" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="19" s="1" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:2:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:2:1:1">
-<Attr>
-<Pos c="8" s="7" l="21"/>
-</Attr>
-</Integer_Literal>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:2">
-<Attr>
-<Pos c="20" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="1731522284" op="*" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:2,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:1:1:1">
-<Attr>
-<Pos c="5" s="9" l="20"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="20" s="2" l="20"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:1:2:1:1:1">
-<Attr>
-<Pos c="19" s="1" l="20"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:1:2:1:1:2">
-<Attr>
-<Pos c="22" s="12" l="20"/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Nary_Exp typref="1569085991" op="{">
-<Attr>
-<Pos c="38" s="1" l="20"/>
-</Attr>
-<Id typref="1727109426" value="plane_dummy" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:1:2:1:2:1">
-<Attr>
-<Pos c="39" s="11" l="20"/>
-</Attr>
-</Id>
-</Nary_Exp>
-</Binary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="2971351405" op=">->">
-<Attr>
-<Pos c="54" s="3" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="40" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:1">
-<Attr>
-<Pos c="39" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="50" s="1" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:2:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:4:1:2:1:1">
-<Attr>
-<Pos c="8" s="7" l="21"/>
-</Attr>
-</Integer_Literal>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:2">
-<Attr>
-<Pos c="51" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:2">
-<Attr>
-<Pos c="58" s="8" l="17"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Binary_Pred>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
+<Proof_State proofState="Proved(0)" passList="Force(0),?" methodList="pr"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>
@@ -639,327 +319,170 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="16" s="1" l="25"/>
+<Pos c="16" s="1" l="22"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:1">
 <Attr>
-<Pos c="13" s="2" l="25"/>
+<Pos c="13" s="2" l="22"/>
 </Attr>
 </Id>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:2">
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:2">
 <Attr>
-<Pos c="18" s="8" l="25"/>
+<Pos c="18" s="8" l="22"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/=">
 <Attr>
-<Pos c="16" s="2" l="26"/>
+<Pos c="16" s="2" l="23"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:1">
 <Attr>
-<Pos c="13" s="2" l="26"/>
+<Pos c="13" s="2" l="23"/>
 </Attr>
 </Id>
-<Id typref="1727109426" value="plane_dummy" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:2">
+<Id value="plane_dummy" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:2">
 <Attr>
-<Pos c="19" s="11" l="26"/>
+<Pos c="19" s="11" l="23"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos c="16" s="2" l="27"/>
+<Pos c="16" s="2" l="24"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:1">
 <Attr>
-<Pos c="13" s="2" l="27"/>
+<Pos c="13" s="2" l="24"/>
 </Attr>
 </Id>
-<Unary_Exp typref="1569085991" op="ran">
+<Unary_Exp op="ran" typref="1569085991">
 <Attr>
-<Pos c="19" s="3" l="27"/>
+<Pos c="19" s="3" l="24"/>
 </Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1">
 <Attr>
-<Pos c="39" s="2" l="27"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="24" s="2" l="27"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:1:1">
-<Attr>
-<Pos c="23" s="1" l="27"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="35" s="1" l="27"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:1:2:1">
-<Attr>
-<Pos c="27" s="7" l="27"/>
+<Pos c="23" s="9" l="24"/>
 </Attr>
 </Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:1:2:2">
-<Attr>
-<Pos c="36" s="1" l="27"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:2">
-<Attr>
-<Pos c="42" s="9" l="27"/>
-</Attr>
-</Id>
-</Binary_Exp>
 </Unary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op="&lt;">
-<Attr>
-<Pos c="21" s="1" l="28"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:4:1">
-<Attr>
-<Pos c="13" s="7" l="28"/>
-</Attr>
-</Id>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:4:2">
-<Attr>
-<Pos c="23" s="12" l="28"/>
-</Attr>
-</Id>
 </Exp_Comparison>
 </Nary_Pred>
 </Hypothesis>
 <Local_Hyp num="1">
 <Nary_Pred op="&amp;"/>
 </Local_Hyp>
+<Local_Hyp num="2">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos c="23" s="1" l="26"/>
+</Attr>
+<Id value="xx" suffix="" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1">
+<Attr>
+<Pos c="18" s="2" l="25"/>
+</Attr>
+</Id>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos c="26" s="2" l="26"/>
+</Attr>
+<Integer_Literal value="0" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1:2:1">
+<Attr>
+<Pos c="25" s="1" l="26"/>
+</Attr>
+</Integer_Literal>
+<Id value="sz_airplanes" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1:2:2">
+<Attr>
+<Pos c="28" s="12" l="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/:">
+<Attr>
+<Pos c="46" s="2" l="26"/>
+</Attr>
+<Id value="xx" suffix="" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1">
+<Attr>
+<Pos c="18" s="2" l="25"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="3603043417">
+<Attr>
+<Pos c="49" s="3" l="26"/>
+</Attr>
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:2:2:1">
+<Attr>
+<Pos c="53" s="9" l="26"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Local_Hyp>
 <Simple_Goal>
 <Tag>Invariant is preserved</Tag>
 <Goal>
 <Binary_Pred op="=>">
+<Nary_Pred op="&amp;">
+<Ref_Hyp num="2"/>
 <Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((pointer) : (((0) .. (sz_airplanes))))" op=":">
-<Attr>
-<Pos c="13" s="1" l="15"/>
-</Attr>
-<Binary_Exp typref="2701647786" op="+" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1">
-<Attr>
-<Pos c="14" s="7" l="30"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:2:1:1">
-<Attr>
-<Pos c="25" s="7" l="30"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:2:1:2">
-<Attr>
-<Pos c="35" s="1" l="30"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="16" s="2" l="15"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:1">
+</Nary_Pred>
+<Exp_Comparison op=":" goalTag="Invariant is preserved">
 <Attr>
 <Pos c="15" s="1" l="15"/>
 </Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:2">
+<Binary_Exp op="&lt;+" typref="1731522284" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:3:1:1:1:1">
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:3:1:1:1:1">
 <Attr>
-<Pos c="18" s="12" l="15"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Binary_Pred>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Invariant is preserved</Tag>
-<Goal>
-<Binary_Pred op="=>">
-<Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((airplanes) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="17" s="1" l="16"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;+" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1:1:1">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1:1:1">
-<Attr>
-<Pos c="14" s="9" l="29"/>
+<Pos c="19" s="9" l="27"/>
 </Attr>
 </Id>
 <Nary_Exp op="{">
 <Binary_Exp op="|->">
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1:1:2">
+<Id value="xx" suffix="" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:3:1:1:1:2,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1">
 <Attr>
-<Pos c="24" s="7" l="29"/>
+<Pos c="18" s="2" l="25"/>
 </Attr>
 </Id>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:2:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:3:1:2:1">
 <Attr>
-<Pos c="36" s="2" l="29"/>
+<Pos c="36" s="2" l="27"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Nary_Exp>
 </Binary_Exp>
-<Binary_Exp typref="2971351405" op="-->">
+<Binary_Exp op=">+>" typref="2971351405" initialTag="((((0) .. (sz_airplanes))) >+> (AIRPLANE))">
 <Attr>
-<Pos c="35" s="3" l="16"/>
+<Pos c="33" s="3" l="15"/>
 </Attr>
-<Binary_Exp typref="3603043417" op="..">
+<Binary_Exp op=".." typref="3603043417">
 <Attr>
-<Pos c="20" s="2" l="16"/>
+<Pos c="18" s="2" l="15"/>
 </Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:1">
+<Integer_Literal value="0" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1:1">
 <Attr>
-<Pos c="19" s="1" l="16"/>
+<Pos c="17" s="1" l="15"/>
 </Attr>
 </Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:2">
+<Id value="sz_airplanes" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1:2">
 <Attr>
-<Pos c="22" s="12" l="16"/>
+<Pos c="20" s="12" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:2">
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2">
 <Attr>
-<Pos c="39" s="8" l="16"/>
+<Pos c="37" s="8" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 </Binary_Pred>
 </Goal>
-<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Invariant is preserved</Tag>
-<Goal>
-<Binary_Pred op="=>">
-<Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((((((0) .. ((pointer - 1)))) &lt;| (airplanes))) : (((((0) .. ((pointer - 1)))) >-> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="37" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="23" s="2" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="9" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:1">
-<Attr>
-<Pos c="8" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="19" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="2701647786" op="+" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1">
-<Attr>
-<Pos c="14" s="7" l="30"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:2:1:1">
-<Attr>
-<Pos c="25" s="7" l="30"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:2:1:2">
-<Attr>
-<Pos c="35" s="1" l="30"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:2">
-<Attr>
-<Pos c="20" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="1731522284" op="&lt;+" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:2,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1:1:1">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1:1:1">
-<Attr>
-<Pos c="14" s="9" l="29"/>
-</Attr>
-</Id>
-<Nary_Exp op="{">
-<Binary_Exp op="|->">
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:1:1:2">
-<Attr>
-<Pos c="24" s="7" l="29"/>
-</Attr>
-</Id>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:1:2:1">
-<Attr>
-<Pos c="36" s="2" l="29"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Nary_Exp>
-</Binary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="2971351405" op=">->">
-<Attr>
-<Pos c="54" s="3" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="40" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:1">
-<Attr>
-<Pos c="39" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="50" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="2701647786" op="+" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1">
-<Attr>
-<Pos c="14" s="7" l="30"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:2:1:1">
-<Attr>
-<Pos c="25" s="7" l="30"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:2:1:2">
-<Attr>
-<Pos c="35" s="1" l="30"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:2">
-<Attr>
-<Pos c="51" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:2">
-<Attr>
-<Pos c="58" s="8" l="17"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Binary_Pred>
-</Goal>
-<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0; 1; 2; 3)"/>
+<Proof_State proofState="Proved(0)" passList="Force(0),?" methodList="pr"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>
@@ -979,67 +502,52 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
+<Pos c="16" s="1" l="32"/>
+</Attr>
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:1">
+<Attr>
+<Pos c="13" s="2" l="32"/>
+</Attr>
+</Id>
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:2">
+<Attr>
+<Pos c="18" s="8" l="32"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Attr>
+<Pos c="16" s="2" l="33"/>
+</Attr>
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:1">
+<Attr>
+<Pos c="13" s="2" l="33"/>
+</Attr>
+</Id>
+<Id value="plane_dummy" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2">
+<Attr>
+<Pos c="19" s="11" l="33"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
 <Pos c="16" s="1" l="34"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:3:1">
 <Attr>
 <Pos c="13" s="2" l="34"/>
 </Attr>
 </Id>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:2">
+<Unary_Exp op="ran" typref="1569085991">
 <Attr>
-<Pos c="18" s="8" l="34"/>
+<Pos c="18" s="3" l="34"/>
+</Attr>
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:3:2:1">
+<Attr>
+<Pos c="22" s="9" l="34"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=":">
-<Attr>
-<Pos c="16" s="1" l="35"/>
-</Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:1">
-<Attr>
-<Pos c="13" s="2" l="35"/>
-</Attr>
-</Id>
-<Unary_Exp typref="1569085991" op="ran">
-<Attr>
-<Pos c="18" s="3" l="35"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="38" s="2" l="35"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="23" s="2" l="35"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2:1:1:1">
-<Attr>
-<Pos c="22" s="1" l="35"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="34" s="1" l="35"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2:1:1:2:1">
-<Attr>
-<Pos c="26" s="7" l="35"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2:1:1:2:2">
-<Attr>
-<Pos c="35" s="1" l="35"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2:1:2">
-<Attr>
-<Pos c="41" s="9" l="35"/>
-</Attr>
-</Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 </Nary_Pred>
@@ -1052,692 +560,59 @@
 <Goal>
 <Binary_Pred op="=>">
 <Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((pointer) : (((0) .. (sz_airplanes))))" op=":">
-<Attr>
-<Pos c="13" s="1" l="15"/>
-</Attr>
-<Binary_Exp typref="2701647786" op="-" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:1:1">
-<Attr>
-<Pos c="14" s="7" l="37"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:2:1:1">
-<Attr>
-<Pos c="25" s="7" l="37"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:2:1:2">
-<Attr>
-<Pos c="35" s="1" l="37"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="16" s="2" l="15"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:1">
+<Exp_Comparison op=":" goalTag="Invariant is preserved">
 <Attr>
 <Pos c="15" s="1" l="15"/>
 </Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:2">
+<Binary_Exp op="|>>" typref="1731522284" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1">
 <Attr>
-<Pos c="18" s="12" l="15"/>
+<Pos c="14" s="9" l="35"/>
+</Attr>
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:1:1">
+<Attr>
+<Pos c="27" s="9" l="35"/>
 </Attr>
 </Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Binary_Pred>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(2)" passList="Force(2),(?; 0; 1)"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Invariant is preserved</Tag>
-<Goal>
-<Binary_Pred op="=>">
-<Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((airplanes) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))))" op=":">
+<Nary_Exp op="{" typref="1569085991">
 <Attr>
-<Pos c="17" s="1" l="16"/>
+<Pos c="41" s="1" l="35"/>
 </Attr>
-<Binary_Exp typref="1731522284" op="&lt;+" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:1">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:1:2:1">
 <Attr>
-<Pos c="14" s="9" l="36"/>
+<Pos c="42" s="2" l="35"/>
 </Attr>
 </Id>
-<Nary_Exp op="{">
-<Binary_Exp op="|->">
-<Binary_Exp typref="2701647786" op="(">
-<Attr>
-<Pos c="52" s="0" l="36"/>
-</Attr>
-<Unary_Exp typref="3692640428" op="~">
-<Attr>
-<Pos c="50" s="1" l="36"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="38" s="2" l="36"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="26" s="2" l="36"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:1">
-<Attr>
-<Pos c="25" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="35" s="1" l="36"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:1">
-<Attr>
-<Pos c="28" s="7" l="36"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:2">
-<Attr>
-<Pos c="36" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:2">
-<Attr>
-<Pos c="41" s="9" l="36"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Unary_Exp>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:2">
-<Attr>
-<Pos c="53" s="2" l="36"/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Binary_Exp typref="1727109426" op="(">
-<Attr>
-<Pos c="70" s="0" l="36"/>
-</Attr>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:1">
-<Attr>
-<Pos c="61" s="9" l="36"/>
-</Attr>
-</Id>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="79" s="1" l="36"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:2:1">
-<Attr>
-<Pos c="71" s="7" l="36"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:2:2">
-<Attr>
-<Pos c="80" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-</Binary_Exp>
 </Nary_Exp>
 </Binary_Exp>
-<Binary_Exp typref="2971351405" op="-->">
+<Binary_Exp op=">+>" typref="2971351405" initialTag="((((0) .. (sz_airplanes))) >+> (AIRPLANE))">
 <Attr>
-<Pos c="35" s="3" l="16"/>
+<Pos c="33" s="3" l="15"/>
 </Attr>
-<Binary_Exp typref="3603043417" op="..">
+<Binary_Exp op=".." typref="3603043417">
 <Attr>
-<Pos c="20" s="2" l="16"/>
+<Pos c="18" s="2" l="15"/>
 </Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:1">
+<Integer_Literal value="0" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1:1">
 <Attr>
-<Pos c="19" s="1" l="16"/>
+<Pos c="17" s="1" l="15"/>
 </Attr>
 </Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:2">
+<Id value="sz_airplanes" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1:2">
 <Attr>
-<Pos c="22" s="12" l="16"/>
+<Pos c="20" s="12" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:2">
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2">
 <Attr>
-<Pos c="39" s="8" l="16"/>
+<Pos c="37" s="8" l="15"/>
 </Attr>
 </Id>
 </Binary_Exp>
 </Exp_Comparison>
 </Binary_Pred>
 </Goal>
-<Proof_State methodList="pr" proofState="Proved(1)" passList="Force(1),(?; 0)"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Invariant is preserved</Tag>
-<Goal>
-<Binary_Pred op="=>">
-<Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((((((0) .. ((pointer - 1)))) &lt;| (airplanes))) : (((((0) .. ((pointer - 1)))) >-> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="37" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="23" s="2" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="9" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:1">
-<Attr>
-<Pos c="8" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="19" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="2701647786" op="-" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:1:1">
-<Attr>
-<Pos c="14" s="7" l="37"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:2:1:1">
-<Attr>
-<Pos c="25" s="7" l="37"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:2:1:2">
-<Attr>
-<Pos c="35" s="1" l="37"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:2">
-<Attr>
-<Pos c="20" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="1731522284" op="&lt;+" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:2,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:1">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:1">
-<Attr>
-<Pos c="14" s="9" l="36"/>
-</Attr>
-</Id>
-<Nary_Exp op="{">
-<Binary_Exp op="|->">
-<Binary_Exp typref="2701647786" op="(">
-<Attr>
-<Pos c="52" s="0" l="36"/>
-</Attr>
-<Unary_Exp typref="3692640428" op="~">
-<Attr>
-<Pos c="50" s="1" l="36"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="38" s="2" l="36"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="26" s="2" l="36"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:1">
-<Attr>
-<Pos c="25" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="35" s="1" l="36"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:1">
-<Attr>
-<Pos c="28" s="7" l="36"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:2">
-<Attr>
-<Pos c="36" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:2">
-<Attr>
-<Pos c="41" s="9" l="36"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Unary_Exp>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:2">
-<Attr>
-<Pos c="53" s="2" l="36"/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Binary_Exp typref="1727109426" op="(">
-<Attr>
-<Pos c="70" s="0" l="36"/>
-</Attr>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:1">
-<Attr>
-<Pos c="61" s="9" l="36"/>
-</Attr>
-</Id>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="79" s="1" l="36"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:2:1">
-<Attr>
-<Pos c="71" s="7" l="36"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:2:2">
-<Attr>
-<Pos c="80" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-</Binary_Exp>
-</Nary_Exp>
-</Binary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="2971351405" op=">->">
-<Attr>
-<Pos c="54" s="3" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="40" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:1">
-<Attr>
-<Pos c="39" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="50" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="2701647786" op="-" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:1:1">
-<Attr>
-<Pos c="14" s="7" l="37"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:2:1:1">
-<Attr>
-<Pos c="25" s="7" l="37"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:2:2:1:2">
-<Attr>
-<Pos c="35" s="1" l="37"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:2">
-<Attr>
-<Pos c="51" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:2">
-<Attr>
-<Pos c="58" s="8" l="17"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Binary_Pred>
-</Goal>
-<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0; 1; 2; 3)"/>
-</Simple_Goal>
-</Proof_Obligation>
-<Proof_Obligation>
-<Comment>Operations dans une machine abstraite</Comment>
-<Tag>remove_on</Tag>
-<Tag>INVARIANT</Tag>
-<Definition name="B definitions"/>
-<Definition name="ctx"/>
-<Definition name="cst"/>
-<Definition name="lprp"/>
-<Definition name="inprp"/>
-<Definition name="inext"/>
-<Definition name="seext"/>
-<Definition name="inv"/>
-<Definition name="ass"/>
-<Hypothesis>
-<Nary_Pred op="&amp;">
-<Exp_Comparison op=":">
-<Attr>
-<Pos c="16" s="1" l="41"/>
-</Attr>
-<Id typref="2701647786" value="pp" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:1">
-<Attr>
-<Pos c="13" s="2" l="41"/>
-</Attr>
-</Id>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="19" s="2" l="41"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:2:1">
-<Attr>
-<Pos c="18" s="1" l="41"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="30" s="1" l="41"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:2:2:1">
-<Attr>
-<Pos c="22" s="7" l="41"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:2:2:2">
-<Attr>
-<Pos c="32" s="1" l="41"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op=">">
-<Attr>
-<Pos c="21" s="1" l="42"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:2:1">
-<Attr>
-<Pos c="13" s="7" l="42"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:2:2">
-<Attr>
-<Pos c="23" s="1" l="42"/>
-</Attr>
-</Integer_Literal>
-</Exp_Comparison>
-</Nary_Pred>
-</Hypothesis>
-<Local_Hyp num="1">
-<Nary_Pred op="&amp;"/>
-</Local_Hyp>
-<Simple_Goal>
-<Tag>Invariant is preserved</Tag>
-<Goal>
-<Binary_Pred op="=>">
-<Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((pointer) : (((0) .. (sz_airplanes))))" op=":">
-<Attr>
-<Pos c="13" s="1" l="15"/>
-</Attr>
-<Binary_Exp typref="2701647786" op="-" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:1:1">
-<Attr>
-<Pos c="14" s="7" l="44"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:2:1:1">
-<Attr>
-<Pos c="25" s="7" l="44"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:2:1:2">
-<Attr>
-<Pos c="35" s="1" l="44"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="16" s="2" l="15"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:1">
-<Attr>
-<Pos c="15" s="1" l="15"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:2">
-<Attr>
-<Pos c="18" s="12" l="15"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Binary_Pred>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
-<iapa>
-<status value="Unproved"/>
-</iapa>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Invariant is preserved</Tag>
-<Goal>
-<Binary_Pred op="=>">
-<Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((airplanes) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="17" s="1" l="16"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;+" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:1:1:1">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:1:1:1">
-<Attr>
-<Pos c="14" s="9" l="43"/>
-</Attr>
-</Id>
-<Nary_Exp op="{">
-<Binary_Exp op="|->">
-<Id typref="2701647786" value="pp" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:1:1:2">
-<Attr>
-<Pos c="24" s="2" l="43"/>
-</Attr>
-</Id>
-<Binary_Exp typref="1727109426" op="(">
-<Attr>
-<Pos c="40" s="0" l="43"/>
-</Attr>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:1">
-<Attr>
-<Pos c="31" s="9" l="43"/>
-</Attr>
-</Id>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="49" s="1" l="43"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:2:1">
-<Attr>
-<Pos c="41" s="7" l="43"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:2:2">
-<Attr>
-<Pos c="50" s="1" l="43"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-</Binary_Exp>
-</Nary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="2971351405" op="-->">
-<Attr>
-<Pos c="35" s="3" l="16"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="20" s="2" l="16"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:1">
-<Attr>
-<Pos c="19" s="1" l="16"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:2">
-<Attr>
-<Pos c="22" s="12" l="16"/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:2">
-<Attr>
-<Pos c="39" s="8" l="16"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Binary_Pred>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Invariant is preserved</Tag>
-<Goal>
-<Binary_Pred op="=>">
-<Ref_Hyp num="1"/>
-<Exp_Comparison goalTag="Invariant is preserved" initialTag="((((((0) .. ((pointer - 1)))) &lt;| (airplanes))) : (((((0) .. ((pointer - 1)))) >-> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="37" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="23" s="2" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="9" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:1">
-<Attr>
-<Pos c="8" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="19" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="2701647786" op="-" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:1:1">
-<Attr>
-<Pos c="14" s="7" l="44"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:2:1:1">
-<Attr>
-<Pos c="25" s="7" l="44"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:2:1:2">
-<Attr>
-<Pos c="35" s="1" l="44"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:1:2:2">
-<Attr>
-<Pos c="20" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="1731522284" op="&lt;+" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:1:2,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:1:1:1">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:1:1:1">
-<Attr>
-<Pos c="14" s="9" l="43"/>
-</Attr>
-</Id>
-<Nary_Exp op="{">
-<Binary_Exp op="|->">
-<Id typref="2701647786" value="pp" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:1:1:2">
-<Attr>
-<Pos c="24" s="2" l="43"/>
-</Attr>
-</Id>
-<Binary_Exp typref="1727109426" op="(">
-<Attr>
-<Pos c="40" s="0" l="43"/>
-</Attr>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:1">
-<Attr>
-<Pos c="31" s="9" l="43"/>
-</Attr>
-</Id>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="49" s="1" l="43"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:2:1">
-<Attr>
-<Pos c="41" s="7" l="43"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:2:2">
-<Attr>
-<Pos c="50" s="1" l="43"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-</Binary_Exp>
-</Nary_Exp>
-</Binary_Exp>
-</Binary_Exp>
-<Binary_Exp typref="2971351405" op=">->">
-<Attr>
-<Pos c="54" s="3" l="17"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="40" s="2" l="17"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:1">
-<Attr>
-<Pos c="39" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="50" s="1" l="17"/>
-</Attr>
-<Binary_Exp typref="2701647786" op="-" tag=",C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:1,C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:1:1">
-<Attr>
-<Pos c="14" s="7" l="44"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:2:1:1">
-<Attr>
-<Pos c="25" s="7" l="44"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:2:1:2">
-<Attr>
-<Pos c="35" s="1" l="44"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:1:2:2">
-<Attr>
-<Pos c="51" s="1" l="17"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:3:2:2">
-<Attr>
-<Pos c="58" s="8" l="17"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Binary_Pred>
-</Goal>
-<Proof_State methodList="?" proofState="Unproved" passList="Force(0),(?; 0; 1; 2; 3)"/>
+<Proof_State proofState="Proved(0)" passList="Force(0),?" methodList="pr"/>
 </Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>
@@ -1754,21 +629,38 @@
 <Definition name="inv"/>
 <Definition name="ass"/>
 <Hypothesis>
+<Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="16" s="1" l="48"/>
+<Pos c="16" s="1" l="39"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:3:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:1">
 <Attr>
-<Pos c="13" s="2" l="48"/>
+<Pos c="13" s="2" l="39"/>
 </Attr>
 </Id>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:3:1:2">
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2">
 <Attr>
-<Pos c="18" s="8" l="48"/>
+<Pos c="18" s="8" l="39"/>
 </Attr>
 </Id>
 </Exp_Comparison>
+<Exp_Comparison op="/=">
+<Attr>
+<Pos c="16" s="2" l="40"/>
+</Attr>
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:1">
+<Attr>
+<Pos c="13" s="2" l="40"/>
+</Attr>
+</Id>
+<Id value="plane_dummy" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:2">
+<Attr>
+<Pos c="19" s="11" l="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
 </Hypothesis>
 <Local_Hyp num="1">
 <Nary_Pred op="&amp;"/>
@@ -1776,52 +668,22 @@
 <Local_Hyp num="2">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="20" s="1" l="49"/>
+<Pos c="20" s="1" l="41"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:4:1:1:1:1">
 <Attr>
-<Pos c="17" s="2" l="49"/>
+<Pos c="17" s="2" l="41"/>
 </Attr>
 </Id>
-<Unary_Exp typref="1569085991" op="ran">
+<Unary_Exp op="ran" typref="1569085991">
 <Attr>
-<Pos c="22" s="3" l="49"/>
+<Pos c="22" s="3" l="41"/>
 </Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:4:1:1:1:2:1">
 <Attr>
-<Pos c="42" s="2" l="49"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="27" s="2" l="49"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:1">
-<Attr>
-<Pos c="26" s="1" l="49"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="38" s="1" l="49"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:2:1">
-<Attr>
-<Pos c="30" s="7" l="49"/>
+<Pos c="26" s="9" l="41"/>
 </Attr>
 </Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:2:2">
-<Attr>
-<Pos c="39" s="1" l="49"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:2">
-<Attr>
-<Pos c="45" s="9" l="49"/>
-</Attr>
-</Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 </Local_Hyp>
@@ -1832,52 +694,22 @@
 <Unary_Pred op="not">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="20" s="1" l="49"/>
+<Pos c="20" s="1" l="41"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:4:1:1:1:1">
 <Attr>
-<Pos c="17" s="2" l="49"/>
+<Pos c="17" s="2" l="41"/>
 </Attr>
 </Id>
-<Unary_Exp typref="1569085991" op="ran">
+<Unary_Exp op="ran" typref="1569085991">
 <Attr>
-<Pos c="22" s="3" l="49"/>
+<Pos c="22" s="3" l="41"/>
 </Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:4:1:1:1:2:1">
 <Attr>
-<Pos c="42" s="2" l="49"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="27" s="2" l="49"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:1">
-<Attr>
-<Pos c="26" s="1" l="49"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="38" s="1" l="49"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:2:1">
-<Attr>
-<Pos c="30" s="7" l="49"/>
+<Pos c="26" s="9" l="41"/>
 </Attr>
 </Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:2:2">
-<Attr>
-<Pos c="39" s="1" l="49"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:2">
-<Attr>
-<Pos c="45" s="9" l="49"/>
-</Attr>
-</Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 </Unary_Pred>
@@ -1902,70 +734,6 @@
 <Definition name="inprp"/>
 <Definition name="inext"/>
 <Definition name="seext"/>
-<Local_Hyp num="1">
-<Exp_Comparison initialTag="((airplanes) : (((((0) .. (sz_airplanes))) --> (AIRPLANE))))" op=":">
-<Attr>
-<Pos c="17" s="1" l="16"/>
-</Attr>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:1">
-<Attr>
-<Pos c="7" s="9" l="16"/>
-</Attr>
-</Id>
-<Binary_Exp typref="2971351405" op="-->">
-<Attr>
-<Pos c="35" s="3" l="16"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="20" s="2" l="16"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:1">
-<Attr>
-<Pos c="19" s="1" l="16"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:1:2">
-<Attr>
-<Pos c="22" s="12" l="16"/>
-</Attr>
-</Id>
-</Binary_Exp>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:2:2:2">
-<Attr>
-<Pos c="39" s="8" l="16"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Local_Hyp>
-<Local_Hyp num="2">
-<Exp_Comparison initialTag="((pointer) : (((0) .. (sz_airplanes))))" op=":">
-<Attr>
-<Pos c="13" s="1" l="15"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:1">
-<Attr>
-<Pos c="5" s="7" l="15"/>
-</Attr>
-</Id>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="16" s="2" l="15"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:1">
-<Attr>
-<Pos c="15" s="1" l="15"/>
-</Attr>
-</Integer_Literal>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:3:1:1:2:2">
-<Attr>
-<Pos c="18" s="12" l="15"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Exp_Comparison>
-</Local_Hyp>
 </Proof_Obligation>
 <Proof_Obligation>
 <Tag>WellDefinednessInitialisation</Tag>
@@ -1991,87 +759,35 @@
 <Definition name="inv"/>
 <Definition name="ass"/>
 <Local_Hyp num="1">
-<Exp_Comparison op="/:">
+<Exp_Comparison op="/=">
 <Attr>
-<Pos c="16" s="2" l="27"/>
+<Pos c="16" s="2" l="23"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:1">
 <Attr>
-<Pos c="13" s="2" l="27"/>
-</Attr>
-</Id>
-<Unary_Exp typref="1569085991" op="ran">
-<Attr>
-<Pos c="19" s="3" l="27"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="39" s="2" l="27"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="24" s="2" l="27"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:1:1">
-<Attr>
-<Pos c="23" s="1" l="27"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="35" s="1" l="27"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:1:2:1">
-<Attr>
-<Pos c="27" s="7" l="27"/>
+<Pos c="13" s="2" l="23"/>
 </Attr>
 </Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:1:2:2">
+<Id value="plane_dummy" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:2">
 <Attr>
-<Pos c="36" s="1" l="27"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:2">
-<Attr>
-<Pos c="42" s="9" l="27"/>
+<Pos c="19" s="11" l="23"/>
 </Attr>
 </Id>
-</Binary_Exp>
-</Unary_Exp>
 </Exp_Comparison>
 </Local_Hyp>
 <Local_Hyp num="2">
-<Exp_Comparison op="/=">
-<Attr>
-<Pos c="16" s="2" l="26"/>
-</Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:1">
-<Attr>
-<Pos c="13" s="2" l="26"/>
-</Attr>
-</Id>
-<Id typref="1727109426" value="plane_dummy" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:2">
-<Attr>
-<Pos c="19" s="11" l="26"/>
-</Attr>
-</Id>
-</Exp_Comparison>
-</Local_Hyp>
-<Local_Hyp num="3">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="16" s="1" l="25"/>
+<Pos c="16" s="1" l="22"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:1">
 <Attr>
-<Pos c="13" s="2" l="25"/>
+<Pos c="13" s="2" l="22"/>
 </Attr>
 </Id>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:2">
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:2">
 <Attr>
-<Pos c="18" s="8" l="25"/>
+<Pos c="18" s="8" l="22"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -2094,101 +810,132 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="16" s="1" l="25"/>
+<Pos c="16" s="1" l="22"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:1">
 <Attr>
-<Pos c="13" s="2" l="25"/>
+<Pos c="13" s="2" l="22"/>
 </Attr>
 </Id>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:2">
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:1:2">
 <Attr>
-<Pos c="18" s="8" l="25"/>
+<Pos c="18" s="8" l="22"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/=">
 <Attr>
-<Pos c="16" s="2" l="26"/>
+<Pos c="16" s="2" l="23"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:1">
 <Attr>
-<Pos c="13" s="2" l="26"/>
+<Pos c="13" s="2" l="23"/>
 </Attr>
 </Id>
-<Id typref="1727109426" value="plane_dummy" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:2">
+<Id value="plane_dummy" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:2:2">
 <Attr>
-<Pos c="19" s="11" l="26"/>
+<Pos c="19" s="11" l="23"/>
 </Attr>
 </Id>
 </Exp_Comparison>
 <Exp_Comparison op="/:">
 <Attr>
-<Pos c="16" s="2" l="27"/>
+<Pos c="16" s="2" l="24"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:1">
 <Attr>
-<Pos c="13" s="2" l="27"/>
+<Pos c="13" s="2" l="24"/>
 </Attr>
 </Id>
-<Unary_Exp typref="1569085991" op="ran">
+<Unary_Exp op="ran" typref="1569085991">
 <Attr>
-<Pos c="19" s="3" l="27"/>
+<Pos c="19" s="3" l="24"/>
 </Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1">
 <Attr>
-<Pos c="39" s="2" l="27"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="24" s="2" l="27"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:1:1">
-<Attr>
-<Pos c="23" s="1" l="27"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="35" s="1" l="27"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:1:2:1">
-<Attr>
-<Pos c="27" s="7" l="27"/>
+<Pos c="23" s="9" l="24"/>
 </Attr>
 </Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:1:2:2">
-<Attr>
-<Pos c="36" s="1" l="27"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:3:2:1:2">
-<Attr>
-<Pos c="42" s="9" l="27"/>
-</Attr>
-</Id>
-</Binary_Exp>
 </Unary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op="&lt;">
-<Attr>
-<Pos c="21" s="1" l="28"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:4:1">
-<Attr>
-<Pos c="13" s="7" l="28"/>
-</Attr>
-</Id>
-<Id typref="2701647786" value="sz_airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:2:1:4:2">
-<Attr>
-<Pos c="23" s="12" l="28"/>
-</Attr>
-</Id>
 </Exp_Comparison>
 </Nary_Pred>
 </Hypothesis>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos c="23" s="1" l="26"/>
+</Attr>
+<Id value="xx" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1:1">
+<Attr>
+<Pos c="20" s="2" l="26"/>
+</Attr>
+</Id>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos c="26" s="2" l="26"/>
+</Attr>
+<Integer_Literal value="0" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1:2:1">
+<Attr>
+<Pos c="25" s="1" l="26"/>
+</Attr>
+</Integer_Literal>
+<Id value="sz_airplanes" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1:2:2">
+<Attr>
+<Pos c="28" s="12" l="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Nary_Pred op="&amp;">
+<Exp_Comparison op=":">
+<Attr>
+<Pos c="23" s="1" l="26"/>
+</Attr>
+<Id value="xx" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1:1">
+<Attr>
+<Pos c="20" s="2" l="26"/>
+</Attr>
+</Id>
+<Binary_Exp op=".." typref="3603043417">
+<Attr>
+<Pos c="26" s="2" l="26"/>
+</Attr>
+<Integer_Literal value="0" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1:2:1">
+<Attr>
+<Pos c="25" s="1" l="26"/>
+</Attr>
+</Integer_Literal>
+<Id value="sz_airplanes" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:1:2:2">
+<Attr>
+<Pos c="28" s="12" l="26"/>
+</Attr>
+</Id>
+</Binary_Exp>
+</Exp_Comparison>
+<Exp_Comparison op="/:">
+<Attr>
+<Pos c="46" s="2" l="26"/>
+</Attr>
+<Id value="xx" typref="2701647786" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:2:1">
+<Attr>
+<Pos c="43" s="2" l="26"/>
+</Attr>
+</Id>
+<Unary_Exp op="dom" typref="3603043417">
+<Attr>
+<Pos c="49" s="3" l="26"/>
+</Attr>
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:1:3:1:2:1:2:2:1">
+<Attr>
+<Pos c="53" s="9" l="26"/>
+</Attr>
+</Id>
+</Unary_Exp>
+</Exp_Comparison>
+</Nary_Pred>
+</Local_Hyp>
 </Proof_Obligation>
 <Proof_Obligation>
 <Comment>Operations dans une machine abstraite</Comment>
@@ -2204,18 +951,35 @@
 <Definition name="inv"/>
 <Definition name="ass"/>
 <Local_Hyp num="1">
-<Exp_Comparison op=":">
+<Exp_Comparison op="/=">
 <Attr>
-<Pos c="16" s="1" l="34"/>
+<Pos c="16" s="2" l="33"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:1">
 <Attr>
-<Pos c="13" s="2" l="34"/>
+<Pos c="13" s="2" l="33"/>
 </Attr>
 </Id>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:2">
+<Id value="plane_dummy" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2">
 <Attr>
-<Pos c="18" s="8" l="34"/>
+<Pos c="19" s="11" l="33"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
+<Local_Hyp num="2">
+<Exp_Comparison op=":">
+<Attr>
+<Pos c="16" s="1" l="32"/>
+</Attr>
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:1">
+<Attr>
+<Pos c="13" s="2" l="32"/>
+</Attr>
+</Id>
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:2">
+<Attr>
+<Pos c="18" s="8" l="32"/>
 </Attr>
 </Id>
 </Exp_Comparison>
@@ -2238,503 +1002,56 @@
 <Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
+<Pos c="16" s="1" l="32"/>
+</Attr>
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:1">
+<Attr>
+<Pos c="13" s="2" l="32"/>
+</Attr>
+</Id>
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:2">
+<Attr>
+<Pos c="18" s="8" l="32"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op="/=">
+<Attr>
+<Pos c="16" s="2" l="33"/>
+</Attr>
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:1">
+<Attr>
+<Pos c="13" s="2" l="33"/>
+</Attr>
+</Id>
+<Id value="plane_dummy" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2">
+<Attr>
+<Pos c="19" s="11" l="33"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+<Exp_Comparison op=":">
+<Attr>
 <Pos c="16" s="1" l="34"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:3:1">
 <Attr>
 <Pos c="13" s="2" l="34"/>
 </Attr>
 </Id>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:1:2">
+<Unary_Exp op="ran" typref="1569085991">
 <Attr>
-<Pos c="18" s="8" l="34"/>
+<Pos c="18" s="3" l="34"/>
+</Attr>
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:3:2:1">
+<Attr>
+<Pos c="22" s="9" l="34"/>
 </Attr>
 </Id>
-</Exp_Comparison>
-<Exp_Comparison op=":">
-<Attr>
-<Pos c="16" s="1" l="35"/>
-</Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:1">
-<Attr>
-<Pos c="13" s="2" l="35"/>
-</Attr>
-</Id>
-<Unary_Exp typref="1569085991" op="ran">
-<Attr>
-<Pos c="18" s="3" l="35"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="38" s="2" l="35"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="23" s="2" l="35"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2:1:1:1">
-<Attr>
-<Pos c="22" s="1" l="35"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="34" s="1" l="35"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2:1:1:2:1">
-<Attr>
-<Pos c="26" s="7" l="35"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2:1:1:2:2">
-<Attr>
-<Pos c="35" s="1" l="35"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:2:1:2:2:1:2">
-<Attr>
-<Pos c="41" s="9" l="35"/>
-</Attr>
-</Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 </Nary_Pred>
 </Hypothesis>
-<Simple_Goal>
-<Tag>Well definedness</Tag>
-<Goal>
-<Exp_Comparison op=":">
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:2">
-<Attr>
-<Pos c="53" s="2" l="36"/>
-</Attr>
-</Id>
-<Unary_Exp op="dom">
-<Unary_Exp typref="3692640428" op="~">
-<Attr>
-<Pos c="50" s="1" l="36"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="38" s="2" l="36"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="26" s="2" l="36"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:1">
-<Attr>
-<Pos c="25" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="35" s="1" l="36"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:1">
-<Attr>
-<Pos c="28" s="7" l="36"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:2">
-<Attr>
-<Pos c="36" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:2">
-<Attr>
-<Pos c="41" s="9" l="36"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Unary_Exp>
-</Unary_Exp>
-</Exp_Comparison>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(1)" passList="Force(1),(?; 0)"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Well definedness</Tag>
-<Goal>
-<Exp_Comparison op=":">
-<Unary_Exp typref="3692640428" op="~">
-<Attr>
-<Pos c="50" s="1" l="36"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="38" s="2" l="36"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="26" s="2" l="36"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:1">
-<Attr>
-<Pos c="25" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="35" s="1" l="36"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:1">
-<Attr>
-<Pos c="28" s="7" l="36"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:2">
-<Attr>
-<Pos c="36" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:2">
-<Attr>
-<Pos c="41" s="9" l="36"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Unary_Exp>
-<Binary_Exp op="+->">
-<Unary_Exp op="dom">
-<Unary_Exp typref="3692640428" op="~">
-<Attr>
-<Pos c="50" s="1" l="36"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="38" s="2" l="36"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="26" s="2" l="36"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:1">
-<Attr>
-<Pos c="25" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="35" s="1" l="36"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:1">
-<Attr>
-<Pos c="28" s="7" l="36"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:2">
-<Attr>
-<Pos c="36" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:2">
-<Attr>
-<Pos c="41" s="9" l="36"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Unary_Exp>
-</Unary_Exp>
-<Unary_Exp op="ran">
-<Unary_Exp typref="3692640428" op="~">
-<Attr>
-<Pos c="50" s="1" l="36"/>
-</Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
-<Attr>
-<Pos c="38" s="2" l="36"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="26" s="2" l="36"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:1">
-<Attr>
-<Pos c="25" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="35" s="1" l="36"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:1">
-<Attr>
-<Pos c="28" s="7" l="36"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:1:2:2">
-<Attr>
-<Pos c="36" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:1:1:2:1:1:2">
-<Attr>
-<Pos c="41" s="9" l="36"/>
-</Attr>
-</Id>
-</Binary_Exp>
-</Unary_Exp>
-</Unary_Exp>
-</Binary_Exp>
-</Exp_Comparison>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(1)" passList="Force(1),(?; 0)"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Well definedness</Tag>
-<Goal>
-<Exp_Comparison op=":">
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="79" s="1" l="36"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:2:1">
-<Attr>
-<Pos c="71" s="7" l="36"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:2:2">
-<Attr>
-<Pos c="80" s="1" l="36"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Unary_Exp op="dom">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:1">
-<Attr>
-<Pos c="61" s="9" l="36"/>
-</Attr>
-</Id>
-</Unary_Exp>
-</Exp_Comparison>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(2)" passList="Force(2),(?; 0; 1)"/>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Well definedness</Tag>
-<Goal>
-<Exp_Comparison op=":">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:1">
-<Attr>
-<Pos c="61" s="9" l="36"/>
-</Attr>
-</Id>
-<Binary_Exp op="+->">
-<Unary_Exp op="dom">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:1">
-<Attr>
-<Pos c="61" s="9" l="36"/>
-</Attr>
-</Id>
-</Unary_Exp>
-<Unary_Exp op="ran">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:2:3:1:1:2:1:1">
-<Attr>
-<Pos c="61" s="9" l="36"/>
-</Attr>
-</Id>
-</Unary_Exp>
-</Binary_Exp>
-</Exp_Comparison>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
-</Simple_Goal>
-</Proof_Obligation>
-<Proof_Obligation>
-<Comment>Operations dans une machine abstraite</Comment>
-<Tag>WellDefinedness_Precondition_remove_on</Tag>
-<Tag>INVARIANT</Tag>
-<Definition name="B definitions"/>
-<Definition name="ctx"/>
-<Definition name="cst"/>
-<Definition name="lprp"/>
-<Definition name="inprp"/>
-<Definition name="inext"/>
-<Definition name="seext"/>
-<Definition name="inv"/>
-<Definition name="ass"/>
-<Local_Hyp num="1">
-<Exp_Comparison op=":">
-<Attr>
-<Pos c="16" s="1" l="41"/>
-</Attr>
-<Id typref="2701647786" value="pp" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:1">
-<Attr>
-<Pos c="13" s="2" l="41"/>
-</Attr>
-</Id>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="19" s="2" l="41"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:2:1">
-<Attr>
-<Pos c="18" s="1" l="41"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="30" s="1" l="41"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:2:2:1">
-<Attr>
-<Pos c="22" s="7" l="41"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:2:2:2">
-<Attr>
-<Pos c="32" s="1" l="41"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-</Exp_Comparison>
-</Local_Hyp>
-</Proof_Obligation>
-<Proof_Obligation>
-<Comment>Operations dans une machine abstraite</Comment>
-<Tag>WellDefinedness_remove_on</Tag>
-<Tag>INVARIANT</Tag>
-<Definition name="B definitions"/>
-<Definition name="ctx"/>
-<Definition name="cst"/>
-<Definition name="lprp"/>
-<Definition name="inprp"/>
-<Definition name="inext"/>
-<Definition name="seext"/>
-<Definition name="inv"/>
-<Definition name="ass"/>
-<Hypothesis>
-<Nary_Pred op="&amp;">
-<Exp_Comparison op=":">
-<Attr>
-<Pos c="16" s="1" l="41"/>
-</Attr>
-<Id typref="2701647786" value="pp" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:1">
-<Attr>
-<Pos c="13" s="2" l="41"/>
-</Attr>
-</Id>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="19" s="2" l="41"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:2:1">
-<Attr>
-<Pos c="18" s="1" l="41"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="30" s="1" l="41"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:2:2:1">
-<Attr>
-<Pos c="22" s="7" l="41"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:1:2:2:2">
-<Attr>
-<Pos c="32" s="1" l="41"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-</Exp_Comparison>
-<Exp_Comparison op=">">
-<Attr>
-<Pos c="21" s="1" l="42"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:2:1">
-<Attr>
-<Pos c="13" s="7" l="42"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:2:1:2:2">
-<Attr>
-<Pos c="23" s="1" l="42"/>
-</Attr>
-</Integer_Literal>
-</Exp_Comparison>
-</Nary_Pred>
-</Hypothesis>
-<Simple_Goal>
-<Tag>Well definedness</Tag>
-<Goal>
-<Exp_Comparison op=":">
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="49" s="1" l="43"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:2:1">
-<Attr>
-<Pos c="41" s="7" l="43"/>
-</Attr>
-</Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:2:2">
-<Attr>
-<Pos c="50" s="1" l="43"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-<Unary_Exp op="dom">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:1">
-<Attr>
-<Pos c="31" s="9" l="43"/>
-</Attr>
-</Id>
-</Unary_Exp>
-</Exp_Comparison>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
-<iapa>
-<status value="Unproved"/>
-</iapa>
-</Simple_Goal>
-<Simple_Goal>
-<Tag>Well definedness</Tag>
-<Goal>
-<Exp_Comparison op=":">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:1">
-<Attr>
-<Pos c="31" s="9" l="43"/>
-</Attr>
-</Id>
-<Binary_Exp op="+->">
-<Unary_Exp op="dom">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:1">
-<Attr>
-<Pos c="31" s="9" l="43"/>
-</Attr>
-</Id>
-</Unary_Exp>
-<Unary_Exp op="ran">
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2:1:1">
-<Attr>
-<Pos c="31" s="9" l="43"/>
-</Attr>
-</Id>
-</Unary_Exp>
-</Binary_Exp>
-</Exp_Comparison>
-</Goal>
-<Proof_State methodList="pr" proofState="Proved(0)" passList="Force(0),?"/>
-<iapa>
-<status value="Unproved"/>
-</iapa>
-</Simple_Goal>
 </Proof_Obligation>
 <Proof_Obligation>
 <Comment>Operations dans une machine abstraite</Comment>
@@ -2749,6 +1066,23 @@
 <Definition name="seext"/>
 <Definition name="inv"/>
 <Definition name="ass"/>
+<Local_Hyp num="1">
+<Exp_Comparison op=":">
+<Attr>
+<Pos c="16" s="1" l="39"/>
+</Attr>
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:1">
+<Attr>
+<Pos c="13" s="2" l="39"/>
+</Attr>
+</Id>
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2">
+<Attr>
+<Pos c="18" s="8" l="39"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Local_Hyp>
 </Proof_Obligation>
 <Proof_Obligation>
 <Comment>Operations dans une machine abstraite</Comment>
@@ -2764,71 +1098,58 @@
 <Definition name="inv"/>
 <Definition name="ass"/>
 <Hypothesis>
+<Nary_Pred op="&amp;">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="16" s="1" l="48"/>
+<Pos c="16" s="1" l="39"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:3:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:1">
 <Attr>
-<Pos c="13" s="2" l="48"/>
+<Pos c="13" s="2" l="39"/>
 </Attr>
 </Id>
-<Id typref="1569085991" value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:3:1:2">
+<Id value="AIRPLANE" typref="1569085991" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:1:2">
 <Attr>
-<Pos c="18" s="8" l="48"/>
+<Pos c="18" s="8" l="39"/>
 </Attr>
 </Id>
 </Exp_Comparison>
+<Exp_Comparison op="/=">
+<Attr>
+<Pos c="16" s="2" l="40"/>
+</Attr>
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:1">
+<Attr>
+<Pos c="13" s="2" l="40"/>
+</Attr>
+</Id>
+<Id value="plane_dummy" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:3:1:2:2">
+<Attr>
+<Pos c="19" s="11" l="40"/>
+</Attr>
+</Id>
+</Exp_Comparison>
+</Nary_Pred>
 </Hypothesis>
 <Local_Hyp num="1">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="20" s="1" l="49"/>
+<Pos c="20" s="1" l="41"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:4:1:1:1:1">
 <Attr>
-<Pos c="17" s="2" l="49"/>
+<Pos c="17" s="2" l="41"/>
 </Attr>
 </Id>
-<Unary_Exp typref="1569085991" op="ran">
+<Unary_Exp op="ran" typref="1569085991">
 <Attr>
-<Pos c="22" s="3" l="49"/>
+<Pos c="22" s="3" l="41"/>
 </Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:4:1:1:1:2:1">
 <Attr>
-<Pos c="42" s="2" l="49"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="27" s="2" l="49"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:1">
-<Attr>
-<Pos c="26" s="1" l="49"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="38" s="1" l="49"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:2:1">
-<Attr>
-<Pos c="30" s="7" l="49"/>
+<Pos c="26" s="9" l="41"/>
 </Attr>
 </Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:2:2">
-<Attr>
-<Pos c="39" s="1" l="49"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:2">
-<Attr>
-<Pos c="45" s="9" l="49"/>
-</Attr>
-</Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 </Local_Hyp>
@@ -2836,52 +1157,22 @@
 <Unary_Pred op="not">
 <Exp_Comparison op=":">
 <Attr>
-<Pos c="20" s="1" l="49"/>
+<Pos c="20" s="1" l="41"/>
 </Attr>
-<Id typref="1727109426" value="aa" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:1">
+<Id value="aa" typref="1727109426" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:4:1:1:1:1">
 <Attr>
-<Pos c="17" s="2" l="49"/>
+<Pos c="17" s="2" l="41"/>
 </Attr>
 </Id>
-<Unary_Exp typref="1569085991" op="ran">
+<Unary_Exp op="ran" typref="1569085991">
 <Attr>
-<Pos c="22" s="3" l="49"/>
+<Pos c="22" s="3" l="41"/>
 </Attr>
-<Binary_Exp typref="1731522284" op="&lt;|">
+<Id value="airplanes" typref="1731522284" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:3:4:1:1:1:2:1">
 <Attr>
-<Pos c="42" s="2" l="49"/>
-</Attr>
-<Binary_Exp typref="3603043417" op="..">
-<Attr>
-<Pos c="27" s="2" l="49"/>
-</Attr>
-<Integer_Literal typref="2701647786" value="0" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:1">
-<Attr>
-<Pos c="26" s="1" l="49"/>
-</Attr>
-</Integer_Literal>
-<Binary_Exp typref="2701647786" op="-">
-<Attr>
-<Pos c="38" s="1" l="49"/>
-</Attr>
-<Id typref="2701647786" value="pointer" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:2:1">
-<Attr>
-<Pos c="30" s="7" l="49"/>
+<Pos c="26" s="9" l="41"/>
 </Attr>
 </Id>
-<Integer_Literal typref="2701647786" value="1" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:1:2:2">
-<Attr>
-<Pos c="39" s="1" l="49"/>
-</Attr>
-</Integer_Literal>
-</Binary_Exp>
-</Binary_Exp>
-<Id typref="1731522284" value="airplanes" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:5:4:4:1:1:1:2:1:2">
-<Attr>
-<Pos c="45" s="9" l="49"/>
-</Attr>
-</Id>
-</Binary_Exp>
 </Unary_Exp>
 </Exp_Comparison>
 </Unary_Pred>
@@ -2896,39 +1187,36 @@
 </Binary_Exp>
 </Unary_Exp>
 </Type>
-<Type id="2701647786">
-<Id value="INTEGER" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:2:1"/>
+<Type id="2971351405">
+<Unary_Exp op="POW">
+<Unary_Exp op="POW">
+<Binary_Exp op="*">
+<Id value="INTEGER" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:2:1:1:1:1"/>
+<Id value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:2:1:1:1:2"/>
+</Binary_Exp>
+</Unary_Exp>
+</Unary_Exp>
 </Type>
 <Type id="3603043417">
 <Unary_Exp op="POW">
 <Id value="INTEGER" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:3:1:1"/>
 </Unary_Exp>
 </Type>
-<Type id="2971351405">
-<Unary_Exp op="POW">
-<Unary_Exp op="POW">
-<Binary_Exp op="*">
-<Id value="INTEGER" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:4:1:1:1:1"/>
-<Id value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:4:1:1:1:2"/>
-</Binary_Exp>
-</Unary_Exp>
-</Unary_Exp>
+<Type id="2701647786">
+<Id value="INTEGER" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:4:1"/>
 </Type>
 <Type id="1569085991">
 <Unary_Exp op="POW">
 <Id value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:5:1:1"/>
 </Unary_Exp>
 </Type>
-<Type id="1727109426">
-<Id value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:6:1"/>
-</Type>
-<Type id="3692640428">
+<Type id="3817003670">
 <Unary_Exp op="POW">
-<Binary_Exp op="*">
-<Id value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:7:1:1:1"/>
-<Id value="INTEGER" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:7:1:1:2"/>
-</Binary_Exp>
+<Generic_Type tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:6:1:1"/>
 </Unary_Exp>
+</Type>
+<Type id="1727109426">
+<Id value="AIRPLANE" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:7:1"/>
 </Type>
 <Type id="2043437594">
 <Id value="BOOL" tag="C:\Users\ohara\Documents\BTI\2019.2\EVP\Workspace\Airport\bdp\Airplane.bxml:1:6:8:1"/>
@@ -2957,13 +1245,13 @@
 <Type id="2701647786">
 <Id value="INTEGER" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:5:6:1"/>
 </Type>
+<Type id="1727109426">
+<Id value="AIRPLANE" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:5:7:1"/>
+</Type>
 <Type id="3603043417">
 <Unary_Exp op="POW">
-<Id value="INTEGER" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:5:7:1:1"/>
+<Id value="INTEGER" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:5:8:1:1"/>
 </Unary_Exp>
-</Type>
-<Type id="1727109426">
-<Id value="AIRPLANE" tag="C:/Users/ohara/Documents/BTI/2019.2/EVP/Workspace/Airport/bdp\Airport_ctx.bxml:1:5:8:1"/>
 </Type>
 </TypeInfos>
 </Proof_Obligations>

@@ -9,73 +9,90 @@ REFINES Airplane
 SEES
     Airport_ctx
 
-
 CONCRETE_VARIABLES
-    airplanes_i , pointer_i
+    airplanes_i , pointer
 
 INVARIANT
-    pointer_i : 0 .. sz_airplanes
+    pointer : 0 .. sz_airplanes
     & airplanes_i : 0 .. sz_airplanes --> AIRPLANE
-
-    & ran ( airplanes ) = ran ( 0 .. ( pointer - 1 ) <| airplanes_i )
     & ( 0 .. ( pointer - 1 ) <| airplanes_i ) : 0 .. ( pointer - 1 ) >-> AIRPLANE
-    & pointer_i = pointer
+
+    & ran ( 0 .. ( pointer - 1 ) <| airplanes_i ) = ran ( airplanes ) //invariant de ligação
 
 INITIALISATION
     airplanes_i := ( 0 .. sz_airplanes ) * { plane_dummy } ;
-    pointer_i := 0
+    pointer := 0
 
 OPERATIONS
     add_plane ( aa ) =
         BEGIN
-           airplanes_i ( pointer_i ) := aa ;
-           pointer_i := pointer_i + 1
-        END ;
+            IF pointer < sz_airplanes
+            THEN VAR ii , nsz , bb IN
+                    ii := 0 ;
+                    nsz := pointer ;
+                    bb := FALSE ;
 
-    remove ( aa ) =
-        BEGIN
-//            airplanes_i((0..pointer_i-1 <| airplanes_i)~(aa)) := airplanes_i(pointer_i-1)
-
-            VAR ii , nsz , plane_current IN
-                ii := 0 ;
-                nsz := pointer_i ;
-                plane_current := airplanes_i ( ii ) ;
-                WHILE ( ii < pointer_i )
-                DO
-                    plane_current := airplanes_i ( ii ) ;
-                    IF aa = plane_current
-                    THEN airplanes_i ( ii ) := airplanes_i ( pointer_i - 1 ) ;
-                         airplanes_i ( pointer_i - 1 ) := plane_dummy ;
-                         pointer_i := pointer_i - 1
+                    WHILE ii < pointer
+                    DO VAR cc IN
+                           cc := airplanes_i ( ii ) ;
+                           IF cc = aa
+                           THEN bb := TRUE
+                           END
+                       END ;
+                       ii := ii + 1
+                    INVARIANT ii : 0 .. pointer
+                            & ( bb = TRUE <=> # xx . ( xx : 0 .. ii - 1 & airplanes_i ( xx ) = aa ) )
+                    VARIANT nsz - ii
                     END ;
-                    ii := ii + 1
-                INVARIANT ii : NAT & ii <= nsz
-                VARIANT nsz - ii
+
+                    IF bb = FALSE
+                    THEN airplanes_i ( pointer ) := aa ;
+                         pointer := pointer + 1
+                    END
                 END
             END
         END ;
 
-    remove_on ( pp ) =
+    remove ( aa ) =
         BEGIN
-            airplanes_i ( pp ) := airplanes_i ( pointer_i - 1 ) ;
-            pointer_i := pointer_i - 1
+            IF pointer > 0
+            THEN VAR ii , nsz IN
+                    ii := 0 ;
+                    nsz := pointer ;
+
+                    WHILE ii < pointer
+                    DO VAR cc IN
+                           cc := airplanes_i ( ii ) ;
+                           IF cc = aa
+                           THEN airplanes_i ( ii ) := airplanes_i ( pointer - 1 ) ;
+                                airplanes_i ( pointer - 1 ) := plane_dummy ;
+                                pointer := pointer - 1
+                           END
+                       END ;
+                       ii := ii + 1
+                    INVARIANT ii : NAT
+                    VARIANT nsz - ii
+                    END
+                 END
+            END
         END ;
 
     bb <-- has_airplane ( aa ) =
         BEGIN
-            VAR ii , nsz , plane_current IN
+            VAR ii , nsz IN
                 ii := 0 ;
-                nsz := pointer_i ;
+                nsz := pointer ;
                 bb := FALSE ;
-                plane_current := airplanes_i ( ii ) ;
-                WHILE ( ii < pointer_i )
-                DO
-                   plane_current := airplanes_i ( ii ) ;
-                   IF aa = plane_current
-                   THEN bb := TRUE
+                WHILE ii < pointer
+                DO VAR cc IN
+                       cc := airplanes_i ( ii ) ;
+                       IF cc = aa
+                       THEN bb := TRUE
+                       END
                    END ;
                    ii := ii + 1
-                INVARIANT ii : NAT & ii <= nsz
+                INVARIANT ii : 0 .. pointer
+                        & ( bb = TRUE <=> # xx . ( xx : 0 .. ii - 1 & airplanes_i ( xx ) = aa ) )
                 VARIANT nsz - ii
                 END
             END

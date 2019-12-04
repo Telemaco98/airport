@@ -1,6 +1,6 @@
 ﻿THEORY BalanceX IS
-  Gate_i,15,0,0,14,1,0,0;
-  Initialisation,2,0,0,1,1,0,0;
+  Gate_i,14,0,0,13,1,0,0;
+  Initialisation,1,0,0,0,1,0,0;
   WellDefinedness_gate_belongs_to,2,0,0,2,0,0,0;
   WellDefinedness_is_gate_occupied,2,0,0,2,0,0,0;
   gate_belongs_to,2,0,0,2,0,0,0;
@@ -10,7 +10,6 @@
 END
 &
 THEORY ProofState IS
-  Proved(0);
   Proved(0);
   Proved(0);
   Proved(0);
@@ -41,12 +40,10 @@ THEORY MethodList IS
   pr;
   pr;
   pr;
-  pr;
   pr
 END
 &
 THEORY PassList IS
-  Force(0),?;
   Force(0),?;
   Force(0),?;
   Force(0),?;

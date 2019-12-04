@@ -51,9 +51,9 @@ END
 THEORY ListInvariantX IS
   Gluing_Seen_List_Invariant(Implementation(Track_i))==(btrue);
   Expanded_List_Invariant(Implementation(Track_i))==(btrue);
-  Abstract_List_Invariant(Implementation(Track_i))==(tracks: track --> AIRPLANE & status_track: track --> OCCUPATION);
+  Abstract_List_Invariant(Implementation(Track_i))==(tracks: 0..sz_tracks --> AIRPLANE & status_track: 0..sz_tracks --> OCCUPATION);
   Context_List_Invariant(Implementation(Track_i))==(btrue);
-  List_Invariant(Implementation(Track_i))==(tracks_i: 0..sz_tracks --> AIRPLANE & status_track_i: track --> OCCUPATION & tracks = tracks_i & status_track = status_track_i)
+  List_Invariant(Implementation(Track_i))==(tracks_i: 0..sz_tracks --> AIRPLANE & status_track_i: 0..sz_tracks --> OCCUPATION & tracks = tracks_i & status_track = status_track_i)
 END
 &
 THEORY ListAssertionsX IS
@@ -72,9 +72,9 @@ THEORY ListExclusivityX IS
 END
 &
 THEORY ListInitialisationX IS
-  Expanded_List_Initialisation(Implementation(Track_i))==(tracks_i:=(0..sz_tracks)*{plane_dummy};status_track_i:=track*{unoccupied});
+  Expanded_List_Initialisation(Implementation(Track_i))==(tracks_i:=(0..sz_tracks)*{plane_dummy};status_track_i:=(0..sz_tracks)*{unoccupied});
   Context_List_Initialisation(Implementation(Track_i))==(skip);
-  List_Initialisation(Implementation(Track_i))==(tracks_i:=(0..sz_tracks)*{plane_dummy};status_track_i:=track*{unoccupied})
+  List_Initialisation(Implementation(Track_i))==(tracks_i:=(0..sz_tracks)*{plane_dummy};status_track_i:=(0..sz_tracks)*{unoccupied})
 END
 &
 THEORY ListParametersX IS
@@ -118,20 +118,20 @@ END
 &
 THEORY ListPreconditionX IS
   Own_Precondition(Implementation(Track_i),occupy_track)==(btrue);
-  List_Precondition(Implementation(Track_i),occupy_track)==(aa: AIRPLANE & tt: track & aa/:ran(tracks) & tracks(tt) = plane_dummy);
+  List_Precondition(Implementation(Track_i),occupy_track)==(aa: AIRPLANE & tt: 0..sz_tracks & aa/:ran(tracks) & tracks(tt) = plane_dummy);
   Own_Precondition(Implementation(Track_i),vacate_track)==(btrue);
-  List_Precondition(Implementation(Track_i),vacate_track)==(tt: track & tracks(tt)/=plane_dummy);
+  List_Precondition(Implementation(Track_i),vacate_track)==(tt: 0..sz_tracks & tracks(tt)/=plane_dummy);
   Own_Precondition(Implementation(Track_i),is_track_occupied)==(btrue);
-  List_Precondition(Implementation(Track_i),is_track_occupied)==(tt: track);
+  List_Precondition(Implementation(Track_i),is_track_occupied)==(tt: 0..sz_tracks);
   Own_Precondition(Implementation(Track_i),track_belongs_to)==(btrue);
-  List_Precondition(Implementation(Track_i),track_belongs_to)==(tt: track & tracks(tt)/=plane_dummy)
+  List_Precondition(Implementation(Track_i),track_belongs_to)==(tt: 0..sz_tracks & tracks(tt)/=plane_dummy)
 END
 &
 THEORY ListSubstitutionX IS
-  Expanded_List_Substitution(Implementation(Track_i),track_belongs_to)==(tt: track & tracks(tt)/=plane_dummy & tt: dom(tracks_i) | aa:=tracks_i(tt));
-  Expanded_List_Substitution(Implementation(Track_i),is_track_occupied)==(tt: track | @xx.((tt: dom(status_track_i) | xx:=status_track_i(tt));(xx = unoccupied ==> bb:=FALSE [] not(xx = unoccupied) ==> bb:=TRUE)));
-  Expanded_List_Substitution(Implementation(Track_i),vacate_track)==(tt: track & tracks(tt)/=plane_dummy | (tt: dom(tracks_i) | tracks_i:=tracks_i<+{tt|->plane_dummy});(tt: dom(status_track_i) | status_track_i:=status_track_i<+{tt|->unoccupied}));
-  Expanded_List_Substitution(Implementation(Track_i),occupy_track)==(aa: AIRPLANE & tt: track & aa/:ran(tracks) & tracks(tt) = plane_dummy | (tt: dom(tracks_i) | tracks_i:=tracks_i<+{tt|->aa});(tt: dom(status_track_i) | status_track_i:=status_track_i<+{tt|->occupied}));
+  Expanded_List_Substitution(Implementation(Track_i),track_belongs_to)==(tt: 0..sz_tracks & tracks(tt)/=plane_dummy & tt: dom(tracks_i) | aa:=tracks_i(tt));
+  Expanded_List_Substitution(Implementation(Track_i),is_track_occupied)==(tt: 0..sz_tracks | @xx.((tt: dom(status_track_i) | xx:=status_track_i(tt));(xx = unoccupied ==> bb:=FALSE [] not(xx = unoccupied) ==> bb:=TRUE)));
+  Expanded_List_Substitution(Implementation(Track_i),vacate_track)==(tt: 0..sz_tracks & tracks(tt)/=plane_dummy | (tt: dom(tracks_i) | tracks_i:=tracks_i<+{tt|->plane_dummy});(tt: dom(status_track_i) | status_track_i:=status_track_i<+{tt|->unoccupied}));
+  Expanded_List_Substitution(Implementation(Track_i),occupy_track)==(aa: AIRPLANE & tt: 0..sz_tracks & aa/:ran(tracks) & tracks(tt) = plane_dummy | (tt: dom(tracks_i) | tracks_i:=tracks_i<+{tt|->aa});(tt: dom(status_track_i) | status_track_i:=status_track_i<+{tt|->occupied}));
   List_Substitution(Implementation(Track_i),occupy_track)==(tracks_i(tt):=aa;status_track_i(tt):=occupied);
   List_Substitution(Implementation(Track_i),vacate_track)==(tracks_i(tt):=plane_dummy;status_track_i(tt):=unoccupied);
   List_Substitution(Implementation(Track_i),is_track_occupied)==(VAR xx IN xx:=status_track_i(tt);IF xx = unoccupied THEN bb:=FALSE ELSE bb:=TRUE END END);
@@ -169,7 +169,7 @@ END
 &
 THEORY ListPropertiesX IS
   Abstract_List_Properties(Implementation(Track_i))==(btrue);
-  Context_List_Properties(Implementation(Track_i))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
+  Context_List_Properties(Implementation(Track_i))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
   Inherited_List_Properties(Implementation(Track_i))==(btrue);
   List_Properties(Implementation(Track_i))==(btrue)
 END
@@ -193,13 +193,13 @@ END
 THEORY ListIncludedOperationsX END
 &
 THEORY InheritedEnvX IS
-  VisibleVariables(Implementation(Track_i))==(Type(tracks_i) == Mvv(SetOf(btype(INTEGER,0,sz_tracks)*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")));Type(status_track_i) == Mvv(SetOf(btype(INTEGER,"[track","]track")*etype(OCCUPATION,0,1))));
+  VisibleVariables(Implementation(Track_i))==(Type(tracks_i) == Mvv(SetOf(btype(INTEGER,0,sz_tracks)*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE")));Type(status_track_i) == Mvv(SetOf(btype(INTEGER,0,sz_tracks)*etype(OCCUPATION,0,1))));
   Operations(Implementation(Track_i))==(Type(track_belongs_to) == Cst(atype(AIRPLANE,?,?),btype(INTEGER,?,?));Type(is_track_occupied) == Cst(btype(BOOL,?,?),btype(INTEGER,?,?));Type(vacate_track) == Cst(No_type,btype(INTEGER,?,?));Type(occupy_track) == Cst(No_type,btype(INTEGER,?,?)*atype(AIRPLANE,?,?)))
 END
 &
 THEORY ListVisibleStaticX IS
-  List_Constants(Implementation(Track_i),Machine(Airport_ctx))==(sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
-  List_Constants_Env(Implementation(Track_i),Machine(Airport_ctx))==(Type(out) == Cst(etype(STATUS,0,5));Type(flighting) == Cst(etype(STATUS,0,5));Type(alighting) == Cst(etype(STATUS,0,5));Type(parked) == Cst(etype(STATUS,0,5));Type(boarding) == Cst(etype(STATUS,0,5));Type(departing) == Cst(etype(STATUS,0,5));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?));Type(sz_airplanes) == Cst(btype(INTEGER,?,?));Type(gate) == Cst(SetOf(btype(INTEGER,"[gate","]gate")));Type(track) == Cst(SetOf(btype(INTEGER,"[track","]track")));Type(plane_dummy) == Cst(atype(AIRPLANE,?,?)));
+  List_Constants(Implementation(Track_i),Machine(Airport_ctx))==(sz_gates,sz_tracks,sz_airplanes,plane_dummy);
+  List_Constants_Env(Implementation(Track_i),Machine(Airport_ctx))==(Type(out) == Cst(etype(STATUS,0,5));Type(flighting) == Cst(etype(STATUS,0,5));Type(alighting) == Cst(etype(STATUS,0,5));Type(parked) == Cst(etype(STATUS,0,5));Type(boarding) == Cst(etype(STATUS,0,5));Type(departing) == Cst(etype(STATUS,0,5));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?));Type(sz_airplanes) == Cst(btype(INTEGER,?,?));Type(plane_dummy) == Cst(atype(AIRPLANE,?,?)));
   List_Defered_Sets(Implementation(Track_i),Machine(Airport_ctx))==(AIRPLANE);
   Enumerate_Definition(Implementation(Track_i),Machine(Airport_ctx),OCCUPATION)==({occupied,unoccupied});
   Enumerate_Definition(Implementation(Track_i),Machine(Airport_ctx),STATUS)==({out,flighting,alighting,parked,boarding,departing})
@@ -211,15 +211,15 @@ THEORY ListOfIdsX IS
   List_Of_VisibleCst_Ids(Implementation(Track_i)) == (?);
   List_Of_VisibleVar_Ids(Implementation(Track_i)) == (status_track_i,tracks_i | ?);
   List_Of_Ids_SeenBNU(Implementation(Track_i)) == (?: ?);
-  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
+  List_Of_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,plane_dummy,AIRPLANE,STATUS,OCCUPATION,out,flighting,alighting,parked,boarding,departing,occupied,unoccupied | ? | ? | ? | ? | ? | ? | ? | Airport_ctx);
   List_Of_HiddenCst_Ids(Machine(Airport_ctx)) == (? | ?);
-  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
+  List_Of_VisibleCst_Ids(Machine(Airport_ctx)) == (sz_gates,sz_tracks,sz_airplanes,plane_dummy);
   List_Of_VisibleVar_Ids(Machine(Airport_ctx)) == (? | ?);
   List_Of_Ids_SeenBNU(Machine(Airport_ctx)) == (?: ?)
 END
 &
 THEORY VisibleVariablesEnvX IS
-  VisibleVariables(Implementation(Track_i)) == (Type(status_track_i) == Mvv(SetOf(btype(INTEGER,"[track","]track")*etype(OCCUPATION,0,1)));Type(tracks_i) == Mvv(SetOf(btype(INTEGER,0,sz_tracks)*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE"))))
+  VisibleVariables(Implementation(Track_i)) == (Type(status_track_i) == Mvv(SetOf(btype(INTEGER,0,sz_tracks)*etype(OCCUPATION,0,1)));Type(tracks_i) == Mvv(SetOf(btype(INTEGER,0,sz_tracks)*atype(AIRPLANE,"[AIRPLANE","]AIRPLANE"))))
 END
 &
 THEORY VariablesLocEnvX IS

@@ -15,14 +15,14 @@ CONCRETE_VARIABLES
 
 INVARIANT
     tracks_i : 0 .. sz_tracks --> AIRPLANE &
-    status_track_i : track --> OCCUPATION &
+    status_track_i : 0 .. sz_tracks --> OCCUPATION &
 
     tracks = tracks_i &
     status_track = status_track_i
 
 INITIALISATION
     tracks_i := ( 0 .. sz_tracks ) * { plane_dummy } ;
-    status_track_i := track * { unoccupied }
+    status_track_i := ( 0 .. sz_tracks ) * { unoccupied }
 
 OPERATIONS
     occupy_track ( tt , aa ) =

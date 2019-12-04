@@ -21,8 +21,8 @@ THEORY Formulas IS
 (1 +1 <= 1000);
 ((1000) : (((0) .. (1000))));
 ((0) .. (1000)): FIN(INTEGER) & not(((0) .. (1000)) = {});
-AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & (1 +1 <= sz_gates) & ((sz_tracks) : ((NAT-{0}))) & (1 +1 <= sz_tracks) & ((sz_airplanes) : ((NAT-{0}))) & (1 +1 <= sz_airplanes) & ((gate) = (((0) .. (sz_gates)))) & ((track) = (((0) .. (sz_tracks)))) & ((plane_dummy) : (AIRPLANE));
-((sz_gates) = (100)) & ((sz_tracks) = (5)) & ((sz_airplanes) = (1000)) & ((gate) = (((0) .. (sz_gates)))) & ((track) = (((0) .. (sz_tracks)))) & ((AIRPLANE) = (((0) .. (sz_airplanes)))) & ((plane_dummy) = (1000));
+AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & ((1..6)*{STATUS}): FIN(NATURAL*{STATUS}) & not(((1..6)*{STATUS}) = {}) & ((1..2)*{OCCUPATION}): FIN(NATURAL*{OCCUPATION}) & not(((1..2)*{OCCUPATION}) = {}) & ((sz_gates) : ((NAT-{0}))) & (1 +1 <= sz_gates) & ((sz_tracks) : ((NAT-{0}))) & (1 +1 <= sz_tracks) & ((sz_airplanes) : ((NAT-{0}))) & (1 +1 <= sz_airplanes) & ((plane_dummy) : (AIRPLANE));
+((sz_gates) = (100)) & ((sz_tracks) = (5)) & ((sz_airplanes) = (1000)) & ((AIRPLANE) = (((0) .. (sz_airplanes)))) & ((plane_dummy) = (1000));
 btrue
 END
 &

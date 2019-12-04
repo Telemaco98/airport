@@ -9,44 +9,36 @@ SEES
     Airport_ctx
 
 ABSTRACT_VARIABLES
-    airplanes , pointer
+    airplanes
 
 INVARIANT
-    pointer : 0 .. sz_airplanes
-    & airplanes : 0 .. sz_airplanes --> AIRPLANE
-    & ( 0 .. ( pointer - 1 ) <| airplanes ) : 0 .. ( pointer - 1 ) >-> AIRPLANE
+    airplanes : 0 .. sz_airplanes >+> AIRPLANE
 
 INITIALISATION
-    airplanes := ( 0 .. sz_airplanes ) * { plane_dummy }
-    || pointer := 0
+    airplanes := {}
 
 OPERATIONS
     add_plane ( aa ) =
-        PRE aa : AIRPLANE &
-            aa /= plane_dummy &
-            aa /: ran ( 0 .. ( pointer - 1 ) <| airplanes ) &
-            pointer < sz_airplanes
-        THEN airplanes ( pointer ) := aa ||
-             pointer := pointer + 1
+        PRE aa : AIRPLANE
+          & aa /= plane_dummy
+          & aa /: ran ( airplanes )
+        THEN ANY xx
+             WHERE xx : 0 .. sz_airplanes & xx /: dom ( airplanes )
+             THEN airplanes ( xx ) := aa
+             END
         END ;
 
     remove ( aa ) =
-        PRE aa : AIRPLANE &
-            aa : ran ( 0 .. ( pointer - 1 ) <| airplanes )
-        THEN airplanes ( ( 0 .. pointer - 1 <| airplanes ) ~ ( aa ) ) := airplanes ( pointer - 1 )
-          || pointer := pointer - 1
-        END ;
-
-    remove_on ( pp ) =
-        PRE pp : 0 .. ( pointer - 1 ) &
-            pointer > 0
-        THEN airplanes ( pp ) := airplanes ( pointer - 1 )
-          || pointer := pointer - 1
+        PRE aa : AIRPLANE
+          & aa /= plane_dummy
+          & aa : ran ( airplanes )
+        THEN airplanes := airplanes |>> { aa }
         END ;
 
     bb <-- has_airplane ( aa ) =
         PRE aa : AIRPLANE
-        THEN IF aa : ran ( 0 .. ( pointer - 1 ) <| airplanes )
+          & aa /= plane_dummy
+        THEN IF aa : ran ( airplanes )
              THEN bb := TRUE
              ELSE bb := FALSE
              END

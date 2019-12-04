@@ -104,8 +104,8 @@ THEORY ListPreconditionX END
 THEORY ListSubstitutionX END
 &
 THEORY ListConstantsX IS
-  List_Valuable_Constants(Implementation(Airport_ctx_i))==(sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
-  Inherited_List_Constants(Implementation(Airport_ctx_i))==(sz_gates,sz_tracks,sz_airplanes,gate,track,plane_dummy);
+  List_Valuable_Constants(Implementation(Airport_ctx_i))==(sz_gates,sz_tracks,sz_airplanes,plane_dummy);
+  Inherited_List_Constants(Implementation(Airport_ctx_i))==(sz_gates,sz_tracks,sz_airplanes,plane_dummy);
   List_Constants(Implementation(Airport_ctx_i))==(?)
 END
 &
@@ -134,7 +134,7 @@ THEORY ListHiddenConstantsX IS
 END
 &
 THEORY ListPropertiesX IS
-  Abstract_List_Properties(Implementation(Airport_ctx_i))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & gate = 0..sz_gates & track = 0..sz_tracks & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
+  Abstract_List_Properties(Implementation(Airport_ctx_i))==(sz_gates: NAT1 & sz_gates>1 & sz_tracks: NAT1 & sz_tracks>1 & sz_airplanes: NAT1 & sz_airplanes>1 & plane_dummy: AIRPLANE & AIRPLANE: FIN(INTEGER) & not(AIRPLANE = {}) & STATUS: FIN(INTEGER) & not(STATUS = {}) & OCCUPATION: FIN(INTEGER) & not(OCCUPATION = {}));
   Context_List_Properties(Implementation(Airport_ctx_i))==(btrue);
   Inherited_List_Properties(Implementation(Airport_ctx_i))==(btrue);
   List_Properties(Implementation(Airport_ctx_i))==(btrue)
@@ -142,8 +142,8 @@ END
 &
 THEORY ListValuesX IS
   Precond_Valued_Objects(Implementation(Airport_ctx_i))==(btrue);
-  Values_Subs(Implementation(Airport_ctx_i))==(sz_gates,sz_tracks,sz_airplanes,gate,track,AIRPLANE,plane_dummy: 100,5,1000,0..100,0..5,0..1000,1000);
-  List_Values(Implementation(Airport_ctx_i))==(sz_gates = 100;sz_tracks = 5;sz_airplanes = 1000;gate = 0..100;track = 0..5;AIRPLANE = 0..1000;plane_dummy = 1000)
+  Values_Subs(Implementation(Airport_ctx_i))==(sz_gates,sz_tracks,sz_airplanes,AIRPLANE,plane_dummy: 100,5,1000,0..1000,1000);
+  List_Values(Implementation(Airport_ctx_i))==(sz_gates = 100;sz_tracks = 5;sz_airplanes = 1000;AIRPLANE = 0..1000;plane_dummy = 1000)
 END
 &
 THEORY ListSeenInfoX END
@@ -151,7 +151,7 @@ THEORY ListSeenInfoX END
 THEORY ListIncludedOperationsX END
 &
 THEORY InheritedEnvX IS
-  Constants(Implementation(Airport_ctx_i))==(Type(out) == Cst(etype(STATUS,0,5));Type(flighting) == Cst(etype(STATUS,0,5));Type(alighting) == Cst(etype(STATUS,0,5));Type(parked) == Cst(etype(STATUS,0,5));Type(boarding) == Cst(etype(STATUS,0,5));Type(departing) == Cst(etype(STATUS,0,5));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?));Type(sz_airplanes) == Cst(btype(INTEGER,?,?));Type(gate) == Cst(SetOf(btype(INTEGER,"[gate","]gate")));Type(track) == Cst(SetOf(btype(INTEGER,"[track","]track")));Type(plane_dummy) == Cst(atype(AIRPLANE,?,?)))
+  Constants(Implementation(Airport_ctx_i))==(Type(out) == Cst(etype(STATUS,0,5));Type(flighting) == Cst(etype(STATUS,0,5));Type(alighting) == Cst(etype(STATUS,0,5));Type(parked) == Cst(etype(STATUS,0,5));Type(boarding) == Cst(etype(STATUS,0,5));Type(departing) == Cst(etype(STATUS,0,5));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?));Type(sz_airplanes) == Cst(btype(INTEGER,?,?));Type(plane_dummy) == Cst(atype(AIRPLANE,?,?)))
 END
 &
 THEORY ListVisibleStaticX END
@@ -169,7 +169,7 @@ THEORY SetsEnvX IS
 END
 &
 THEORY ConstantsEnvX IS
-  Constants(Implementation(Airport_ctx_i)) == (Type(plane_dummy) == Cst(btype(INTEGER,?,?));Type(track) == Cst(SetOf(btype(INTEGER,"[track","]track")));Type(gate) == Cst(SetOf(btype(INTEGER,"[gate","]gate")));Type(sz_airplanes) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(departing) == Cst(etype(STATUS,0,5));Type(boarding) == Cst(etype(STATUS,0,5));Type(parked) == Cst(etype(STATUS,0,5));Type(alighting) == Cst(etype(STATUS,0,5));Type(flighting) == Cst(etype(STATUS,0,5));Type(out) == Cst(etype(STATUS,0,5)))
+  Constants(Implementation(Airport_ctx_i)) == (Type(plane_dummy) == Cst(btype(INTEGER,?,?));Type(sz_airplanes) == Cst(btype(INTEGER,?,?));Type(sz_tracks) == Cst(btype(INTEGER,?,?));Type(sz_gates) == Cst(btype(INTEGER,?,?));Type(unoccupied) == Cst(etype(OCCUPATION,0,1));Type(occupied) == Cst(etype(OCCUPATION,0,1));Type(departing) == Cst(etype(STATUS,0,5));Type(boarding) == Cst(etype(STATUS,0,5));Type(parked) == Cst(etype(STATUS,0,5));Type(alighting) == Cst(etype(STATUS,0,5));Type(flighting) == Cst(etype(STATUS,0,5));Type(out) == Cst(etype(STATUS,0,5)))
 END
 &
 THEORY TCIntRdX IS
